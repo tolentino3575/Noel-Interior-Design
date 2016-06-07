@@ -22,16 +22,12 @@
         {% include "layout/slider.html.twig" %}
     {% endblock %}
 
-    {% block content %}
-        <section class="content">
-            <div class="row column">
-                <h1>Headline georgia h1</h1>
-                <h2>Sub Headline georgia h2</h2>
-                <h3>Sub Headline georgia h3</h3>
-                <h4>Sub Headline Lato h4</h4>
-                <p>dummy body lato</p>
-            </div>
-        </section>
+    {% block share %}
+        {% include "layout/share.html.twig" %}
+    {% endblock %}
+
+    {% block transform %}
+        {% include "layout/transform.html.twig" %}
     {% endblock %}
 
     {% block footer %}

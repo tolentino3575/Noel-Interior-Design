@@ -2198,9 +2198,12 @@
  * Licensed under MIT Open Source
  */
 .slider {
-  height: 500px; }
+  height: 200px;
+  text-align: center; }
 
 .footer {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
   text-align: center; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -3459,12 +3462,12 @@ h6 {
     font-size: 1rem; } }
 
 a {
-  color: web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColor);
+  color: #787879;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer; }
   a:hover, a:focus {
-    color: web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColorHover); }
+    color: #a9aaaa; }
   a img {
     border: 0; }
 
@@ -4494,7 +4497,7 @@ select {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColor) transparent transparent;
+  border-color: #787879 transparent transparent;
   border-top-style: solid;
   border-bottom-width: 0;
   right: 5px;
@@ -4527,7 +4530,7 @@ select {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColor) transparent transparent;
+  border-color: transparent #787879 transparent transparent;
   border-right-style: solid;
   border-left-width: 0; }
 
@@ -4537,7 +4540,7 @@ select {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent transparent transparent web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColor);
+  border-color: transparent transparent transparent #787879;
   border-left-style: solid;
   border-right-width: 0; }
 
@@ -4559,7 +4562,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColor) transparent transparent;
+    border-color: #787879 transparent transparent;
     border-top-style: solid;
     border-bottom-width: 0;
     right: 5px;
@@ -4581,7 +4584,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColor) transparent transparent;
+    border-color: transparent #787879 transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .dropdown.menu.medium-vertical > li.opens-right > a::after {
@@ -4590,7 +4593,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColor);
+    border-color: transparent transparent transparent #787879;
     border-left-style: solid;
     border-right-width: 0; } }
 
@@ -4612,7 +4615,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColor) transparent transparent;
+    border-color: #787879 transparent transparent;
     border-top-style: solid;
     border-bottom-width: 0;
     right: 5px;
@@ -4634,7 +4637,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColor) transparent transparent;
+    border-color: transparent #787879 transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .dropdown.menu.large-vertical > li.opens-right > a::after {
@@ -4643,7 +4646,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColor);
+    border-color: transparent transparent transparent #787879;
     border-left-style: solid;
     border-right-width: 0; } }
 
@@ -4692,7 +4695,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColor) transparent transparent;
+    border-color: transparent #787879 transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after {
@@ -4701,7 +4704,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent web-get((primaryGrey: #787878, primaryYellow: #f8f7e9, primaryPink: #fcdad8, secondaryLightGrey: #dddddd, secondaryDarkGrey: #a5acaf, secondaryPink: #efc3c2, bodyFontColor: #58595b, headerColor: #414141, anchorColor: #787879, anchorColorHover: #a9aaaa), anchorColor);
+    border-color: transparent transparent transparent #787879;
     border-left-style: solid;
     border-right-width: 0; }
   .is-dropdown-submenu .is-dropdown-submenu {

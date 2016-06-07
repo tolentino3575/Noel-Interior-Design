@@ -55,25 +55,25 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
-$color-palette: (
-    primaryGrey: #787878,
-    primaryYellow: #f8f7e9,
-    primaryPink: #fcdad8,
-    secondaryLightGrey: #dddddd,
-    secondaryDarkGrey: #a5acaf,
-    secondaryPink: #efc3c2,
-    bodyFontColor: #58595b,
-    headerColor: #414141,
-    anchorColor: #787879,
-    anchorColorHover: #a9aaaa,
-);
+
+$primaryGrey: #787878;
+$primaryYellow: #f8f7e9;
+$primaryPink: #fcdad8;
+$secondaryLightGrey: #dddddd;
+$secondaryDarkGrey: #a5acaf;
+$secondaryPink: #efc3c2;
+$bodyFontColor: #58595b;
+$headerColor: #414141;
+$anchorColor: #787879;
+$anchorColorHover: #a9aaaa;
+
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: map-get($color-palette, bodyFontColor);
+$body-font-color: $bodyFontColor;
 $body-font-family: 'Lato', Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -136,7 +136,7 @@ $header-sizes: (
     'h6': 16,
   ),
 );
-$header-color: map-get($color-palette, headerColor);
+$header-color: $headerColor;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-text-rendering: optimizeLegibility;
@@ -151,8 +151,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: web-get($color-palette, anchorColor);
-$anchor-color-hover: web-get($color-palette, anchorColorHover);
+$anchor-color: $anchorColor;
+$anchor-color-hover: $anchorColorHover;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;

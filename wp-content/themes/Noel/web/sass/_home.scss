@@ -1,9 +1,12 @@
 @import "settings";
 
 .slider {
-    height: 500px;
+    height: 200px;
+    text-align: center;
 }
 
 .footer {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     text-align: center;
 }
