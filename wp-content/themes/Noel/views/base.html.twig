@@ -4,16 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <title>{{ "Title" }}</title>
+        <title>{{ wp_get_the_title() }}</title>
     {% endblock %}
 
     {% block stylesheets %}
-        {{ "stylesheets" }}
+        {{ wp_head() | raw }}
     {% endblock %}
 
-
+    {% include "recipes/google-analytics.html.twig" %}
 </head>
-<body {{ "body class" }}>
+<body {{ wp_body_class() | raw }}>
 {% block body %}
     {% block header %}
         {% include "layout/header.html.twig" %}
@@ -22,8 +22,8 @@
     {% block content %}
         <section class="content">
             <div class="row column">
-                <h1>{{ "Title" }}</h1>
-                {{ "content" }}
+                <h1>{{ wp_get_the_title() }}</h1>
+                {{ wp_get_the_content() | raw }}
             </div>
         </section>
     {% endblock %}
@@ -34,7 +34,7 @@
 {% endblock %}
 
 {% block scripts %}
-    {{ "footer" }}
+    {{ wp_footer() | raw }}
 {% endblock %}
 </body>
 </html>
