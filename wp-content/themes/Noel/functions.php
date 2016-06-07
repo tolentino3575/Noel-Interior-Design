@@ -14,6 +14,12 @@ add_action('plugins_loaded', function() {
     load_plugin_textdomain('supertheme', false, get_template_directory() . '/languages');
 });
 
+// styles and scripts
+add_action('wp_enqueue_scripts', function (){
+    wp_register_style('app', get_template_directory_uri() . '/web/stylesheets/app.css' );
+    wp_enqueue_style( 'app' );
+});
+
 // logo for ACF options page
 add_action('admin_head', function () {
     $rootURI = get_template_directory_uri();
