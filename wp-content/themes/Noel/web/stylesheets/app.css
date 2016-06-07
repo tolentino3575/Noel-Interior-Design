@@ -2199,11 +2199,17 @@
  */
 .slider {
   height: 200px;
+  text-align: center;
+  border-bottom: 1px solid #fcdad8; }
+
+.nav {
+  border-top: 1px solid #fcdad8;
+  border-bottom: 1px solid #fcdad8;
   text-align: center; }
 
 .footer {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
+  border-top: 1px solid #fcdad8;
+  border-bottom: 1px solid #fcdad8;
   text-align: center; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
