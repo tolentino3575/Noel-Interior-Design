@@ -1,2 +1,42 @@
-<h1>Hello World</h1>
-{{head|raw}}
+<html>
+<head>
+    {% block meta %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>title</title>
+    {% endblock %}
+
+    {% block stylesheets %}
+        {{ head|raw }}
+    {% endblock %}
+
+</head>
+<body>
+{% block body %}
+    {% block header %}
+        {% include "layout/header.html.twig" %}
+    {% endblock %}
+
+    {% block content %}
+        <section class="content">
+            <div class="row column">
+                <h1>Headline georgia h1</h1>
+                <h2>Sub Headline georgia h2</h2>
+                <h3>Sub Headline georgia h3</h3>
+                <h4>Sub Headline Lato h4</h4>
+                <p>dummy body lato</p>
+            </div>
+        </section>
+    {% endblock %}
+
+    {% block footer %}
+        {% include "layout/footer.html.twig" %}
+    {% endblock %}
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
+</body>
+</html>

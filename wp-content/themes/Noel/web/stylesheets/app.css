@@ -3403,10 +3403,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: Georgia;
   font-weight: normal;
   font-style: normal;
-  color: inherit;
+  color: #414141;
   text-rendering: optimizeLegibility;
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -3440,13 +3440,13 @@ h6 {
 
 @media screen and (min-width: 40em) {
   h1 {
-    font-size: 3rem; }
+    font-size: 2.25rem; }
   h2 {
-    font-size: 2.5rem; }
+    font-size: 1.875rem; }
   h3 {
-    font-size: 1.9375rem; }
+    font-size: 1.5rem; }
   h4 {
-    font-size: 1.5625rem; }
+    font-size: 1rem; }
   h5 {
     font-size: 1.25rem; }
   h6 {
@@ -5744,3 +5744,7 @@ table.hover tr:nth-of-type(even):hover {
 .alignleft {
   float: left;
   padding: 0 1rem 1rem 0; }
+
+h4 {
+  font-family: Lato;
+  text-transform: uppercase; }

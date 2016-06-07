@@ -4,3 +4,8 @@
 @include foundation-everything();
 
 @import "classes";
+
+h4 {
+    font-family: Lato;
+    text-transform: uppercase;
+}
