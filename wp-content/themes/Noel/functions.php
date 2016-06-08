@@ -18,7 +18,7 @@ add_action('plugins_loaded', function() {
 add_action('wp_enqueue_scripts', function (){
     wp_register_style('app', get_template_directory_uri() . '/web/stylesheets/app.css' );
     wp_register_script('slick', get_template_directory_uri() . '/src/slick/slick/slick.js', array('jQuery'));
-    wp_enqueue_scripts('slick');
+    wp_enqueue_script('slick');
     wp_enqueue_style( 'app' );
 });
 

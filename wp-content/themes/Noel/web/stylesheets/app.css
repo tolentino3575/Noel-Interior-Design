@@ -2198,15 +2198,8 @@
  * Licensed under MIT Open Source
  */
 html {
-  margin-left: 75px;
-  margin-right: 75px; }
-
-.imgslider {
-  text-align: center;
-  height: 350px;
-  background-color: #FEFAFE;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-left: 112px;
+  margin-right: 112px; }
 
 .headerContainer {
   display: -webkit-flex;
@@ -2222,6 +2215,20 @@ html {
       -ms-flex: 1;
           flex: 1;
   text-align: right; }
+
+.nav {
+  border-top: 1px solid #fcdad8;
+  border-bottom: 1px solid #fcdad8;
+  text-align: center; }
+
+.imgslider {
+  text-align: center;
+  height: 350px;
+  background-color: #FEFAFE;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .imgslider .img {
+    height: 100%; }
 
 .contentContainer {
   display: -webkit-flex;
@@ -2243,19 +2250,14 @@ html {
           flex: 1;
   text-align: center; }
 
-.nav {
-  border-top: 1px solid #fcdad8;
-  border-bottom: 1px solid #fcdad8;
-  text-align: center; }
-
-.footer {
-  border: 1px solid #fcdad8;
-  text-align: center; }
-
 .transformButton {
   background-color: #a9aaaa;
   color: #fefefe;
   padding: 10px; }
+
+.footer {
+  border: 1px solid #fcdad8;
+  text-align: center; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**

@@ -1,18 +1,11 @@
 @import "settings";
 
 html {
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 112px;
+    margin-right: 112px;
 }
 
-.imgslider {
-    text-align: center;
-    height: 350px;
-    background-color: #FEFAFE;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
+//Header
 .headerContainer {
     display: flex;
 }
@@ -27,6 +20,27 @@ html {
     text-align: right;
 }
 
+//Nav
+.nav {
+    border-top: 1px solid $primaryPink;
+    border-bottom: 1px solid $primaryPink;
+    text-align: center;
+}
+
+//Slider
+.imgslider {
+    text-align: center;
+    height: 350px;
+    background-color: #FEFAFE;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    .img {
+        height: 100%;
+    }
+}
+
+//Body Content
 .contentContainer {
     display: flex;
     border-top: 1px solid $primaryPink;
@@ -46,19 +60,14 @@ html {
     text-align: center;
 }
 
-.nav {
-    border-top: 1px solid $primaryPink;
-    border-bottom: 1px solid $primaryPink;
-    text-align: center;
-}
-
-.footer {
-    border: 1px solid $primaryPink;
-    text-align: center;
-}
-
 .transformButton {
     background-color: $anchorColor;
     color: $white;
     padding: 10px;
+}
+
+//Footer
+.footer {
+    border: 1px solid $primaryPink;
+    text-align: center;
 }
