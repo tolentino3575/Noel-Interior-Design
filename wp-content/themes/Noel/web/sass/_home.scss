@@ -1,9 +1,49 @@
 @import "settings";
 
-.slider {
-    height: 200px;
+html {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.imgslider {
     text-align: center;
-    border-bottom: 1px solid $primaryPink;
+    height: 350px;
+    background-color: #FEFAFE;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.headerContainer {
+    display: flex;
+}
+
+.headerIcons {
+    width: 50%;
+    text-align: left;
+}
+
+.headerPhone {
+    flex: 1;
+    text-align: right;
+}
+
+.contentContainer {
+    display: flex;
+    border-top: 1px solid $primaryPink;
+    border-left: 1px solid $primaryPink;
+    border-right: 1px solid $primaryPink;
+}
+
+.share {
+    width: 50%;
+    text-align: center;
+    height: 150px;
+}
+
+.transform {
+    flex: 1;
+    text-align: center;
+    height: 150px;
 }
 
 .nav {
@@ -13,7 +53,6 @@
 }
 
 .footer {
-    border-top: 1px solid $primaryPink;
-    border-bottom: 1px solid $primaryPink;
+    border: 1px solid $primaryPink;
     text-align: center;
 }

@@ -2197,10 +2197,51 @@
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
-.slider {
-  height: 200px;
+html {
+  margin-left: 75px;
+  margin-right: 75px; }
+
+.imgslider {
   text-align: center;
-  border-bottom: 1px solid #fcdad8; }
+  height: 350px;
+  background-color: #FEFAFE;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.headerContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.headerIcons {
+  width: 50%;
+  text-align: left; }
+
+.headerPhone {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right; }
+
+.contentContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #fcdad8;
+  border-left: 1px solid #fcdad8;
+  border-right: 1px solid #fcdad8; }
+
+.share {
+  width: 50%;
+  text-align: center;
+  height: 150px; }
+
+.transform {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  height: 150px; }
 
 .nav {
   border-top: 1px solid #fcdad8;
@@ -2208,8 +2249,7 @@
   text-align: center; }
 
 .footer {
-  border-top: 1px solid #fcdad8;
-  border-bottom: 1px solid #fcdad8;
+  border: 1px solid #fcdad8;
   text-align: center; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */

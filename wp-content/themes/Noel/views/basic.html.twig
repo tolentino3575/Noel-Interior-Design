@@ -22,17 +22,19 @@
         {% include "layout/nav.html.twig" %}
     {% endblock %}
 
-    {% block slider %}
-        {% include "layout/slider.html.twig" %}
+    {% block imgslider %}
+        {% include "layout/imgslider.html.twig" %}
     {% endblock %}
 
-    {% block share %}
-        {% include "layout/share.html.twig" %}
-    {% endblock %}
+    <div class="contentContainer">
+        {% block share %}
+            {% include "layout/share.html.twig" %}
+        {% endblock %}
 
-    {% block transform %}
-        {% include "layout/transform.html.twig" %}
-    {% endblock %}
+        {% block transform %}
+            {% include "layout/transform.html.twig" %}
+        {% endblock %}
+    </div>
 
     {% block footer %}
         {% include "layout/footer.html.twig" %}
