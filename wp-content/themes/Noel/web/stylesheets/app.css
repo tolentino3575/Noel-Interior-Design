@@ -2229,19 +2229,19 @@ html {
   display: flex;
   border-top: 1px solid #fcdad8;
   border-left: 1px solid #fcdad8;
-  border-right: 1px solid #fcdad8; }
+  border-right: 1px solid #fcdad8;
+  height: 150px; }
 
 .share {
   width: 50%;
   text-align: center;
-  height: 150px; }
+  border-right: 1px solid #fcdad8; }
 
 .transform {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  text-align: center;
-  height: 150px; }
+  text-align: center; }
 
 .nav {
   border-top: 1px solid #fcdad8;
@@ -2251,6 +2251,11 @@ html {
 .footer {
   border: 1px solid #fcdad8;
   text-align: center; }
+
+.transformButton {
+  background-color: #a9aaaa;
+  color: #fefefe;
+  padding: 10px; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -3508,7 +3513,7 @@ h6 {
     font-size: 1rem; } }
 
 a {
-  color: #787879;
+  color: #a9aaaa;
   text-decoration: none;
   line-height: inherit;
   cursor: pointer; }
@@ -4543,7 +4548,7 @@ select {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: #787879 transparent transparent;
+  border-color: #a9aaaa transparent transparent;
   border-top-style: solid;
   border-bottom-width: 0;
   right: 5px;
@@ -4576,7 +4581,7 @@ select {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent #787879 transparent transparent;
+  border-color: transparent #a9aaaa transparent transparent;
   border-right-style: solid;
   border-left-width: 0; }
 
@@ -4586,7 +4591,7 @@ select {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent transparent transparent #787879;
+  border-color: transparent transparent transparent #a9aaaa;
   border-left-style: solid;
   border-right-width: 0; }
 
@@ -4608,7 +4613,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #787879 transparent transparent;
+    border-color: #a9aaaa transparent transparent;
     border-top-style: solid;
     border-bottom-width: 0;
     right: 5px;
@@ -4630,7 +4635,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #787879 transparent transparent;
+    border-color: transparent #a9aaaa transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .dropdown.menu.medium-vertical > li.opens-right > a::after {
@@ -4639,7 +4644,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #787879;
+    border-color: transparent transparent transparent #a9aaaa;
     border-left-style: solid;
     border-right-width: 0; } }
 
@@ -4661,7 +4666,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: #787879 transparent transparent;
+    border-color: #a9aaaa transparent transparent;
     border-top-style: solid;
     border-bottom-width: 0;
     right: 5px;
@@ -4683,7 +4688,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #787879 transparent transparent;
+    border-color: transparent #a9aaaa transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .dropdown.menu.large-vertical > li.opens-right > a::after {
@@ -4692,7 +4697,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #787879;
+    border-color: transparent transparent transparent #a9aaaa;
     border-left-style: solid;
     border-right-width: 0; } }
 
@@ -4741,7 +4746,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent #787879 transparent transparent;
+    border-color: transparent #a9aaaa transparent transparent;
     border-right-style: solid;
     border-left-width: 0; }
   .is-dropdown-submenu .is-dropdown-submenu-parent.opens-right > a::after {
@@ -4750,7 +4755,7 @@ select {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: transparent transparent transparent #787879;
+    border-color: transparent transparent transparent #a9aaaa;
     border-left-style: solid;
     border-right-width: 0; }
   .is-dropdown-submenu .is-dropdown-submenu {

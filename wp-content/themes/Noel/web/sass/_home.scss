@@ -32,18 +32,18 @@ html {
     border-top: 1px solid $primaryPink;
     border-left: 1px solid $primaryPink;
     border-right: 1px solid $primaryPink;
+    height: 150px;
 }
 
 .share {
     width: 50%;
     text-align: center;
-    height: 150px;
+    border-right: 1px solid $primaryPink;
 }
 
 .transform {
     flex: 1;
     text-align: center;
-    height: 150px;
 }
 
 .nav {
@@ -55,4 +55,10 @@ html {
 .footer {
     border: 1px solid $primaryPink;
     text-align: center;
+}
+
+.transformButton {
+    background-color: $anchorColor;
+    color: $white;
+    padding: 10px;
 }
