@@ -6,6 +6,7 @@ jQuery(document).ready(function(){
         speed: 300,
         dots: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: true
     });
 });
