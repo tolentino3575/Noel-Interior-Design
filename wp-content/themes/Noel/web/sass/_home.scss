@@ -3,6 +3,7 @@
 html {
     margin-left: 112px;
     margin-right: 112px;
+    margin-bottom: 112px;
 }
 
 //Header
@@ -30,13 +31,14 @@ html {
 //Slider
 .imgslider {
     text-align: center;
-    height: 350px;
+    height: 500px;
     background-color: #FEFAFE;
-    margin-top: 15px;
+    margin-top: 38px;
     margin-bottom: 15px;
 
     .img {
         height: 100%;
+        width: 100%;
     }
 }
 
@@ -46,7 +48,7 @@ html {
     border-top: 1px solid $primaryPink;
     border-left: 1px solid $primaryPink;
     border-right: 1px solid $primaryPink;
-    height: 150px;
+    height: 295px;
 }
 
 .share {
