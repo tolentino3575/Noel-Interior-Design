@@ -1,0 +1,78 @@
+@import "settings";
+
+html {
+    margin-left: 112px;
+    margin-right: 112px;
+    padding-bottom: 112px;
+}
+
+//Header
+.headerContainer {
+    display: flex;
+}
+
+.headerIcons {
+    width: 50%;
+    text-align: left;
+}
+
+.headerPhone {
+    flex: 1;
+    text-align: right;
+}
+
+//Nav
+.nav {
+    border-top: 1px solid $primaryPink;
+    border-bottom: 1px solid $primaryPink;
+    text-align: center;
+}
+
+//Slider
+.imgslider {
+    text-align: center;
+    height: 500px;
+    background-color: #FEFAFE;
+    margin-top: 38px;
+    margin-bottom: 15px;
+
+    .img {
+        height: 100%;
+        width: 100%;
+    }
+    .slick-prev:before, .slick-next:before {
+        color: red;
+    }
+}
+
+//Body Content
+.contentContainer {
+    display: flex;
+    border-top: 1px solid $primaryPink;
+    border-left: 1px solid $primaryPink;
+    border-right: 1px solid $primaryPink;
+    height: 295px;
+}
+
+.share {
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid $primaryPink;
+}
+
+.transform {
+    flex: 1;
+    text-align: center;
+}
+
+.transformButton {
+    background-color: $anchorColor;
+    color: $white;
+    padding: 10px;
+}
+
+//Footer
+.footer {
+    border: 1px solid $primaryPink;
+    text-align: center;
+}
