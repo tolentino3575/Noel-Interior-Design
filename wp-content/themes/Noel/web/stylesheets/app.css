@@ -2200,16 +2200,26 @@
 html {
   margin-left: 112px;
   margin-right: 112px;
-  padding-bottom: 112px; }
+  margin-bottom: 112px;
+  margin-top: 24px; }
 
 .headerContainer {
-  display: inline-block;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 19px; }
 
 .headerIcons {
   width: 50%;
   text-align: left;
   display: inline-block; }
+  .headerIcons .circle-icon {
+    background: #a5acaf;
+    color: #fefefe;
+    padding: 10px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle; }
 
 .headerPhone {
   width: 50%;
@@ -2218,9 +2228,12 @@ html {
   float: right; }
 
 .nav {
+  padding-top: 17px;
+  padding-bottom: 10px;
   border-top: 1px solid #fcdad8;
   border-bottom: 1px solid #fcdad8;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .imgslider {
   text-align: center;
@@ -2232,7 +2245,7 @@ html {
     height: 100%;
     width: 100%;
     outline: 4px solid #fcdad8;
-    outline-offset: -8px; }
+    outline-offset: -11px; }
   .imgslider .slick-prev:before, .imgslider .slick-next:before {
     color: red; }
 
@@ -2256,6 +2269,15 @@ html {
   text-align: center;
   vertical-align: middle;
   border-right: 1px solid #fcdad8; }
+  .share .circle-icon {
+    background: #a5acaf;
+    color: #fefefe;
+    padding: 10px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle; }
 
 .transform {
   display: table-cell;
@@ -2272,7 +2294,9 @@ html {
 
 .footer {
   border: 1px solid #fcdad8;
-  text-align: center; }
+  height: 83px;
+  text-align: center;
+  vertical-align: middle; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**

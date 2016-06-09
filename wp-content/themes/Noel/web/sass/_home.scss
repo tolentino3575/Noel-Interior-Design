@@ -3,19 +3,31 @@
 html {
     margin-left: 112px;
     margin-right: 112px;
-    padding-bottom: 112px;
+    margin-bottom: 112px;
+    margin-top: 24px;
 }
 
 //Header
 .headerContainer {
-    display: inline-block;
+    // display: inline-block;
     width: 100%;
+    margin-bottom: 19px;
 }
 
 .headerIcons {
     width: 50%;
     text-align: left;
     display: inline-block;
+        .circle-icon {
+            background: $secondaryDarkGrey;
+            color: $white;
+            padding: 10px;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            vertical-align: middle;
+        }
 }
 
 .headerPhone {
@@ -27,10 +39,32 @@ html {
 
 //Nav
 .nav {
+    padding-top: 17px;
+    padding-bottom: 10px;
     border-top: 1px solid $primaryPink;
     border-bottom: 1px solid $primaryPink;
     text-align: center;
+    width: 100%;
 }
+
+// .column-left, .column-mid, .column-right {
+//     display: inline-block;
+// }
+//
+// .column-left, .column-right {
+//     border-top: 1px solid $primaryPink;
+//     border-bottom: 1px solid $primaryPink;
+//     padding-top: 17px;
+//     padding-bottom: 10px;
+//     word-spacing: 78px;
+// }
+//
+// .column-mid {
+//     border: 1px solid $primaryPink;
+//     width: 252px;
+//     margin-left: 11px;
+//     margin-right: 11px;
+// }
 
 //Slider
 .imgslider {
@@ -44,7 +78,7 @@ html {
         height: 100%;
         width: 100%;
         outline: 4px solid $primaryPink;
-        outline-offset: -8px;
+        outline-offset: -11px;
     }
     .slick-prev:before, .slick-next:before {
         color: red;
@@ -75,6 +109,16 @@ html {
     text-align: center;
     vertical-align: middle;
     border-right: 1px solid $primaryPink;
+    .circle-icon {
+        background: $secondaryDarkGrey;
+        color: $white;
+        padding: 10px;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        vertical-align: middle;
+    }
 }
 
 .transform {
@@ -95,5 +139,7 @@ html {
 //Footer
 .footer {
     border: 1px solid $primaryPink;
+    height: 83px;
     text-align: center;
+    vertical-align: middle;
 }
