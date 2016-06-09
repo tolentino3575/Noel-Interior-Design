@@ -2230,7 +2230,9 @@ html {
   margin-bottom: 15px; }
   .imgslider .img {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    outline: 4px solid #fcdad8;
+    outline-offset: -8px; }
   .imgslider .slick-prev:before, .imgslider .slick-next:before {
     color: red; }
 
@@ -2241,6 +2243,12 @@ html {
   border-right: 1px solid #fcdad8;
   height: 295px;
   width: 100%; }
+  .contentContainer .divider {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    bottom: 10%;
+    border-left: 1px solid #fcdad8; }
 
 .share {
   display: table-cell;
@@ -2257,6 +2265,8 @@ html {
 
 .transformButton {
   background-color: #a9aaaa;
+  border: 2px solid #fefefe;
+  box-shadow: 0 0 0 2px #a9aaaa;
   color: #fefefe;
   padding: 10px; }
 
