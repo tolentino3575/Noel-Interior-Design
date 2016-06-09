@@ -2248,6 +2248,12 @@ html {
     outline-offset: -11px; }
   .imgslider .slick-prev:before, .imgslider .slick-next:before {
     color: red; }
+  .imgslider .slick-prev {
+    left: 100px;
+    z-index: 1; }
+  .imgslider .slick-next {
+    right: 100px;
+    z-index: 1; }
 
 .contentContainer {
   display: table;

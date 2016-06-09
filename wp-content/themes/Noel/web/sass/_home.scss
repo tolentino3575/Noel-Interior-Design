@@ -83,6 +83,14 @@ html {
     .slick-prev:before, .slick-next:before {
         color: red;
     }
+    .slick-prev {
+        left: 100px;
+        z-index: 1;
+    }
+    .slick-next {
+        right: 100px;
+        z-index: 1;
+    }
 }
 
 //Body Content
