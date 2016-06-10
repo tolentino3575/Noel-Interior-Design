@@ -2239,16 +2239,12 @@ html {
     border-bottom: 1px solid #fcdad8;
     padding-top: 17px;
     padding-bottom: 10px;
-    word-spacing: 78px; }
-  .nav .col-mid {
-    border: 1px solid #fcdad8;
-    width: 252px;
-    margin-left: 11px;
-    margin-right: 11px; }
+    word-spacing: 78px;
+    width: 40%; }
 
 .imgslider {
   text-align: center;
-  height: 500px;
+  height: 708px;
   background-color: #FEFAFE;
   margin-top: 38px;
   margin-bottom: 15px; }
@@ -2314,10 +2310,14 @@ html {
   padding: 10px; }
 
 .footer {
+  width: 100%;
   border: 1px solid #fcdad8;
   height: 83px;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-size: 16px; }
+  .footer p {
+    line-height: 0.5rem; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**

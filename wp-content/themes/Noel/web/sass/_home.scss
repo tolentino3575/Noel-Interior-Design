@@ -54,14 +54,15 @@ html {
         padding-top: 17px;
         padding-bottom: 10px;
         word-spacing: 78px;
+        width: 40%;
     }
 
-    .col-mid {
-        border: 1px solid $primaryPink;
-        width: 252px;
-        margin-left: 11px;
-        margin-right: 11px;
-    }
+    // .col-mid {
+    //     border: 1px solid $primaryPink;
+    //     width: 252px;
+    //     margin-left: 11px;
+    //     margin-right: 11px;
+    // }
 }
 
 
@@ -69,7 +70,7 @@ html {
 //Slider
 .imgslider {
     text-align: center;
-    height: 500px;
+    height: 708px;
     background-color: #FEFAFE;
     margin-top: 38px;
     margin-bottom: 15px;
@@ -159,8 +160,14 @@ html {
 
 //Footer
 .footer {
+    width: 100%;
     border: 1px solid $primaryPink;
     height: 83px;
     text-align: center;
     vertical-align: middle;
+    font-size: 16px;
+
+    p {
+        line-height: 0.5rem;
+    }
 }
