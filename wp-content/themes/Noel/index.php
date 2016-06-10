@@ -6,4 +6,4 @@ require_once __DIR__.'/App/bootstrap.php';
     $head = ob_get_clean();
 
 $twig = $container->get("twig.environment");
-echo $twig->render('basic.html.twig', array('head' => $head));
+echo $twig->render('home.html.twig', array('head' => $head));
