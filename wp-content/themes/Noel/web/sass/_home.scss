@@ -87,7 +87,7 @@ html {
 
     .slick-prev:before{
         font-family: $sliderArrow;
-        content: '<';
+        content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png");
         font-size: 90.78px;
         top: 40%;
     }
@@ -97,7 +97,7 @@ html {
     }
     .slick-next:before{
         font-family: $sliderArrow;
-        content: '>';
+        content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png");
         font-size: 90.78px;
         top: 40%;
     }

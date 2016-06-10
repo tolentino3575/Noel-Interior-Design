@@ -2257,7 +2257,7 @@ html {
     color: #a5acaf; }
   .imgslider .slick-prev:before {
     font-family: "Raleway";
-    content: '<';
+    content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png");
     font-size: 90.78px;
     top: 40%; }
   .imgslider .slick-prev {
@@ -2265,7 +2265,7 @@ html {
     z-index: 1; }
   .imgslider .slick-next:before {
     font-family: "Raleway";
-    content: '>';
+    content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png");
     font-size: 90.78px;
     top: 40%; }
   .imgslider .slick-next {
