@@ -39,32 +39,31 @@ html {
 
 //Nav
 .nav {
-    padding-top: 17px;
-    padding-bottom: 10px;
-    border-top: 1px solid $primaryPink;
-    border-bottom: 1px solid $primaryPink;
     text-align: center;
     width: 100%;
+    display: table;
+
+    .col-left, .col-mid, .col-right {
+        display: table-cell;;
+    }
+
+    .col-left, .col-right {
+        border-top: 1px solid $primaryPink;
+        border-bottom: 1px solid $primaryPink;
+        padding-top: 17px;
+        padding-bottom: 10px;
+        word-spacing: 78px;
+    }
+
+    .col-mid {
+        border: 1px solid $primaryPink;
+        width: 252px;
+        margin-left: 11px;
+        margin-right: 11px;
+    }
 }
 
-// .column-left, .column-mid, .column-right {
-//     display: inline-block;
-// }
-//
-// .column-left, .column-right {
-//     border-top: 1px solid $primaryPink;
-//     border-bottom: 1px solid $primaryPink;
-//     padding-top: 17px;
-//     padding-bottom: 10px;
-//     word-spacing: 78px;
-// }
-//
-// .column-mid {
-//     border: 1px solid $primaryPink;
-//     width: 252px;
-//     margin-left: 11px;
-//     margin-right: 11px;
-// }
+
 
 //Slider
 .imgslider {
@@ -81,14 +80,27 @@ html {
         outline-offset: -11px;
     }
     .slick-prev:before, .slick-next:before {
-        color: red;
+        color: $secondaryDarkGrey;
+    }
+
+    .slick-prev:before{
+        font-family: $sliderArrow;
+        content: '<';
+        font-size: 90.78px;
+        top: 40%;
     }
     .slick-prev {
-        left: 100px;
+        left: 72px;
         z-index: 1;
     }
+    .slick-next:before{
+        font-family: $sliderArrow;
+        content: '>';
+        font-size: 90.78px;
+        top: 40%;
+    }
     .slick-next {
-        right: 100px;
+        right: 72px;
         z-index: 1;
     }
 }
@@ -102,13 +114,13 @@ html {
     height: 295px;
     width: 100%;
 
-    .divider {
-        position: absolute;
-        left: 50%;
-        top: 10%;
-        bottom: 10%;
-        border-left: 1px solid $primaryPink;
-    }
+    // .divider {
+    //     position: absolute;
+    //     left: 50%;
+    //     top: 10%;
+    //     bottom: 10%;
+    //     border-left: 1px solid $primaryPink;
+    // }
 }
 
 .share {

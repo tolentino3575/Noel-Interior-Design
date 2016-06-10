@@ -7,8 +7,8 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  src: url("../libs/font-awesome/fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../libs/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../libs/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../libs/font-awesome/fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../libs/font-awesome/fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../libs/font-awesome/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2228,12 +2228,22 @@ html {
   float: right; }
 
 .nav {
-  padding-top: 17px;
-  padding-bottom: 10px;
-  border-top: 1px solid #fcdad8;
-  border-bottom: 1px solid #fcdad8;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  display: table; }
+  .nav .col-left, .nav .col-mid, .nav .col-right {
+    display: table-cell; }
+  .nav .col-left, .nav .col-right {
+    border-top: 1px solid #fcdad8;
+    border-bottom: 1px solid #fcdad8;
+    padding-top: 17px;
+    padding-bottom: 10px;
+    word-spacing: 78px; }
+  .nav .col-mid {
+    border: 1px solid #fcdad8;
+    width: 252px;
+    margin-left: 11px;
+    margin-right: 11px; }
 
 .imgslider {
   text-align: center;
@@ -2247,12 +2257,22 @@ html {
     outline: 4px solid #fcdad8;
     outline-offset: -11px; }
   .imgslider .slick-prev:before, .imgslider .slick-next:before {
-    color: red; }
+    color: #a5acaf; }
+  .imgslider .slick-prev:before {
+    font-family: "Raleway";
+    content: '<';
+    font-size: 90.78px;
+    top: 40%; }
   .imgslider .slick-prev {
-    left: 100px;
+    left: 72px;
     z-index: 1; }
+  .imgslider .slick-next:before {
+    font-family: "Raleway";
+    content: '>';
+    font-size: 90.78px;
+    top: 40%; }
   .imgslider .slick-next {
-    right: 100px;
+    right: 72px;
     z-index: 1; }
 
 .contentContainer {
@@ -2262,12 +2282,6 @@ html {
   border-right: 1px solid #fcdad8;
   height: 295px;
   width: 100%; }
-  .contentContainer .divider {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    bottom: 10%;
-    border-left: 1px solid #fcdad8; }
 
 .share {
   display: table-cell;

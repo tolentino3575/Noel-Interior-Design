@@ -16,10 +16,10 @@ add_action('plugins_loaded', function() {
 
 // styles and scripts
 add_action('wp_enqueue_scripts', function (){
+    wp_register_style('raleway', 'https://fonts.googleapis.com/css?family=Raleway:100');
     wp_register_style('slick-css', get_template_directory_uri() . '/src/slick/slick/slick.css');
     wp_register_style('slick-theme-css', get_template_directory_uri() . '/src/slick/slick/slick-theme.css');
-    wp_register_style('font-awesome', get_template_directory_uri() . '/web/libs/font-awesome/css/font-awesome.css');
-    wp_register_style('app', get_template_directory_uri() . '/web/stylesheets/app.css', ['slick-css', 'slick-theme-css', 'font-awesome']);
+    wp_register_style('app', get_template_directory_uri() . '/web/stylesheets/app.css', ['slick-css', 'slick-theme-css', 'raleway']);
     wp_register_script('slick', get_template_directory_uri() . '/src/slick/slick/slick.js', array('jquery'));
     wp_register_script('slick-app-js', get_template_directory_uri() . '/web/scripts-min/app.min.js', array('jquery'));
     wp_enqueue_script('slick-app-js');
