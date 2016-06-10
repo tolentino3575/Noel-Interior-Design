@@ -2230,7 +2230,8 @@ html {
 .nav {
   text-align: center;
   width: 100%;
-  display: table; }
+  display: table;
+  border-spacing: 10px; }
   .nav .col-left, .nav .col-mid, .nav .col-right {
     display: table-cell; }
   .nav .col-left, .nav .col-right {
