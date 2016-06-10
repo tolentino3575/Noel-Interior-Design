@@ -2214,12 +2214,13 @@ html {
   .headerIcons .circle-icon {
     background: #a5acaf;
     color: #fefefe;
-    padding: 10px;
-    border-radius: 50%;
-    height: 30px;
     width: 30px;
+    height: 30px;
+    border-radius: 50%;
     text-align: center;
-    vertical-align: middle; }
+    vertical-align: middle;
+    line-height: 1.5rem;
+    padding: 0.3rem; }
 
 .headerPhone {
   width: 50%;
@@ -2289,12 +2290,13 @@ html {
   .share .circle-icon {
     background: #a5acaf;
     color: #fefefe;
-    padding: 10px;
-    border-radius: 50%;
-    height: 30px;
     width: 30px;
+    height: 30px;
+    border-radius: 50%;
     text-align: center;
-    vertical-align: middle; }
+    vertical-align: middle;
+    line-height: 1.5rem;
+    padding: 0.3rem; }
 
 .transform {
   display: table-cell;
@@ -2309,8 +2311,12 @@ html {
   color: #fefefe;
   padding: 10px; }
 
+.footerContainer {
+  display: table;
+  width: 100%; }
+
 .footer {
-  width: 100%;
+  display: table-cell;
   border: 1px solid #fcdad8;
   height: 83px;
   text-align: center;
