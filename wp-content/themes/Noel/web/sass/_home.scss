@@ -30,7 +30,7 @@ html {
 .nav {
     text-align: center;
     width: 100%;
-    display: table;
+    // display: table;
     border-spacing: 0.625rem;
 
     .services {
@@ -41,7 +41,7 @@ html {
     }
 
     .col-left, .col-mid, .col-right {
-        display: table-cell;
+        display: inline-block;;
     }
 
     .col-left, .col-right {
@@ -50,7 +50,11 @@ html {
         padding-top: 1.063rem;
         padding-bottom: 0.625rem;
         word-spacing: 4.875rem;
-        width: 40%;
+        width: 35%;
+    }
+
+    .col-mid {
+        width: 23%;
     }
 }
 
@@ -104,18 +108,20 @@ html {
 
 .row {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 2.188rem;
 }
 
 .col-share {
     display: inline-block;
-    padding-right: 12.5rem;
-    padding-left: 7.188rem;
+    margin: auto;
+    // padding-right: 12.5rem;
+    // padding-left: 7.188rem;
 }
 
 .col-transform {
     display: inline-block;
-    padding-left: 5rem;
+    margin: auto;
+    // padding-left: 5rem;
     border-left: 2px solid $secondaryDarkGrey;
 }
 
@@ -141,6 +147,7 @@ html {
     height: 5.188rem;
     text-align: center;
     vertical-align: middle;
+    // line-height: 1rem;
     font-size: 1rem;
 
     p {

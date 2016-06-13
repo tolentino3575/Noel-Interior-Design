@@ -2221,20 +2221,21 @@ html {
 .nav {
   text-align: center;
   width: 100%;
-  display: table;
   border-spacing: 0.625rem; }
   .nav .services:hover {
     color: #a9aaaa;
     text-decoration: underline; }
   .nav .col-left, .nav .col-mid, .nav .col-right {
-    display: table-cell; }
+    display: inline-block; }
   .nav .col-left, .nav .col-right {
     border-top: 1px solid #fcdad8;
     border-bottom: 1px solid #fcdad8;
     padding-top: 1.063rem;
     padding-bottom: 0.625rem;
     word-spacing: 4.875rem;
-    width: 40%; }
+    width: 35%; }
+  .nav .col-mid {
+    width: 23%; }
 
 .imgslider {
   text-align: center;
@@ -2271,16 +2272,15 @@ html {
 
 .row {
   text-align: center;
-  margin-top: 50px; }
+  margin-top: 2.188rem; }
 
 .col-share {
   display: inline-block;
-  padding-right: 12.5rem;
-  padding-left: 7.188rem; }
+  margin: auto; }
 
 .col-transform {
   display: inline-block;
-  padding-left: 5rem;
+  margin: auto;
   border-left: 2px solid #a5acaf; }
 
 .transformButton {
