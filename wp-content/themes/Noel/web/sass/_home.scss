@@ -1,17 +1,17 @@
 @import "settings";
 
 html {
-    margin-left: 112px;
-    margin-right: 112px;
-    margin-bottom: 112px;
-    margin-top: 24px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 7rem;
+    margin-top: 1.5rem;
 }
 
 //Header
 .headerContainer {
     // display: inline-block;
     width: 100%;
-    margin-bottom: 19px;
+    margin-bottom: 1.188rem;
 }
 
 .headerIcons {
@@ -21,8 +21,8 @@ html {
         .circle-icon {
             background: $secondaryDarkGrey;
             color: $white;
-            width: 30px;
-            height: 30px;
+            width: 1.875rem;
+            height: 1.875rem;
             border-radius: 50%;
             text-align: center;
             vertical-align: middle;
@@ -43,7 +43,7 @@ html {
     text-align: center;
     width: 100%;
     display: table;
-    border-spacing: 10px;
+    border-spacing: 0.625rem;
 
     .col-left, .col-mid, .col-right {
         display: table-cell;;
@@ -71,39 +71,35 @@ html {
 //Slider
 .imgslider {
     text-align: center;
-    height: 708px;
+    height: 44.25rem;
     background-color: #FEFAFE;
-    margin-top: 38px;
-    margin-bottom: 15px;
+    margin-top: 2.375rem;
+    margin-bottom: 0.9375rem;
 
     .img {
         height: 100%;
         width: 100%;
         outline: 4px solid $primaryPink;
-        outline-offset: -11px;
+        outline-offset: -0.6875rem;
     }
     .slick-prev:before, .slick-next:before {
         color: $secondaryDarkGrey;
     }
 
     .slick-prev:before{
-        font-family: $sliderArrow;
         content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png");
-        font-size: 90.78px;
         top: 40%;
     }
     .slick-prev {
-        left: 72px;
+        left: 4.5rem;
         z-index: 1;
     }
     .slick-next:before{
-        font-family: $sliderArrow;
         content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png");
-        font-size: 90.78px;
         top: 40%;
     }
     .slick-next {
-        right: 72px;
+        right: 4.5rem;
         z-index: 1;
     }
 }
@@ -114,7 +110,7 @@ html {
     border-top: 1px solid $primaryPink;
     border-left: 1px solid $primaryPink;
     border-right: 1px solid $primaryPink;
-    height: 295px;
+    height: 18.44rem;
     width: 100%;
     // .divider {
     //     position: absolute;
@@ -134,8 +130,8 @@ html {
     .circle-icon {
         background: $secondaryDarkGrey;
         color: $white;
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
         border-radius: 50%;
         text-align: center;
         vertical-align: middle;
@@ -155,6 +151,8 @@ html {
     background-color: $anchorColor;
     border: 2px solid $white;
     box-shadow: 0 0 0 2px $anchorColor;
+    height: 2.375rem;
+    width: 5.625rem;
     color: $white;
     padding: 10px;
 }
@@ -168,10 +166,10 @@ html {
 .footer {
     display: table-cell;
     border: 1px solid $primaryPink;
-    height: 83px;
+    height: 5.188rem;
     text-align: center;
     vertical-align: middle;
-    font-size: 16px;
+    font-size: 1rem;
 
     p {
         line-height: 0.5rem;
