@@ -9,7 +9,6 @@ html {
 
 //Header
 .headerContainer {
-    // display: inline-block;
     width: 100%;
     margin-bottom: 1.188rem;
 }
@@ -18,17 +17,6 @@ html {
     width: 50%;
     text-align: left;
     display: inline-block;
-        .circle-icon {
-            background: $secondaryDarkGrey;
-            color: $white;
-            width: 1.875rem;
-            height: 1.875rem;
-            border-radius: 50%;
-            text-align: center;
-            vertical-align: middle;
-            line-height: 1.5rem;
-            padding: 0.3rem;
-        }
 }
 
 .headerPhone {
@@ -64,13 +52,6 @@ html {
         word-spacing: 4.875rem;
         width: 40%;
     }
-
-    // .col-mid {
-    //     border: 1px solid $primaryPink;
-    //     width: 252px;
-    //     margin-left: 11px;
-    //     margin-right: 11px;
-    // }
 }
 
 
@@ -119,40 +100,54 @@ html {
     border-right: 1px solid $primaryPink;
     height: 18.44rem;
     width: 100%;
-    .divider {
-        position: absolute;
-        left: 50%;
-        top: 10%;
-        bottom: 10%;
-        border-left: 1px solid $primaryPink;
     }
-}
 
-.share {
+.row {
     display: table-cell;
-    width: 50%;
-    text-align: center;
-    vertical-align: middle;
-    // border-right: 1px solid $primaryPink;
-    .circle-icon {
-        background: $secondaryDarkGrey;
-        color: $white;
-        width: 1.875rem;
-        height: 1.875rem;
-        border-radius: 50%;
-        text-align: center;
-        vertical-align: middle;
-        line-height: 1.5rem;
-        padding: 0.3rem;
-    }
-}
-
-.transform {
-    display: table-cell;
-    width: 50%;
     text-align: center;
     vertical-align: middle;
 }
+
+.col-share {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.col-transform {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+    border-left: 2px solid $secondaryDarkGrey;
+}
+
+// .share {
+//     display: table-cell;
+//     width: 50%;
+//     text-align: center;
+//     vertical-align: middle;
+//     border-right: 1px solid $primaryPink;
+//     .circle-icon {
+//         background: $secondaryDarkGrey;
+//         color: $white;
+//         width: 1.875rem;
+//         height: 1.875rem;
+//         border-radius: 50%;
+//         text-align: center;
+//         vertical-align: middle;
+//         line-height: 1.5rem;
+//         padding: 0.3rem;
+//     }
+// }
+//
+// .transform {
+//     display: table-cell;
+//     width: 50%;
+//     text-align: center;
+//     vertical-align: middle;
+// }
 
 .transformButton {
     background-color: $anchorColor;
@@ -162,10 +157,6 @@ html {
     width: 5.625rem;
     color: $white;
     padding: 0.625rem;
-
-    &:hover {
-        background-color: black;
-    }
 }
 
 //Footer
@@ -185,4 +176,17 @@ html {
     p {
         line-height: 0.5rem;
     }
+}
+
+//misc
+.circle-icon {
+    background: $secondaryDarkGrey;
+    color: $white;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5rem;
+    padding: 0.3rem;
 }

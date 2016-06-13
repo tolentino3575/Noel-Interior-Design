@@ -2211,16 +2211,6 @@ html {
   width: 50%;
   text-align: left;
   display: inline-block; }
-  .headerIcons .circle-icon {
-    background: #a5acaf;
-    color: #fefefe;
-    width: 1.875rem;
-    height: 1.875rem;
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 1.5rem;
-    padding: 0.3rem; }
 
 .headerPhone {
   width: 50%;
@@ -2279,34 +2269,24 @@ html {
   border-right: 1px solid #fcdad8;
   height: 18.44rem;
   width: 100%; }
-  .contentContainer .divider {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    bottom: 10%;
-    border-left: 1px solid #fcdad8; }
 
-.share {
+.row {
   display: table-cell;
-  width: 50%;
   text-align: center;
   vertical-align: middle; }
-  .share .circle-icon {
-    background: #a5acaf;
-    color: #fefefe;
-    width: 1.875rem;
-    height: 1.875rem;
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 1.5rem;
-    padding: 0.3rem; }
 
-.transform {
+.col-share {
   display: table-cell;
   width: 50%;
+  vertical-align: middle;
+  text-align: center; }
+
+.col-transform {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
   text-align: center;
-  vertical-align: middle; }
+  border-left: 2px solid #a5acaf; }
 
 .transformButton {
   background-color: #a9aaaa;
@@ -2316,8 +2296,6 @@ html {
   width: 5.625rem;
   color: #fefefe;
   padding: 0.625rem; }
-  .transformButton:hover {
-    background-color: black; }
 
 .footerContainer {
   display: table;
@@ -2332,6 +2310,17 @@ html {
   font-size: 1rem; }
   .footer p {
     line-height: 0.5rem; }
+
+.circle-icon {
+  background: #a5acaf;
+  color: #fefefe;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5rem;
+  padding: 0.3rem; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
