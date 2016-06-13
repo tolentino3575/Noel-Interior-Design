@@ -45,16 +45,23 @@ html {
     display: table;
     border-spacing: 0.625rem;
 
+    .services {
+        &:hover{
+            color: #a9aaaa;
+            text-decoration: underline;
+        }
+    }
+
     .col-left, .col-mid, .col-right {
-        display: table-cell;;
+        display: table-cell;
     }
 
     .col-left, .col-right {
         border-top: 1px solid $primaryPink;
         border-bottom: 1px solid $primaryPink;
-        padding-top: 17px;
-        padding-bottom: 10px;
-        word-spacing: 78px;
+        padding-top: 1.063rem;
+        padding-bottom: 0.625rem;
+        word-spacing: 4.875rem;
         width: 40%;
     }
 
@@ -112,13 +119,13 @@ html {
     border-right: 1px solid $primaryPink;
     height: 18.44rem;
     width: 100%;
-    // .divider {
-    //     position: absolute;
-    //     left: 50%;
-    //     top: 10%;
-    //     bottom: 10%;
-    //     border-left: 1px solid $primaryPink;
-    // }
+    .divider {
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        bottom: 10%;
+        border-left: 1px solid $primaryPink;
+    }
 }
 
 .share {
@@ -126,7 +133,7 @@ html {
     width: 50%;
     text-align: center;
     vertical-align: middle;
-    border-right: 1px solid $primaryPink;
+    // border-right: 1px solid $primaryPink;
     .circle-icon {
         background: $secondaryDarkGrey;
         color: $white;
@@ -154,7 +161,11 @@ html {
     height: 2.375rem;
     width: 5.625rem;
     color: $white;
-    padding: 10px;
+    padding: 0.625rem;
+
+    &:hover {
+        background-color: black;
+    }
 }
 
 //Footer

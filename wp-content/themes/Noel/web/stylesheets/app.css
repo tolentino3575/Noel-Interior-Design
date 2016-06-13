@@ -2233,14 +2233,17 @@ html {
   width: 100%;
   display: table;
   border-spacing: 0.625rem; }
+  .nav .services:hover {
+    color: #a9aaaa;
+    text-decoration: underline; }
   .nav .col-left, .nav .col-mid, .nav .col-right {
     display: table-cell; }
   .nav .col-left, .nav .col-right {
     border-top: 1px solid #fcdad8;
     border-bottom: 1px solid #fcdad8;
-    padding-top: 17px;
-    padding-bottom: 10px;
-    word-spacing: 78px;
+    padding-top: 1.063rem;
+    padding-bottom: 0.625rem;
+    word-spacing: 4.875rem;
     width: 40%; }
 
 .imgslider {
@@ -2276,13 +2279,18 @@ html {
   border-right: 1px solid #fcdad8;
   height: 18.44rem;
   width: 100%; }
+  .contentContainer .divider {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    bottom: 10%;
+    border-left: 1px solid #fcdad8; }
 
 .share {
   display: table-cell;
   width: 50%;
   text-align: center;
-  vertical-align: middle;
-  border-right: 1px solid #fcdad8; }
+  vertical-align: middle; }
   .share .circle-icon {
     background: #a5acaf;
     color: #fefefe;
@@ -2307,7 +2315,9 @@ html {
   height: 2.375rem;
   width: 5.625rem;
   color: #fefefe;
-  padding: 10px; }
+  padding: 0.625rem; }
+  .transformButton:hover {
+    background-color: black; }
 
 .footerContainer {
   display: table;
