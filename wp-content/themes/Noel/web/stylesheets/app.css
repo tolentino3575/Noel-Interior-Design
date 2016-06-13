@@ -2263,7 +2263,6 @@ html {
     z-index: 1; }
 
 .contentContainer {
-  display: table;
   border-top: 1px solid #fcdad8;
   border-left: 1px solid #fcdad8;
   border-right: 1px solid #fcdad8;
@@ -2271,21 +2270,17 @@ html {
   width: 100%; }
 
 .row {
-  display: table-cell;
   text-align: center;
-  vertical-align: middle; }
+  margin-top: 50px; }
 
 .col-share {
-  display: table-cell;
-  width: 50%;
-  vertical-align: middle;
-  text-align: center; }
+  display: inline-block;
+  padding-right: 12.5rem;
+  padding-left: 7.188rem; }
 
 .col-transform {
-  display: table-cell;
-  width: 50%;
-  vertical-align: middle;
-  text-align: center;
+  display: inline-block;
+  padding-left: 5rem;
   border-left: 2px solid #a5acaf; }
 
 .transformButton {

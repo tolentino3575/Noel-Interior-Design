@@ -94,7 +94,7 @@ html {
 
 //Body Content
 .contentContainer {
-    display: table;
+    // display: table;
     border-top: 1px solid $primaryPink;
     border-left: 1px solid $primaryPink;
     border-right: 1px solid $primaryPink;
@@ -103,51 +103,21 @@ html {
     }
 
 .row {
-    display: table-cell;
     text-align: center;
-    vertical-align: middle;
+    margin-top: 50px;
 }
 
 .col-share {
-    display: table-cell;
-    width: 50%;
-    vertical-align: middle;
-    text-align: center;
+    display: inline-block;
+    padding-right: 12.5rem;
+    padding-left: 7.188rem;
 }
 
 .col-transform {
-    display: table-cell;
-    width: 50%;
-    vertical-align: middle;
-    text-align: center;
+    display: inline-block;
+    padding-left: 5rem;
     border-left: 2px solid $secondaryDarkGrey;
 }
-
-// .share {
-//     display: table-cell;
-//     width: 50%;
-//     text-align: center;
-//     vertical-align: middle;
-//     border-right: 1px solid $primaryPink;
-//     .circle-icon {
-//         background: $secondaryDarkGrey;
-//         color: $white;
-//         width: 1.875rem;
-//         height: 1.875rem;
-//         border-radius: 50%;
-//         text-align: center;
-//         vertical-align: middle;
-//         line-height: 1.5rem;
-//         padding: 0.3rem;
-//     }
-// }
-//
-// .transform {
-//     display: table-cell;
-//     width: 50%;
-//     text-align: center;
-//     vertical-align: middle;
-// }
 
 .transformButton {
     background-color: $anchorColor;
