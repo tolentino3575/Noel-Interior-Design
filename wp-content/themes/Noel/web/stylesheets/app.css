@@ -2220,10 +2220,9 @@ html {
 
 .nav {
   text-align: center;
-  width: 100%;
-  border-spacing: 0.625rem; }
-  .nav .services:hover {
-    color: #a5acaf;
+  width: 100%; }
+  .nav .nav-link:hover {
+    color: #dddddd;
     text-decoration: underline; }
   .nav .col-left, .nav .col-mid, .nav .col-right {
     display: inline-block; }
@@ -2270,9 +2269,10 @@ html {
   height: 18.44rem;
   width: 100%; }
 
-.row {
+.content {
   text-align: center;
-  margin-top: 1.75rem; }
+  margin-top: 2.5rem;
+  height: 100%; }
 
 .transform {
   border-left: 2px solid #dddddd; }
@@ -2283,8 +2283,7 @@ html {
   box-shadow: 0 0 0 2px #a9aaaa;
   height: 2.375rem;
   width: 5.625rem;
-  color: #fefefe;
-  padding: 0.625rem; }
+  color: #fefefe; }
 
 .footerContainer {
   display: table;

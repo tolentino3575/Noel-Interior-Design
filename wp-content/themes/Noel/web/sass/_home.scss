@@ -30,11 +30,10 @@ html {
 .nav {
     text-align: center;
     width: 100%;
-    border-spacing: 0.625rem;
 
-    .services {
+    .nav-link {
         &:hover{
-            color: $secondaryDarkGrey;
+            color: $secondaryLightGrey;
             text-decoration: underline;
         }
     }
@@ -73,6 +72,7 @@ html {
         outline: 4px solid $primaryPink;
         outline-offset: -0.6875rem;
     }
+
     .slick-prev:before, .slick-next:before {
         color: $secondaryDarkGrey;
     }
@@ -104,9 +104,10 @@ html {
     width: 100%;
     }
 
-.row {
+.content {
     text-align: center;
-    margin-top: 1.75rem;
+    margin-top: 2.5rem;
+    height: 100%;
 }
 
 .transform {
@@ -120,7 +121,6 @@ html {
     height: 2.375rem;
     width: 5.625rem;
     color: $white;
-    padding: 0.625rem;
 }
 
 //Footer
