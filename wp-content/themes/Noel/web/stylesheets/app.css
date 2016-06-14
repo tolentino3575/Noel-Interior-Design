@@ -2276,11 +2276,11 @@ html {
 
 .col-share {
   display: inline-block;
-  margin: auto; }
+  width: 45%; }
 
 .col-transform {
   display: inline-block;
-  margin: auto;
+  width: 45%;
   border-left: 2px solid #a5acaf; }
 
 .transformButton {
@@ -2294,15 +2294,16 @@ html {
 
 .footerContainer {
   display: table;
-  width: 100%; }
+  width: 100%;
+  height: 5.188rem; }
 
 .footer {
   display: table-cell;
   border: 1px solid #fcdad8;
-  height: 5.188rem;
   text-align: center;
   vertical-align: middle;
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #dddddd; }
   .footer p {
     line-height: 0.5rem; }
 
