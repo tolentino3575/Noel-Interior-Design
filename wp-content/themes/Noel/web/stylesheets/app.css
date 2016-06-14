@@ -2311,8 +2311,9 @@ html {
   line-height: 1.5rem;
   padding: 0.3rem; }
 
-@media only screen and (max-width: 38.5em) {
-  font-size: 1.5rem; }
+@media only screen and (max-width: 42.625rem) {
+  .transform {
+    border-left: 0; } }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
