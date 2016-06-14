@@ -1,33 +1,22 @@
 @import "settings";
 
 html {
-    margin-left: 112px;
-    margin-right: 112px;
-    margin-bottom: 112px;
-    margin-top: 24px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 7rem;
+    margin-top: 1.5rem;
 }
 
 //Header
 .headerContainer {
-    // display: inline-block;
     width: 100%;
-    margin-bottom: 19px;
+    margin-bottom: 1.188rem;
 }
 
 .headerIcons {
     width: 50%;
     text-align: left;
     display: inline-block;
-        .circle-icon {
-            background: $secondaryDarkGrey;
-            color: $white;
-            padding: 10px;
-            border-radius: 50%;
-            height: 30px;
-            width: 30px;
-            text-align: center;
-            vertical-align: middle;
-        }
 }
 
 .headerPhone {
@@ -41,26 +30,30 @@ html {
 .nav {
     text-align: center;
     width: 100%;
-    display: table;
-    border-spacing: 10px;
+    border-spacing: 0.625rem;
+
+    .services {
+        &:hover{
+            color: $anchorColorHover;
+            text-decoration: underline;
+        }
+    }
 
     .col-left, .col-mid, .col-right {
-        display: table-cell;;
+        display: inline-block;
     }
 
     .col-left, .col-right {
         border-top: 1px solid $primaryPink;
         border-bottom: 1px solid $primaryPink;
-        padding-top: 17px;
-        padding-bottom: 10px;
-        word-spacing: 78px;
+        padding-top: 1.063rem;
+        padding-bottom: 0.625rem;
+        word-spacing: 4.875rem;
+        width: 35%;
     }
 
     .col-mid {
-        border: 1px solid $primaryPink;
-        width: 252px;
-        margin-left: 11px;
-        margin-right: 11px;
+        width: 23%;
     }
 }
 
@@ -69,98 +62,109 @@ html {
 //Slider
 .imgslider {
     text-align: center;
-    height: 500px;
+    height: 44.25rem;
     background-color: #FEFAFE;
-    margin-top: 38px;
-    margin-bottom: 15px;
+    margin-top: 2.375rem;
+    margin-bottom: 0.9375rem;
 
     .img {
         height: 100%;
         width: 100%;
         outline: 4px solid $primaryPink;
-        outline-offset: -11px;
+        outline-offset: -0.6875rem;
     }
     .slick-prev:before, .slick-next:before {
         color: $secondaryDarkGrey;
     }
 
     .slick-prev:before{
-        font-family: $sliderArrow;
-        content: '<';
-        font-size: 90.78px;
+        content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png");
         top: 40%;
     }
     .slick-prev {
-        left: 72px;
+        left: 4.5rem;
         z-index: 1;
     }
     .slick-next:before{
-        font-family: $sliderArrow;
-        content: '>';
-        font-size: 90.78px;
+        content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png");
         top: 40%;
     }
     .slick-next {
-        right: 72px;
+        right: 4.5rem;
         z-index: 1;
     }
 }
 
 //Body Content
 .contentContainer {
-    display: table;
+    // display: table;
     border-top: 1px solid $primaryPink;
     border-left: 1px solid $primaryPink;
     border-right: 1px solid $primaryPink;
-    height: 295px;
+    height: 18.44rem;
     width: 100%;
-
-    // .divider {
-    //     position: absolute;
-    //     left: 50%;
-    //     top: 10%;
-    //     bottom: 10%;
-    //     border-left: 1px solid $primaryPink;
-    // }
-}
-
-.share {
-    display: table-cell;
-    width: 50%;
-    text-align: center;
-    vertical-align: middle;
-    border-right: 1px solid $primaryPink;
-    .circle-icon {
-        background: $secondaryDarkGrey;
-        color: $white;
-        padding: 10px;
-        border-radius: 50%;
-        height: 30px;
-        width: 30px;
-        text-align: center;
-        vertical-align: middle;
     }
+
+.row {
+    text-align: center;
+    margin-top: 2.188rem;
 }
 
-.transform {
-    display: table-cell;
-    width: 50%;
-    text-align: center;
-    vertical-align: middle;
+.col-share {
+    display: inline-block;
+    // margin: auto;
+    width: 45%;
+    // padding-right: 12.5rem;
+    // padding-left: 7.188rem;
+}
+
+.col-transform {
+    display: inline-block;
+    // margin: auto;
+    width: 45%;
+    // padding-left: 5rem;
+    border-left: 2px solid $secondaryDarkGrey;
 }
 
 .transformButton {
     background-color: $anchorColor;
     border: 2px solid $white;
     box-shadow: 0 0 0 2px $anchorColor;
+    height: 2.375rem;
+    width: 5.625rem;
     color: $white;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 //Footer
+.footerContainer {
+    display: table;
+    width: 100%;
+    height: 5.188rem;
+}
+
 .footer {
+    display: table-cell;
     border: 1px solid $primaryPink;
-    height: 83px;
     text-align: center;
     vertical-align: middle;
+    font-size: 1rem;
+    color: $secondaryLightGrey;
+
+    p {
+        line-height: 0.5rem;
+    }
+}
+
+//misc
+.circle-icon {
+    background: $secondaryDarkGrey;
+    color: $white;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5rem;
+    padding: 0.3rem;
 }

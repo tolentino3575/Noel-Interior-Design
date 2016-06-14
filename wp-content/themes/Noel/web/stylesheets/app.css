@@ -2198,28 +2198,19 @@
  * Licensed under MIT Open Source
  */
 html {
-  margin-left: 112px;
-  margin-right: 112px;
-  margin-bottom: 112px;
-  margin-top: 24px; }
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-bottom: 7rem;
+  margin-top: 1.5rem; }
 
 .headerContainer {
   width: 100%;
-  margin-bottom: 19px; }
+  margin-bottom: 1.188rem; }
 
 .headerIcons {
   width: 50%;
   text-align: left;
   display: inline-block; }
-  .headerIcons .circle-icon {
-    background: #a5acaf;
-    color: #fefefe;
-    padding: 10px;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    vertical-align: middle; }
 
 .headerPhone {
   width: 50%;
@@ -2230,94 +2221,102 @@ html {
 .nav {
   text-align: center;
   width: 100%;
-  display: table;
-  border-spacing: 10px; }
+  border-spacing: 0.625rem; }
+  .nav .services:hover {
+    color: #a9aaaa;
+    text-decoration: underline; }
   .nav .col-left, .nav .col-mid, .nav .col-right {
-    display: table-cell; }
+    display: inline-block; }
   .nav .col-left, .nav .col-right {
     border-top: 1px solid #fcdad8;
     border-bottom: 1px solid #fcdad8;
-    padding-top: 17px;
-    padding-bottom: 10px;
-    word-spacing: 78px; }
+    padding-top: 1.063rem;
+    padding-bottom: 0.625rem;
+    word-spacing: 4.875rem;
+    width: 35%; }
   .nav .col-mid {
-    border: 1px solid #fcdad8;
-    width: 252px;
-    margin-left: 11px;
-    margin-right: 11px; }
+    width: 23%; }
 
 .imgslider {
   text-align: center;
-  height: 500px;
+  height: 44.25rem;
   background-color: #FEFAFE;
-  margin-top: 38px;
-  margin-bottom: 15px; }
+  margin-top: 2.375rem;
+  margin-bottom: 0.9375rem; }
   .imgslider .img {
     height: 100%;
     width: 100%;
     outline: 4px solid #fcdad8;
-    outline-offset: -11px; }
+    outline-offset: -0.6875rem; }
   .imgslider .slick-prev:before, .imgslider .slick-next:before {
     color: #a5acaf; }
   .imgslider .slick-prev:before {
-    font-family: "Raleway";
-    content: '<';
-    font-size: 90.78px;
+    content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png");
     top: 40%; }
   .imgslider .slick-prev {
-    left: 72px;
+    left: 4.5rem;
     z-index: 1; }
   .imgslider .slick-next:before {
-    font-family: "Raleway";
-    content: '>';
-    font-size: 90.78px;
+    content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png");
     top: 40%; }
   .imgslider .slick-next {
-    right: 72px;
+    right: 4.5rem;
     z-index: 1; }
 
 .contentContainer {
-  display: table;
   border-top: 1px solid #fcdad8;
   border-left: 1px solid #fcdad8;
   border-right: 1px solid #fcdad8;
-  height: 295px;
+  height: 18.44rem;
   width: 100%; }
 
-.share {
-  display: table-cell;
-  width: 50%;
+.row {
   text-align: center;
-  vertical-align: middle;
-  border-right: 1px solid #fcdad8; }
-  .share .circle-icon {
-    background: #a5acaf;
-    color: #fefefe;
-    padding: 10px;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    vertical-align: middle; }
+  margin-top: 2.188rem; }
 
-.transform {
-  display: table-cell;
-  width: 50%;
-  text-align: center;
-  vertical-align: middle; }
+.col-share {
+  display: inline-block;
+  width: 45%; }
+
+.col-transform {
+  display: inline-block;
+  width: 45%;
+  border-left: 2px solid #a5acaf; }
 
 .transformButton {
   background-color: #a9aaaa;
   border: 2px solid #fefefe;
   box-shadow: 0 0 0 2px #a9aaaa;
+  height: 2.375rem;
+  width: 5.625rem;
   color: #fefefe;
-  padding: 10px; }
+  padding: 0.625rem; }
+
+.footerContainer {
+  display: table;
+  width: 100%;
+  height: 5.188rem; }
 
 .footer {
+  display: table-cell;
   border: 1px solid #fcdad8;
-  height: 83px;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-size: 1rem;
+  color: #dddddd; }
+  .footer p {
+    line-height: 0.5rem; }
+
+.circle-icon {
+  background: #a5acaf;
+  color: #fefefe;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5rem;
+  padding: 0.3rem; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
