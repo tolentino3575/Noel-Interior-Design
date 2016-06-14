@@ -2223,7 +2223,7 @@ html {
   width: 100%;
   border-spacing: 0.625rem; }
   .nav .services:hover {
-    color: #a9aaaa;
+    color: #a5acaf;
     text-decoration: underline; }
   .nav .col-left, .nav .col-mid, .nav .col-right {
     display: inline-block; }
@@ -2274,13 +2274,7 @@ html {
   text-align: center;
   margin-top: 2.188rem; }
 
-.col-share {
-  display: inline-block;
-  width: 45%; }
-
-.col-transform {
-  display: inline-block;
-  width: 45%;
+.transform {
   border-left: 2px solid #a5acaf; }
 
 .transformButton {

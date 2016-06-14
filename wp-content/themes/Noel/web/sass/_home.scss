@@ -34,7 +34,7 @@ html {
 
     .services {
         &:hover{
-            color: $anchorColorHover;
+            color: $secondaryDarkGrey;
             text-decoration: underline;
         }
     }
@@ -97,7 +97,6 @@ html {
 
 //Body Content
 .contentContainer {
-    // display: table;
     border-top: 1px solid $primaryPink;
     border-left: 1px solid $primaryPink;
     border-right: 1px solid $primaryPink;
@@ -110,19 +109,7 @@ html {
     margin-top: 2.188rem;
 }
 
-.col-share {
-    display: inline-block;
-    // margin: auto;
-    width: 45%;
-    // padding-right: 12.5rem;
-    // padding-left: 7.188rem;
-}
-
-.col-transform {
-    display: inline-block;
-    // margin: auto;
-    width: 45%;
-    // padding-left: 5rem;
+.transform {
     border-left: 2px solid $secondaryDarkGrey;
 }
 
@@ -168,3 +155,7 @@ html {
     line-height: 1.5rem;
     padding: 0.3rem;
 }
+
+
+// med
+// breakdown to 2 columns
