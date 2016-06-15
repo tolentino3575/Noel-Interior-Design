@@ -2242,27 +2242,36 @@ html {
   background-color: #FEFAFE;
   margin-top: 2.375rem;
   margin-bottom: 0.9375rem; }
-  .img-slider .img-text {
-    color: #fefefe;
-    z-index: 1; }
+  .img-slider .slide {
+    position: relative; }
   .img-slider .img {
     height: 100%;
     width: 100%;
     outline: 4px solid #fcdad8;
     outline-offset: -0.6875rem; }
+  .img-slider .img-text {
+    top: 43%;
+    position: absolute;
+    width: 100%;
+    z-index: 2; }
+    .img-slider .img-text h1 {
+      color: #fefefe; }
+    .img-slider .img-text p {
+      color: #a5acaf;
+      font-size: 1.5rem; }
   .img-slider .slick-prev:before, .img-slider .slick-next:before {
     color: #a5acaf; }
   .img-slider .slick-prev:before {
-    content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png");
-    top: 40%; }
+    content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png"); }
   .img-slider .slick-prev {
     left: 4.5rem;
+    top: 45%;
     z-index: 1; }
   .img-slider .slick-next:before {
-    content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png");
-    top: 40%; }
+    content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png"); }
   .img-slider .slick-next {
     right: 4.5rem;
+    top: 45%;
     z-index: 1; }
 
 .content-container {

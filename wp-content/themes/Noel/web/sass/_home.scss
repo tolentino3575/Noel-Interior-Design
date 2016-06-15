@@ -66,9 +66,8 @@ html {
     margin-top: 2.375rem;
     margin-bottom: 0.9375rem;
 
-    .img-text {
-        color: $white;
-        z-index: 1;
+    .slide {
+        position: relative;
     }
 
     .img {
@@ -78,24 +77,38 @@ html {
         outline-offset: -0.6875rem;
     }
 
+    .img-text {
+        top: 43%;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        h1 {
+            color: $white;
+        }
+        p {
+            color: $secondaryDarkGrey;
+            font-size: 1.5rem;
+        }
+    }
+
     .slick-prev:before, .slick-next:before {
         color: $secondaryDarkGrey;
     }
 
     .slick-prev:before{
         content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png");
-        top: 40%;
     }
     .slick-prev {
         left: 4.5rem;
+        top: 45%;
         z-index: 1;
     }
     .slick-next:before{
         content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png");
-        top: 40%;
     }
     .slick-next {
         right: 4.5rem;
+        top: 45%;
         z-index: 1;
     }
 }
