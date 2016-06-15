@@ -143,7 +143,7 @@ html {
     }
 }
 
-//misc
+//misc & breakpoints
 .circle-icon {
     background: $secondaryDarkGrey;
     color: $white;
@@ -156,9 +156,22 @@ html {
     padding: 0.3rem;
 }
 
-@media only screen and (max-width: 42.625rem) {
+// @media only screen and ()
+
+@media only screen and (min-width: rem-calc(641)) and (max-width: rem-calc(1025)) {
+    .content {
+        margin-top: .25rem;
+    }
     .transform {
         border-left: 0;
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    .share {
+        h1 {
+            font-size: 1.5rem;
+        }
     }
 }
 // med
