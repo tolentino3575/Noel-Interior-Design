@@ -2259,6 +2259,10 @@ html {
     .img-slider .img-text p {
       color: #a5acaf;
       font-size: 1.5rem; }
+    .img-slider .img-text .text-lines {
+      display: block;
+      margin: auto;
+      padding-bottom: 0.5rem; }
   .img-slider .slick-prev:before, .img-slider .slick-next:before {
     color: #a5acaf; }
   .img-slider .slick-prev:before {
