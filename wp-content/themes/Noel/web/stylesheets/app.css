@@ -2203,16 +2203,16 @@ html {
   margin-bottom: 7rem;
   margin-top: 1.5rem; }
 
-.headerContainer {
+.header-container {
   width: 100%;
   margin-bottom: 1.188rem; }
 
-.headerIcons {
+.header-icons {
   width: 50%;
   text-align: left;
   display: inline-block; }
 
-.headerPhone {
+.header-phone {
   width: 50%;
   text-align: right;
   display: inline-block;
@@ -2236,33 +2236,36 @@ html {
   .nav .col-mid {
     width: 23%; }
 
-.imgslider {
+.img-slider {
   text-align: center;
   height: 44.25rem;
   background-color: #FEFAFE;
   margin-top: 2.375rem;
   margin-bottom: 0.9375rem; }
-  .imgslider .img {
+  .img-slider .img-text {
+    color: #fefefe;
+    z-index: 1; }
+  .img-slider .img {
     height: 100%;
     width: 100%;
     outline: 4px solid #fcdad8;
     outline-offset: -0.6875rem; }
-  .imgslider .slick-prev:before, .imgslider .slick-next:before {
+  .img-slider .slick-prev:before, .img-slider .slick-next:before {
     color: #a5acaf; }
-  .imgslider .slick-prev:before {
+  .img-slider .slick-prev:before {
     content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png");
     top: 40%; }
-  .imgslider .slick-prev {
+  .img-slider .slick-prev {
     left: 4.5rem;
     z-index: 1; }
-  .imgslider .slick-next:before {
+  .img-slider .slick-next:before {
     content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png");
     top: 40%; }
-  .imgslider .slick-next {
+  .img-slider .slick-next {
     right: 4.5rem;
     z-index: 1; }
 
-.contentContainer {
+.content-container {
   border-top: 1px solid #fcdad8;
   border-left: 1px solid #fcdad8;
   border-right: 1px solid #fcdad8;
@@ -2277,7 +2280,7 @@ html {
 .transform {
   border-left: 2px solid #dddddd; }
 
-.transformButton {
+.transform-button {
   background-color: #a9aaaa;
   border: 2px solid #fefefe;
   box-shadow: 0 0 0 2px #a9aaaa;
@@ -2285,7 +2288,7 @@ html {
   width: 5.625rem;
   color: #fefefe; }
 
-.footerContainer {
+.footer-container {
   display: table;
   width: 100%;
   height: 5.188rem; }
@@ -2312,13 +2315,13 @@ html {
   padding: 0.3rem; }
 
 @media only screen and (max-width: 40.0625rem) {
-  .imgslider {
+  .img-slider {
     height: 20rem; }
   .content {
     margin-top: .25rem; }
   .transform {
     border-left: 0; }
-  .transformButton {
+  .transform-button {
     background-color: #a9aaaa;
     border: 2px solid #fefefe;
     box-shadow: 0 0 0 2px #a9aaaa;
@@ -2327,7 +2330,7 @@ html {
     color: #fefefe; } }
 
 @media only screen and (min-width: 40rem) and (max-width: 64rem) {
-  .imgslider {
+  .img-slider {
     height: 30rem; }
   .footer-info {
     margin-top: .25rem; }
@@ -2337,7 +2340,7 @@ html {
     border-left: 0; }
     .transform h1 {
       font-size: 1.5rem; }
-  .transformButton {
+  .transform-button {
     background-color: #a9aaaa;
     border: 2px solid #fefefe;
     box-shadow: 0 0 0 2px #a9aaaa;
