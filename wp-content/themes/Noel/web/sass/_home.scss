@@ -157,6 +157,9 @@ html {
 }
 
 @media only screen and (max-width: rem-calc(641)){
+    .imgslider {
+        height: 20rem;
+    }
     .content {
         margin-top: .25rem;
     }
@@ -174,6 +177,12 @@ html {
 }
 
 @media only screen and (min-width: rem-calc(640)) and (max-width: rem-calc(1024)) {
+    .imgslider {
+        height: 30rem;
+    }
+    .footer-info {
+        margin-top: .25rem;
+    }
     .content {
         margin-top: .25rem;
     }
@@ -197,5 +206,3 @@ html {
         }
     }
 }
-// med
-// breakdown to 2 columns

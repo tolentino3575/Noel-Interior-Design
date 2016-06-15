@@ -2312,6 +2312,8 @@ html {
   padding: 0.3rem; }
 
 @media only screen and (max-width: 40.0625rem) {
+  .imgslider {
+    height: 20rem; }
   .content {
     margin-top: .25rem; }
   .transform {
@@ -2325,6 +2327,10 @@ html {
     color: #fefefe; } }
 
 @media only screen and (min-width: 40rem) and (max-width: 64rem) {
+  .imgslider {
+    height: 30rem; }
+  .footer-info {
+    margin-top: .25rem; }
   .content {
     margin-top: .25rem; }
   .transform {
