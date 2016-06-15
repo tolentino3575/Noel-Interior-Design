@@ -156,9 +156,24 @@ html {
     padding: 0.3rem;
 }
 
-// @media only screen and ()
+@media only screen and (max-width: rem-calc(641)){
+    .content {
+        margin-top: .25rem;
+    }
+    .transform {
+        border-left: 0;
+    }
+    .transformButton {
+        background-color: $anchorColor;
+        border: 2px solid $white;
+        box-shadow: 0 0 0 2px $anchorColor;
+        height: 2.075rem;
+        width: 5.325rem;
+        color: $white;
+    }
+}
 
-@media only screen and (min-width: rem-calc(641)) and (max-width: rem-calc(1025)) {
+@media only screen and (min-width: rem-calc(640)) and (max-width: rem-calc(1024)) {
     .content {
         margin-top: .25rem;
     }
@@ -167,6 +182,14 @@ html {
         h1 {
             font-size: 1.5rem;
         }
+    }
+    .transformButton {
+        background-color: $anchorColor;
+        border: 2px solid $white;
+        box-shadow: 0 0 0 2px $anchorColor;
+        height: 2.075rem;
+        width: 5.325rem;
+        color: $white;
     }
     .share {
         h1 {

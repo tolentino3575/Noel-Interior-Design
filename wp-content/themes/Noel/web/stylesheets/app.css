@@ -2311,13 +2311,33 @@ html {
   line-height: 1.5rem;
   padding: 0.3rem; }
 
-@media only screen and (min-width: 40.0625rem) and (max-width: 64.0625rem) {
+@media only screen and (max-width: 40.0625rem) {
+  .content {
+    margin-top: .25rem; }
+  .transform {
+    border-left: 0; }
+  .transformButton {
+    background-color: #a9aaaa;
+    border: 2px solid #fefefe;
+    box-shadow: 0 0 0 2px #a9aaaa;
+    height: 2.075rem;
+    width: 5.325rem;
+    color: #fefefe; } }
+
+@media only screen and (min-width: 40rem) and (max-width: 64rem) {
   .content {
     margin-top: .25rem; }
   .transform {
     border-left: 0; }
     .transform h1 {
       font-size: 1.5rem; }
+  .transformButton {
+    background-color: #a9aaaa;
+    border: 2px solid #fefefe;
+    box-shadow: 0 0 0 2px #a9aaaa;
+    height: 2.075rem;
+    width: 5.325rem;
+    color: #fefefe; }
   .share h1 {
     font-size: 1.5rem; } }
 
