@@ -26,36 +26,13 @@
             <h1>Hello world</h1>
     {% endblock %}
 
-    <div class="content-container">
-        <div class="row column">
-            <div class="row content">
-                <div class="large-6 columns share">
-                    <h1>Share this page!</h1>
-                    <img src="/wp-content/themes/Noel/web/imgs/footer-lines.png">
-                    <br><br>
-                    <a href=""><i class="fa fa-instagram fa-lg circle-icon" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-pinterest-p fa-lg circle-icon" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-facebook fa-lg circle-icon" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-google fa-lg circle-icon" aria-hidden="true"></i></a>
-                </div>
-                <div class="large-6 columns transform">
-                    <h1>Ready to Transform Your Home?</h1>
-                    <img src="/wp-content/themes/Noel/web/imgs/footer-lines.png">
-                    <br><br>
-                    <form>
-                        <input><br><br>
-                        <button class="transform-button">NEXT ></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% block shareTransform %}
+        {% include "layout/sharetransform.html.twig" %}
+    {% endblock %}
 
-    <div class="footer-container">
-        {% block footer %}
-            {% include "layout/footer.html.twig" %}
-        {% endblock %}
-    </div>
+    {% block footer %}
+        {% include "layout/footer.html.twig" %}
+    {% endblock %}
 {% endblock %}
 
 {% block scripts %}
