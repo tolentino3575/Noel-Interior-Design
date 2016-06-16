@@ -2380,10 +2380,10 @@ html {
     font-size: 1.25rem; } }
 
 .about-container {
-  width: 100%; }
+  width: 100%;
+  margin-top: 2.375rem;
+  margin-bottom: 0.9375rem; }
   .about-container .about-content {
-    margin-top: 2.375rem;
-    margin-bottom: 0.9375rem;
     text-align: center;
     position: relative; }
     .about-container .about-content .about {
@@ -2395,8 +2395,7 @@ html {
       outline-offset: -0.6875rem;
       overflow: scroll; }
       .about-container .about-content .about .about-text {
-        margin-top: 3.875rem;
-        margin-bottom: 2rem; }
+        margin-top: 3.875rem; }
         .about-container .about-content .about .about-text p {
           text-align: left;
           line-height: 1.15rem;
@@ -2405,12 +2404,11 @@ html {
         text-align: left;
         line-height: 1.15rem;
         margin-top: 1rem; }
-      .about-container .about-content .about .about-image {
-        padding-right: 0;
-        border-right: 2px solid black; }
       .about-container .about-content .about .img {
         display: block;
         margin: auto; }
+    .about-container .about-content .about-image {
+      padding-right: 0px; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
