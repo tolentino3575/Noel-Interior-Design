@@ -179,7 +179,11 @@ html {
     padding: 0.3rem;
 }
 
-@media only screen and (max-width: rem-calc(641)){
+@include breakpoint(small only){
+    html {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .img-slider {
         height: 20rem;
     }
@@ -199,7 +203,11 @@ html {
     }
 }
 
-@media only screen and (min-width: rem-calc(640)) and (max-width: rem-calc(1024)) {
+@include breakpoint(medium only) {
+    html {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
     .img-slider {
         height: 30rem;
     }
@@ -223,7 +231,10 @@ html {
         width: 5.325rem;
         color: $white;
     }
-    .share {
+    .share, .img-text {
+        p {
+            font-size: 0.5rem;
+        }
         h1 {
             font-size: 1.5rem;
         }

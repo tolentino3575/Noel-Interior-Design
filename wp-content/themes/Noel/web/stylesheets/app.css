@@ -2327,7 +2327,10 @@ html {
   line-height: 1.5rem;
   padding: 0.3rem; }
 
-@media only screen and (max-width: 40.0625rem) {
+@media screen and (max-width: 39.9375em) {
+  html {
+    margin-left: 0;
+    margin-right: 0; }
   .img-slider {
     height: 20rem; }
   .content {
@@ -2342,7 +2345,10 @@ html {
     width: 5.325rem;
     color: #fefefe; } }
 
-@media only screen and (min-width: 40rem) and (max-width: 64rem) {
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  html {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem; }
   .img-slider {
     height: 30rem; }
   .footer-info {
@@ -2360,7 +2366,9 @@ html {
     height: 2.075rem;
     width: 5.325rem;
     color: #fefefe; }
-  .share h1 {
+  .share p, .img-text p {
+    font-size: 0.5rem; }
+  .share h1, .img-text h1 {
     font-size: 1.5rem; } }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
