@@ -2379,6 +2379,39 @@ html {
   .slide .img-text p {
     font-size: 1.25rem; } }
 
+.about-container {
+  width: 100%; }
+  .about-container .about-content {
+    margin-top: 2.375rem;
+    margin-bottom: 0.9375rem;
+    text-align: center;
+    position: relative; }
+    .about-container .about-content .about {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: #fafaf5;
+      outline: 4px solid #fefefe;
+      outline-offset: -0.6875rem;
+      overflow: scroll; }
+      .about-container .about-content .about .about-text {
+        margin-top: 3.875rem;
+        margin-bottom: 2rem; }
+        .about-container .about-content .about .about-text p {
+          text-align: left;
+          line-height: 1.15rem;
+          margin-top: 1rem; }
+      .about-container .about-content .about .mission-text p {
+        text-align: left;
+        line-height: 1.15rem;
+        margin-top: 1rem; }
+      .about-container .about-content .about .about-image {
+        padding-right: 0;
+        border-right: 2px solid black; }
+      .about-container .about-content .about .img {
+        display: block;
+        margin: auto; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
    * 1. Set default font family to sans-serif.

@@ -1,1 +1,49 @@
 @import "settings";
+
+.about-container {
+    width: 100%;
+
+    .about-content{
+        margin-top: 2.375rem;
+        margin-bottom: 0.9375rem;
+        text-align: center;
+        position: relative;
+
+        .about {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-color: $left-column-yellow;
+            outline: 4px solid $white;
+            outline-offset: -0.6875rem;
+            overflow: scroll;
+
+            .about-text{
+                margin-top: 3.875rem;
+                margin-bottom: 2rem;
+                p {
+                    text-align: left;
+                    line-height: 1.15rem;
+                    margin-top: 1rem;
+                }
+            }
+
+            .mission-text {
+                p {
+                    text-align: left;
+                    line-height: 1.15rem;
+                    margin-top: 1rem;
+                }
+            }
+            .about-image {
+                padding-right: 0;
+                border-right: 2px solid black;
+            }
+
+            .img {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
