@@ -2341,9 +2341,10 @@ html {
     background-color: #a9aaaa;
     border: 2px solid #fefefe;
     box-shadow: 0 0 0 2px #a9aaaa;
-    height: 2.075rem;
-    width: 5.325rem;
-    color: #fefefe; }
+    height: 2rem;
+    width: 5.25rem;
+    color: #fefefe;
+    margin-top: -0.5rem; }
   .slide .img-text h1 {
     font-size: 1.125rem; }
   .slide .img-text p {
@@ -2367,9 +2368,10 @@ html {
     background-color: #a9aaaa;
     border: 2px solid #fefefe;
     box-shadow: 0 0 0 2px #a9aaaa;
-    height: 2.075rem;
-    width: 5.325rem;
-    color: #fefefe; }
+    height: 2rem;
+    width: 5.25rem;
+    color: #fefefe;
+    margin-top: -0.5rem; }
   .share h1 {
     font-size: 1.5rem; }
   .slide .img-text h1 {
