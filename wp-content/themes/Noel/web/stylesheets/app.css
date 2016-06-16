@@ -2203,16 +2203,16 @@ html {
   margin-bottom: 7rem;
   margin-top: 1.5rem; }
 
-.headerContainer {
+.header-container {
   width: 100%;
   margin-bottom: 1.188rem; }
 
-.headerIcons {
+.header-icons {
   width: 50%;
   text-align: left;
   display: inline-block; }
 
-.headerPhone {
+.header-phone {
   width: 50%;
   text-align: right;
   display: inline-block;
@@ -2220,10 +2220,9 @@ html {
 
 .nav {
   text-align: center;
-  width: 100%;
-  border-spacing: 0.625rem; }
-  .nav .services:hover {
-    color: #a9aaaa;
+  width: 100%; }
+  .nav .nav-link:hover {
+    color: #dddddd;
     text-decoration: underline; }
   .nav .col-left, .nav .col-mid, .nav .col-right {
     display: inline-block; }
@@ -2237,62 +2236,72 @@ html {
   .nav .col-mid {
     width: 23%; }
 
-.imgslider {
+.img-slider {
   text-align: center;
   height: 44.25rem;
   background-color: #FEFAFE;
   margin-top: 2.375rem;
   margin-bottom: 0.9375rem; }
-  .imgslider .img {
+  .img-slider .slide {
+    position: relative; }
+  .img-slider .img {
     height: 100%;
     width: 100%;
     outline: 4px solid #fcdad8;
     outline-offset: -0.6875rem; }
-  .imgslider .slick-prev:before, .imgslider .slick-next:before {
+  .img-slider .img-text {
+    top: 43%;
+    position: absolute;
+    width: 100%;
+    z-index: 2; }
+    .img-slider .img-text h1 {
+      color: #fefefe; }
+    .img-slider .img-text p {
+      color: #f9f9eb;
+      font-size: 1.75rem; }
+    .img-slider .img-text .text-lines {
+      display: block;
+      margin: auto;
+      padding-bottom: 0.5rem; }
+  .img-slider .slick-prev:before, .img-slider .slick-next:before {
     color: #a5acaf; }
-  .imgslider .slick-prev:before {
-    content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png");
-    top: 40%; }
-  .imgslider .slick-prev {
+  .img-slider .slick-prev:before {
+    content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png"); }
+  .img-slider .slick-prev {
     left: 4.5rem;
+    top: 45%;
     z-index: 1; }
-  .imgslider .slick-next:before {
-    content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png");
-    top: 40%; }
-  .imgslider .slick-next {
+  .img-slider .slick-next:before {
+    content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png"); }
+  .img-slider .slick-next {
     right: 4.5rem;
+    top: 45%;
     z-index: 1; }
 
-.contentContainer {
+.content-container {
   border-top: 1px solid #fcdad8;
   border-left: 1px solid #fcdad8;
   border-right: 1px solid #fcdad8;
   height: 18.44rem;
   width: 100%; }
 
-.row {
+.content {
   text-align: center;
-  margin-top: 2.188rem; }
+  margin-top: 2.5rem;
+  height: 100%; }
 
-.col-share {
-  display: inline-block;
-  width: 45%; }
+.transform {
+  border-left: 2px solid #dddddd; }
 
-.col-transform {
-  display: inline-block;
-  width: 45%;
-  border-left: 2px solid #a5acaf; }
-
-.transformButton {
+.transform-button {
   background-color: #a9aaaa;
   border: 2px solid #fefefe;
   box-shadow: 0 0 0 2px #a9aaaa;
   height: 2.375rem;
   width: 5.625rem;
-  color: #fefefe;
-  padding: 0.625rem; }
+  color: #fefefe; }
 
-.footerContainer {
+.footer-container {
   display: table;
   width: 100%;
   height: 5.188rem; }
@@ -2305,7 +2314,7 @@ html {
   font-size: 1rem;
   color: #dddddd; }
   .footer p {
-    line-height: 0.5rem; }
+    line-height: 1rem; }
 
 .circle-icon {
   background: #a5acaf;
@@ -2317,6 +2326,42 @@ html {
   vertical-align: middle;
   line-height: 1.5rem;
   padding: 0.3rem; }
+
+@media only screen and (max-width: 40.0625rem) {
+  .img-slider {
+    height: 20rem; }
+  .content {
+    margin-top: .25rem; }
+  .transform {
+    border-left: 0; }
+  .transform-button {
+    background-color: #a9aaaa;
+    border: 2px solid #fefefe;
+    box-shadow: 0 0 0 2px #a9aaaa;
+    height: 2.075rem;
+    width: 5.325rem;
+    color: #fefefe; } }
+
+@media only screen and (min-width: 40rem) and (max-width: 64rem) {
+  .img-slider {
+    height: 30rem; }
+  .footer-info {
+    margin-top: .25rem; }
+  .content {
+    margin-top: .25rem; }
+  .transform {
+    border-left: 0; }
+    .transform h1 {
+      font-size: 1.5rem; }
+  .transform-button {
+    background-color: #a9aaaa;
+    border: 2px solid #fefefe;
+    box-shadow: 0 0 0 2px #a9aaaa;
+    height: 2.075rem;
+    width: 5.325rem;
+    color: #fefefe; }
+  .share h1 {
+    font-size: 1.5rem; } }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**

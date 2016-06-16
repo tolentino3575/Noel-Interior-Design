@@ -1,7 +1,7 @@
 jQuery(document).foundation();
 
 jQuery(document).ready(function(){
-    jQuery('.imgslider').slick({
+    jQuery('.img-slider').slick({
         infinite: true,
         speed: 300,
         slidesToShow: 1,

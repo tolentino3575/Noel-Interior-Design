@@ -26,34 +26,32 @@
         {% include "layout/imgslider.html.twig" %}
     {% endblock %}
 
-    <div class="contentContainer">
+    <div class="content-container">
         <div class="row column">
-            <div class="row">
-                <div class="col-share">
+            <div class="row content">
+                <div class="small-12 large-6 columns share">
                     <h1>Share this page!</h1>
-
+                    <img src="/wp-content/themes/Noel/web/imgs/footer-lines.png">
+                    <br><br>
                     <a href=""><i class="fa fa-instagram fa-lg circle-icon" aria-hidden="true"></i></a>
                     <a href=""><i class="fa fa-pinterest-p fa-lg circle-icon" aria-hidden="true"></i></a>
                     <a href=""><i class="fa fa-facebook fa-lg circle-icon" aria-hidden="true"></i></a>
                     <a href=""><i class="fa fa-google fa-lg circle-icon" aria-hidden="true"></i></a>
                 </div>
-                <div class="col-transform">
+                <div class="small-12 large-6 columns transform">
                     <h1>Ready to Transform Your Home?</h1>
+                    <img src="/wp-content/themes/Noel/web/imgs/footer-lines.png">
+                    <br><br>
                     <form>
                         <input><br><br>
-                        <button class="transformButton">NEXT ></button>
+                        <button class="transform-button">NEXT ></button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- class row class column = 12 column grid
-    12 column grid inside,
-    row inside,
-    6 column grid text-center -->
-
-    <div class="footerContainer">
+    <div class="footer-container">
         {% block footer %}
             {% include "layout/footer.html.twig" %}
         {% endblock %}
