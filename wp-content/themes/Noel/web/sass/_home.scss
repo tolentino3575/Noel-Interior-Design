@@ -179,7 +179,7 @@ html {
     padding: 0.3rem;
 }
 
-@include breakpoint(small only){
+@include breakpoint(small only) {
     html {
         margin-left: 0;
         margin-right: 0;
@@ -200,6 +200,16 @@ html {
         height: 2.075rem;
         width: 5.325rem;
         color: $white;
+    }
+    .slide {
+        .img-text {
+            h1 {
+                font-size: 1.125rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+        }
     }
 }
 
@@ -231,12 +241,19 @@ html {
         width: 5.325rem;
         color: $white;
     }
-    .share, .img-text {
-        p {
-            font-size: 0.5rem;
-        }
+    .share {
         h1 {
             font-size: 1.5rem;
+        }
+    }
+    .slide {
+        .img-text {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1.25rem;
+            }
         }
     }
 }
