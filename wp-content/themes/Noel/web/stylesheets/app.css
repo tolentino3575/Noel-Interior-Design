@@ -2423,6 +2423,16 @@ html {
       background-color: #fafaf5;
       outline: 4px solid #fefefe;
       outline-offset: -0.6875rem; }
+      .services-container .services-content .services .services-text {
+        margin-top: 3.875rem; }
+        .services-container .services-content .services .services-text p {
+          text-align: left;
+          line-height: 1.15rem;
+          margin-top: 1rem;
+          margin-left: 2rem;
+          margin-right: 1rem; }
+  .services-container .services-images {
+    background-color: #BFEFFF; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
