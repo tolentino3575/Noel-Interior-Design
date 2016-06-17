@@ -4,20 +4,17 @@
     width: 100%;
     margin-top: 2.375rem;
     margin-bottom: 0.9375rem;
-
     .about-content{
         text-align: center;
         position: relative;
-
         .about {
-            position: absolute;;
+            position: absolute;
             top: 0;
             bottom: 0;
             background-color: $left-column-yellow;
             outline: 4px solid $white;
             outline-offset: -0.6875rem;
             overflow: scroll;
-
             .about-text{
                 margin-top: 3.875rem;
                 p {
@@ -26,17 +23,12 @@
                     margin-top: 1rem;
                 }
             }
-
             .mission-text {
                 p {
                     text-align: left;
                     line-height: 1.15rem;
                     margin-top: 1rem;
                 }
-            }
-            .img {
-                display: block;
-                margin: auto;
             }
         }
         .about-image {
