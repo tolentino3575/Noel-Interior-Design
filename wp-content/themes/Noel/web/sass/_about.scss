@@ -6,11 +6,11 @@
     margin-bottom: 0.9375rem;
     .about-content{
         text-align: center;
-        position: relative;
+        // position: relative;
         .about {
-            position: absolute;
-            top: 0;
-            bottom: 0;
+            // position: absolute;
+            // top: 0;
+            // bottom: 0;
             background-color: $left-column-yellow;
             outline: 4px solid $white;
             outline-offset: -0.6875rem;
@@ -21,6 +21,8 @@
                     text-align: left;
                     line-height: 1.15rem;
                     margin-top: 1rem;
+                    margin-left: 2rem;
+                    margin-right: 1rem;
                 }
             }
             .mission-text {
@@ -28,11 +30,25 @@
                     text-align: left;
                     line-height: 1.15rem;
                     margin-top: 1rem;
+                    margin-left: 2rem;
+                    margin-right: 1rem;
                 }
             }
         }
         .about-image {
             padding-right: 0px;
         }
+    }
+}
+
+@include breakpoint(small only) {
+    .about-image {
+        display: none;
+    }
+}
+
+@include breakpoint(medium only) {
+    .about-image {
+        display: none;
     }
 }

@@ -2384,12 +2384,8 @@ html {
   margin-top: 2.375rem;
   margin-bottom: 0.9375rem; }
   .about-container .about-content {
-    text-align: center;
-    position: relative; }
+    text-align: center; }
     .about-container .about-content .about {
-      position: absolute;
-      top: 0;
-      bottom: 0;
       background-color: #fafaf5;
       outline: 4px solid #fefefe;
       outline-offset: -0.6875rem;
@@ -2399,13 +2395,25 @@ html {
         .about-container .about-content .about .about-text p {
           text-align: left;
           line-height: 1.15rem;
-          margin-top: 1rem; }
+          margin-top: 1rem;
+          margin-left: 2rem;
+          margin-right: 1rem; }
       .about-container .about-content .about .mission-text p {
         text-align: left;
         line-height: 1.15rem;
-        margin-top: 1rem; }
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-right: 1rem; }
     .about-container .about-content .about-image {
       padding-right: 0px; }
+
+@media screen and (max-width: 40em) {
+  .about-image {
+    display: none; } }
+
+@media screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .about-image {
+    display: none; } }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
