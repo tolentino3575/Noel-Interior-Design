@@ -1,16 +1,11 @@
 @import "settings";
 
 .about-container {
-    width: 100%;
     margin-top: 2.375rem;
     margin-bottom: 0.9375rem;
     .about-content{
         text-align: center;
-        // position: relative;
         .about {
-            // position: absolute;
-            // top: 0;
-            // bottom: 0;
             background-color: $left-column-yellow;
             outline: 4px solid $white;
             outline-offset: -0.6875rem;

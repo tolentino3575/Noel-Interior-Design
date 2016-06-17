@@ -2380,7 +2380,6 @@ html {
     font-size: 1.25rem; } }
 
 .about-container {
-  width: 100%;
   margin-top: 2.375rem;
   margin-bottom: 0.9375rem; }
   .about-container .about-content {
@@ -2414,6 +2413,16 @@ html {
 @media screen and (min-width: 40.0625em) and (max-width: 64em) {
   .about-image {
     display: none; } }
+
+.services-container {
+  margin-top: 2.375rem;
+  margin-bottom: 0.9375rem; }
+  .services-container .services-content {
+    text-align: center; }
+    .services-container .services-content .services {
+      background-color: #fafaf5;
+      outline: 4px solid #fefefe;
+      outline-offset: -0.6875rem; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**

@@ -1,0 +1,14 @@
+@import "settings";
+
+.services-container {
+    margin-top: 2.375rem;
+    margin-bottom: 0.9375rem;
+    .services-content {
+        text-align: center;
+        .services {
+            background-color: $left-column-yellow;
+            outline: 4px solid $white;
+            outline-offset: -0.6875rem;
+        }
+    }
+}
