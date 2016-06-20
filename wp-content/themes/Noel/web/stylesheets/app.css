@@ -2327,7 +2327,10 @@ html {
   line-height: 1.5rem;
   padding: 0.3rem; }
 
-@media only screen and (max-width: 40.0625rem) {
+@media screen and (max-width: 40em) {
+  html {
+    margin-left: 0;
+    margin-right: 0; }
   .img-slider {
     height: 20rem; }
   .content {
@@ -2338,11 +2341,19 @@ html {
     background-color: #a9aaaa;
     border: 2px solid #fefefe;
     box-shadow: 0 0 0 2px #a9aaaa;
-    height: 2.075rem;
-    width: 5.325rem;
-    color: #fefefe; } }
+    height: 2rem;
+    width: 5.25rem;
+    color: #fefefe;
+    margin-top: -0.5rem; }
+  .slide .img-text h1 {
+    font-size: 1.125rem; }
+  .slide .img-text p {
+    font-size: 0.9rem; } }
 
-@media only screen and (min-width: 40rem) and (max-width: 64rem) {
+@media screen and (min-width: 40.0625em) and (max-width: 64em) {
+  html {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem; }
   .img-slider {
     height: 30rem; }
   .footer-info {
@@ -2357,11 +2368,71 @@ html {
     background-color: #a9aaaa;
     border: 2px solid #fefefe;
     box-shadow: 0 0 0 2px #a9aaaa;
-    height: 2.075rem;
-    width: 5.325rem;
-    color: #fefefe; }
+    height: 2rem;
+    width: 5.25rem;
+    color: #fefefe;
+    margin-top: -0.5rem; }
   .share h1 {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .slide .img-text h1 {
+    font-size: 1.5rem; }
+  .slide .img-text p {
+    font-size: 1.25rem; } }
+
+.about-container {
+  margin-top: 2.375rem;
+  margin-bottom: 0.9375rem; }
+  .about-container .about-content {
+    text-align: center; }
+    .about-container .about-content .about {
+      background-color: #fafaf5;
+      outline: 4px solid #fefefe;
+      outline-offset: -0.6875rem;
+      overflow: scroll; }
+      .about-container .about-content .about .about-text {
+        margin-top: 3.875rem; }
+        .about-container .about-content .about .about-text p {
+          text-align: left;
+          line-height: 1.15rem;
+          margin-top: 1rem;
+          margin-left: 2rem;
+          margin-right: 1rem; }
+      .about-container .about-content .about .mission-text p {
+        text-align: left;
+        line-height: 1.15rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-right: 1rem; }
+    .about-container .about-content .about-image {
+      padding-right: 0px; }
+
+@media screen and (max-width: 40em) {
+  .about-image {
+    display: none; } }
+
+@media screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .about-image {
+    display: none; } }
+
+.services-container {
+  margin-top: 2.375rem;
+  margin-bottom: 0.9375rem; }
+  .services-container .services-content {
+    text-align: center; }
+    .services-container .services-content .services {
+      background-color: #fafaf5;
+      outline: 4px solid #fefefe;
+      outline-offset: -0.6875rem; }
+      .services-container .services-content .services .services-text {
+        margin-top: 3.875rem; }
+        .services-container .services-content .services .services-text p {
+          text-align: left;
+          line-height: 1.15rem;
+          margin-top: 1rem;
+          margin-left: 2rem;
+          margin-right: 1rem; }
+  .services-container .services-images {
+    background-color: #BFEFFF; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -2720,7 +2791,7 @@ th {
   padding: 0; }
 
 .foundation-mq {
-  font-family: "small=0em&medium=40em&large=64em&xlarge=75em&xxlarge=90em"; }
+  font-family: "small=0em&medium=40.0625em&large=64.0625em&xlarge=75em&xxlarge=90em"; }
 
 html {
   font-size: 100%;
@@ -2802,7 +2873,7 @@ button {
     max-width: none;
     margin-left: -0.625rem;
     margin-right: -0.625rem; }
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 40.0625em) {
       .row .row {
         margin-left: -0.9375rem;
         margin-right: -0.9375rem; } }
@@ -2820,7 +2891,7 @@ button {
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 40.0625em) {
     .column, .columns {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
@@ -3103,7 +3174,7 @@ button {
   margin-right: 0;
   float: left; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 40.0625em) {
   .medium-1 {
     width: 8.33333%; }
   .medium-push-1 {
@@ -3312,7 +3383,7 @@ button {
     margin-right: 0;
     float: left; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .large-1 {
     width: 8.33333%; }
   .large-push-1 {
@@ -3604,7 +3675,7 @@ h5 {
 h6 {
   font-size: 1rem; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 40.0625em) {
   h1 {
     font-size: 2.25rem; }
   h2 {
@@ -3733,7 +3804,7 @@ kbd {
 .text-justify {
   text-align: justify; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 40.0625em) {
   .medium-text-left {
     text-align: left; }
   .medium-text-right {
@@ -3743,7 +3814,7 @@ kbd {
   .medium-text-justify {
     text-align: justify; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .large-text-left {
     text-align: left; }
   .large-text-right {
@@ -4359,15 +4430,15 @@ select {
     width: 100%; }
     .button-group.stacked .button:last-child, .button-group.stacked-for-small .button:last-child, .button-group.stacked-for-medium .button:last-child {
       margin-bottom: 0; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 40.0625em) {
     .button-group.stacked-for-small .button {
       width: auto;
       margin-bottom: 0; } }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 64.0625em) {
     .button-group.stacked-for-medium .button {
       width: auto;
       margin-bottom: 0; } }
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 40em) {
     .button-group.stacked-for-small.expanded {
       display: block; }
       .button-group.stacked-for-small.expanded .button {
@@ -4453,12 +4524,12 @@ select {
     display: table-cell; }
   .menu.vertical > li {
     display: block; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 40.0625em) {
     .menu.medium-horizontal > li {
       display: table-cell; }
     .menu.medium-vertical > li {
       display: block; } }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 64.0625em) {
     .menu.large-horizontal > li {
       display: table-cell; }
     .menu.large-vertical > li {
@@ -4701,7 +4772,7 @@ select {
   border-left-style: solid;
   border-right-width: 0; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 40.0625em) {
   .dropdown.menu.medium-horizontal > li.opens-left > .is-dropdown-submenu {
     left: auto;
     right: 0;
@@ -4754,7 +4825,7 @@ select {
     border-left-style: solid;
     border-right-width: 0; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .dropdown.menu.large-horizontal > li.opens-left > .is-dropdown-submenu {
     left: auto;
     right: 0;
@@ -4919,7 +4990,7 @@ select {
   display: block; }
   .media-object img {
     max-width: none; }
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 40em) {
     .media-object.stack-for-small .media-object-section {
       padding: 0;
       padding-bottom: 1rem;
@@ -5017,7 +5088,7 @@ body {
           -ms-transform: translateX(-250px);
               transform: translateX(-250px); }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 40.0625em) {
   .position-left.reveal-for-medium {
     left: 0;
     z-index: auto;
@@ -5031,7 +5102,7 @@ body {
     .position-right.reveal-for-medium ~ .off-canvas-content {
       margin-right: 250px; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .position-left.reveal-for-large {
     left: 0;
     z-index: auto;
@@ -5132,7 +5203,7 @@ body {
     display: none; }
     .pagination li:last-child, .pagination li:first-child {
       display: inline-block; }
-    @media screen and (min-width: 40em) {
+    @media screen and (min-width: 40.0625em) {
       .pagination li {
         display: inline-block; } }
   .pagination a,
@@ -5347,7 +5418,7 @@ html.is-reveal-open body {
   overflow-y: auto; }
   [data-whatinput='mouse'] .reveal {
     outline: 0; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 40.0625em) {
     .reveal {
       min-height: 0; } }
   .reveal .column, .reveal .columns,
@@ -5355,26 +5426,26 @@ html.is-reveal-open body {
     min-width: 0; }
   .reveal > :last-child {
     margin-bottom: 0; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 40.0625em) {
     .reveal {
       width: 600px;
       max-width: 75rem; } }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 40.0625em) {
     .reveal .reveal {
       left: auto;
       right: auto;
       margin: 0 auto; } }
   .reveal.collapse {
     padding: 0; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 40.0625em) {
     .reveal.tiny {
       width: 30%;
       max-width: 75rem; } }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 40.0625em) {
     .reveal.small {
       width: 50%;
       max-width: 75rem; } }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 40.0625em) {
     .reveal.large {
       width: 90%;
       max-width: 75rem; } }
@@ -5389,7 +5460,7 @@ html.is-reveal-open body {
     margin-left: 0;
     border: 0;
     border-radius: 0; }
-  @media screen and (max-width: 39.9375em) {
+  @media screen and (max-width: 40em) {
     .reveal {
       top: 0;
       left: 0;
@@ -5539,7 +5610,7 @@ table {
   table tbody td {
     padding: 0.5rem 0.625rem 0.625rem; }
 
-@media screen and (max-width: 63.9375em) {
+@media screen and (max-width: 64em) {
   table.stack thead {
     display: none; }
   table.stack tfoot {
@@ -5777,11 +5848,11 @@ table.hover tr:nth-of-type(even):hover {
   .top-bar .top-bar-left,
   .top-bar .top-bar-right {
     width: 100%; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 40.0625em) {
     .top-bar .top-bar-left,
     .top-bar .top-bar-right {
       width: auto; } }
-  @media screen and (max-width: 63.9375em) {
+  @media screen and (max-width: 64em) {
     .top-bar.stacked-for-medium .top-bar-left,
     .top-bar.stacked-for-medium .top-bar-right {
       width: 100%; } }
@@ -5806,43 +5877,43 @@ table.hover tr:nth-of-type(even):hover {
 .invisible {
   visibility: hidden; }
 
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 40em) {
   .hide-for-small-only {
     display: none !important; } }
 
-@media screen and (max-width: 0em), screen and (min-width: 40em) {
+@media screen and (max-width: 0em), screen and (min-width: 40.0625em) {
   .show-for-small-only {
     display: none !important; } }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 40.0625em) {
   .hide-for-medium {
     display: none !important; } }
 
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 40em) {
   .show-for-medium {
     display: none !important; } }
 
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+@media screen and (min-width: 40.0625em) and (max-width: 64em) {
   .hide-for-medium-only {
     display: none !important; } }
 
-@media screen and (max-width: 39.9375em), screen and (min-width: 64em) {
+@media screen and (max-width: 40em), screen and (min-width: 64.0625em) {
   .show-for-medium-only {
     display: none !important; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .hide-for-large {
     display: none !important; } }
 
-@media screen and (max-width: 63.9375em) {
+@media screen and (max-width: 64em) {
   .show-for-large {
     display: none !important; } }
 
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+@media screen and (min-width: 64.0625em) and (max-width: 74.9375em) {
   .hide-for-large-only {
     display: none !important; } }
 
-@media screen and (max-width: 63.9375em), screen and (min-width: 75em) {
+@media screen and (max-width: 64em), screen and (min-width: 75em) {
   .show-for-large-only {
     display: none !important; } }
 

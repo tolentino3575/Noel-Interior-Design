@@ -118,7 +118,7 @@ html {
     }
 }
 
-//Body Content
+//Footer
 .content-container {
     border-top: 1px solid $primaryPink;
     border-left: 1px solid $primaryPink;
@@ -146,7 +146,6 @@ html {
     color: $white;
 }
 
-//Footer
 .footer-container {
     display: table;
     width: 100%;
@@ -179,7 +178,11 @@ html {
     padding: 0.3rem;
 }
 
-@media only screen and (max-width: rem-calc(641)){
+@include breakpoint(small only) {
+    html {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .img-slider {
         height: 20rem;
     }
@@ -193,13 +196,28 @@ html {
         background-color: $anchorColor;
         border: 2px solid $white;
         box-shadow: 0 0 0 2px $anchorColor;
-        height: 2.075rem;
-        width: 5.325rem;
+        height: 2rem;
+        width: 5.25rem;
         color: $white;
+        margin-top: -0.5rem;
+    }
+    .slide {
+        .img-text {
+            h1 {
+                font-size: 1.125rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+        }
     }
 }
 
-@media only screen and (min-width: rem-calc(640)) and (max-width: rem-calc(1024)) {
+@include breakpoint(medium only) {
+    html {
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
     .img-slider {
         height: 30rem;
     }
@@ -219,13 +237,24 @@ html {
         background-color: $anchorColor;
         border: 2px solid $white;
         box-shadow: 0 0 0 2px $anchorColor;
-        height: 2.075rem;
-        width: 5.325rem;
+        height: 2rem;
+        width: 5.25rem;
         color: $white;
+        margin-top: -0.5rem;
     }
     .share {
         h1 {
             font-size: 1.5rem;
+        }
+    }
+    .slide {
+        .img-text {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1.25rem;
+            }
         }
     }
 }
