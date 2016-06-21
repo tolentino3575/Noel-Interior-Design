@@ -9,7 +9,16 @@ jQuery(document).ready(function(){
         arrows: true
     });
 
-    jQuery('.service').click(function(){
-        jQuery('.service-text').toggle();
+    jQuery('.service-function').click(function(){
+        jQuery('.function-text').toggle();
+    });
+    jQuery('.service-access').click(function(){
+        jQuery('.access-text').toggle();
+    });
+    jQuery('.service-commit').click(function(){
+        jQuery('.commit-text').toggle();
+    });
+    jQuery('.service-collab').click(function(){
+        jQuery('.collab-text').toggle();
     });
 });
