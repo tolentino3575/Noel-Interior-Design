@@ -11,6 +11,6 @@ jQuery(document).ready(function(){
 
     jQuery('.service-text').hide();
     jQuery('.service').click(function(){
-        jQuery(this).next("p").toggle();
+        jQuery(this).next().slideToggle();
     });
 });

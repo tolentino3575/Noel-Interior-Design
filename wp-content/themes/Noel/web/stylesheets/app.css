@@ -2443,10 +2443,11 @@ html {
       .services-container .services-content .services .why-text .services-links {
         text-align: left;
         margin-top: 1.5rem;
-        margin-left: 2rem; }
+        margin-left: 2rem;
+        padding-bottom: 3.125rem; }
         .services-container .services-content .services .why-text .services-links h4 {
           color: #58595b;
-          line-height: 1rem; }
+          line-height: 1.188rem; }
           .services-container .services-content .services .why-text .services-links h4:hover {
             color: #dddddd; }
   .services-container .services-images {
@@ -2465,6 +2466,22 @@ html {
       background-color: #ffe6e6; }
     .services-container .services-images .bottom .right-image {
       background-color: #FEFFD4; }
+
+@media screen and (max-width: 40em) {
+  .services-container .services-images {
+    padding-left: 0; }
+    .services-container .services-images .top {
+      margin-top: 0.75rem; }
+    .services-container .services-images .bottom .right-image {
+      margin-top: 0.75rem; } }
+
+@media screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .services-container .services-images {
+    padding-left: 0; }
+    .services-container .services-images .top {
+      margin-top: 0.75rem; }
+    .services-container .services-images .bottom .right-image {
+      margin-top: 0.75rem; } }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**

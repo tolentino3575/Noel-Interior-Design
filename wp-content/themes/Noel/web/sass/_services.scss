@@ -36,12 +36,10 @@
                     text-align: left;
                     margin-top: 1.5rem;
                     margin-left: 2rem;
-                    // .function-text, .access-text, .commit-text, .collab-text {
-                    //     display: none;
-                    // }
+                    padding-bottom: 3.125rem;
                     h4 {
                         color: $bodyFontColor;
-                        line-height: 1rem;
+                        line-height: 1.188rem;
                         &:hover {
                             color: $secondaryLightGrey;
                         }
@@ -68,9 +66,41 @@
         .bottom {
             .left-image {
                 background-color: #ffe6e6;
+                // padding-right: 1.25rem;
             }
             .right-image {
                 background-color: #FEFFD4;
+            }
+        }
+    }
+}
+
+@include breakpoint(small only) {
+    .services-container {
+        .services-images {
+            padding-left: 0;
+            .top {
+                margin-top: 0.75rem;
+            }
+            .bottom {
+                .right-image {
+                    margin-top: 0.75rem;
+                }
+            }
+        }
+    }
+}
+@include breakpoint(medium only) {
+    .services-container {
+        .services-images {
+            padding-left: 0;
+            .top {
+                margin-top: 0.75rem;
+            }
+            .bottom {
+                .right-image {
+                    margin-top: 0.75rem;
+                }
             }
         }
     }
