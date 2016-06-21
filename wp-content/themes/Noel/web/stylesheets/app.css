@@ -2444,6 +2444,8 @@ html {
         text-align: left;
         margin-top: 1.5rem;
         margin-left: 2rem; }
+        .services-container .services-content .services .why-text .services-links .service-text {
+          display: none; }
         .services-container .services-content .services .why-text .services-links h4 {
           color: #58595b;
           line-height: 1rem; }

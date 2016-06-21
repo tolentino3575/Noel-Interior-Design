@@ -36,6 +36,9 @@
                     text-align: left;
                     margin-top: 1.5rem;
                     margin-left: 2rem;
+                    .service-text {
+                        display: none;
+                    }
                     h4 {
                         color: $bodyFontColor;
                         line-height: 1rem;

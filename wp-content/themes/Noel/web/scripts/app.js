@@ -8,4 +8,8 @@ jQuery(document).ready(function(){
         slidesToScroll: 1,
         arrows: true
     });
+
+    jQuery('.service').click(function(){
+        jQuery('.service-text').toggle();
+    });
 });
