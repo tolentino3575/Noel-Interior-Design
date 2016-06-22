@@ -8,4 +8,9 @@ jQuery(document).ready(function(){
         slidesToScroll: 1,
         arrows: true
     });
+
+    jQuery('.service-text').hide();
+    jQuery('.service').click(function(){
+        jQuery(this).next().slideToggle();
+    });
 });

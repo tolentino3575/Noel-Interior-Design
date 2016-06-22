@@ -5,6 +5,7 @@
     margin-bottom: 0.9375rem;
     .about-content{
         text-align: center;
+        padding-left: 0;
         .about {
             background-color: $left-column-yellow;
             outline: 4px solid $white;
@@ -37,13 +38,23 @@
 }
 
 @include breakpoint(small only) {
-    .about-image {
-        display: none;
+    .about-container {
+        .about-content {
+            padding-right: 0;
+        }
+        .about-image {
+            display: none;
+        }
     }
 }
 
 @include breakpoint(medium only) {
-    .about-image {
-        display: none;
+    .about-container {
+        .about-content {
+            padding-right: 0;
+        }
+        .about-image {
+            display: none;
+        }
     }
 }
