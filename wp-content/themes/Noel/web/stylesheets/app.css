@@ -2411,20 +2411,22 @@ html {
   .about-container .about-content {
     padding-right: 0px; }
   .about-container .about-image {
-    display: none; } }
+    margin-top: 0.75rem;
+    text-align: center; } }
 
 @media screen and (min-width: 40.0625em) and (max-width: 64em) {
   .about-container .about-content {
     padding-right: 0px; }
   .about-container .about-image {
-    display: none; } }
+    margin-top: 0.75rem;
+    text-align: center; } }
 
 .services-container {
   margin-top: 2.375rem;
   margin-bottom: 0.9375rem; }
   .services-container .services-content {
     text-align: center;
-    padding-left: 0; }
+    padding-left: 0px; }
     .services-container .services-content .services {
       background-color: #fafaf5;
       outline: 4px solid #fefefe;
@@ -2460,7 +2462,7 @@ html {
           margin-right: 1rem;
           line-height: 1.15rem; }
   .services-container .services-images {
-    padding-right: 0; }
+    padding-right: 0px; }
     .services-container .services-images .fade {
       opacity: 1;
       transition: opacity .25s ease-in-out;
@@ -2471,31 +2473,31 @@ html {
     .services-container .services-images .top {
       margin-bottom: 15px; }
     .services-container .services-images .left-image {
-      padding-left: 0; }
+      padding-left: 0px; }
     .services-container .services-images .right-image {
-      padding-right: 0; }
+      padding-right: 0px; }
 
 @media screen and (max-width: 40em) {
   .services-container .services-content {
-    padding-right: 0; }
+    padding-right: 0px; }
   .services-container .services-images .top {
     margin-top: 0.75rem;
-    margin-bottom: 0; }
+    margin-bottom: 0px; }
   .services-container .services-images .bottom .left-image {
-    padding-right: 0; }
+    padding-right: 0px; }
   .services-container .services-images .bottom .right-image {
-    padding-left: 0; } }
+    padding-left: 0px; } }
 
 @media screen and (min-width: 40.0625em) and (max-width: 64em) {
   .services-container .services-content {
-    padding-right: 0; }
+    padding-right: 0px; }
   .services-container .services-images .top {
     margin-top: 0.75rem;
-    margin-bottom: 0; }
+    margin-bottom: 0px; }
   .services-container .services-images .bottom .left-image {
-    padding-right: 0; }
+    padding-right: 0px; }
   .services-container .services-images .bottom .right-image {
-    padding-left: 0; } }
+    padding-left: 0px; } }
 
 .post-container {
   margin-top: 2.375rem;
@@ -2508,6 +2510,8 @@ html {
       outline: 4px solid #fefefe;
       outline-offset: -0.6875rem;
       overflow: scroll; }
+      .post-container .post-content .post .lines {
+        margin-bottom: 2.25rem; }
       .post-container .post-content .post .post-text {
         margin-top: 1.75rem; }
         .post-container .post-content .post .post-text h4 {
@@ -2517,19 +2521,22 @@ html {
           line-height: 1.15rem;
           margin-top: 1rem;
           margin-left: 2rem;
-          margin-right: 1rem; }
+          margin-right: 1rem;
+          margin-bottom: 3.125rem; }
       .post-container .post-content .post .challenge-text p {
         text-align: left;
         line-height: 1.15rem;
         margin-top: 1rem;
         margin-left: 2rem;
-        margin-right: 1rem; }
+        margin-right: 1rem;
+        margin-bottom: 3.125rem; }
       .post-container .post-content .post .results-text p {
         text-align: left;
         line-height: 1.15rem;
         margin-top: 1rem;
         margin-left: 2rem;
-        margin-right: 1rem; }
+        margin-right: 1rem;
+        margin-bottom: 5.813rem; }
       .post-container .post-content .post .buttons {
         padding-bottom: 1rem; }
         .post-container .post-content .post .buttons h6 a {
@@ -2560,6 +2567,51 @@ html {
       padding-left: 0px; }
     .post-container .images .bottom .bottom-right {
       padding-right: 0px; }
+
+@media screen and (max-width: 40em) {
+  .post-container .post-content {
+    padding-right: 0px;
+    padding-left: 0px; }
+  .post-container .images .top {
+    margin-top: 0.75rem;
+    margin-bottom: 0px; }
+  .post-container .images .middle {
+    margin-bottom: 0px; }
+    .post-container .images .middle .middle-left {
+      text-align: center; }
+    .post-container .images .middle .middle-right {
+      padding-left: 0px; }
+      .post-container .images .middle .middle-right .middle-right-top {
+        margin-bottom: 0px; }
+  .post-container .images .bottom .bottom-left {
+    padding-right: 0px; }
+  .post-container .images .bottom .bottom-middle {
+    padding-left: 0px;
+    padding-right: 0px; }
+  .post-container .images .bottom .bottom-right {
+    padding-left: 0px; } }
+
+@media screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .post-container .post-content {
+    padding-right: 0px; }
+  .post-container .images .top {
+    margin-top: 0.75rem;
+    margin-bottom: 0px; }
+  .post-container .images .middle {
+    margin-bottom: 0px; }
+    .post-container .images .middle .middle-left {
+      text-align: center; }
+    .post-container .images .middle .middle-right {
+      padding-left: 0px; }
+      .post-container .images .middle .middle-right .middle-right-top {
+        margin-bottom: 0px; }
+  .post-container .images .bottom .bottom-left {
+    padding-right: 0px; }
+  .post-container .images .bottom .bottom-middle {
+    padding-left: 0px;
+    padding-right: 0px; }
+  .post-container .images .bottom .bottom-right {
+    padding-left: 0px; } }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**

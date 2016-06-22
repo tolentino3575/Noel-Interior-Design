@@ -11,6 +11,9 @@
             outline: 4px solid $white;
             outline-offset: -0.6875rem;
             overflow: scroll;
+            .lines {
+                margin-bottom: 2.25rem;
+            }
             .post-text {
                 margin-top: 1.75rem;
                 h4 {
@@ -22,6 +25,7 @@
                     margin-top: 1rem;
                     margin-left: 2rem;
                     margin-right: 1rem;
+                    margin-bottom: 3.125rem;
                 }
             }
             .challenge-text {
@@ -31,6 +35,7 @@
                     margin-top: 1rem;
                     margin-left: 2rem;
                     margin-right: 1rem;
+                    margin-bottom: 3.125rem;
                 }
             }
             .results-text {
@@ -40,6 +45,7 @@
                     margin-top: 1rem;
                     margin-left: 2rem;
                     margin-right: 1rem;
+                    margin-bottom: 5.813rem;
                 }
             }
             .buttons {
@@ -86,6 +92,81 @@
             }
             .bottom-right {
                 padding-right: 0px;
+            }
+        }
+    }
+}
+
+@include breakpoint(small only) {
+    .post-container {
+        .post-content {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .images {
+            .top {
+                margin-top: 0.75rem;
+                margin-bottom: 0px;
+            }
+            .middle {
+                margin-bottom: 0px;
+                .middle-left {
+                    text-align: center;
+                }
+                .middle-right {
+                    padding-left: 0px;
+                    .middle-right-top { margin-bottom: 0px;
+                    }
+                }
+            }
+            .bottom {
+                .bottom-left {
+                    padding-right: 0px;
+                }
+                .bottom-middle {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+                .bottom-right {
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(medium only) {
+    .post-container {
+        .post-content {
+            padding-right: 0px;
+        }
+        .images {
+            .top {
+                margin-top: 0.75rem;
+                margin-bottom: 0px;
+            }
+            .middle {
+                margin-bottom: 0px;
+                .middle-left {
+                    text-align: center;
+                }
+                .middle-right {
+                    padding-left: 0px;
+                    .middle-right-top { margin-bottom: 0px;
+                    }
+                }
+            }
+            .bottom {
+                .bottom-left {
+                    padding-right: 0px;
+                }
+                .bottom-middle {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+                .bottom-right {
+                    padding-left: 0px;
+                }
             }
         }
     }
