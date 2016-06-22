@@ -73,8 +73,11 @@
             .middle-left {
                 padding-left: 0px;
             }
-            .middle-right-top {
-                margin-bottom:  map-get($grid-column-gutter, medium);
+            .middle-right {
+                padding-right: 0px;
+                .middle-right-top {
+                    margin-bottom:  map-get($grid-column-gutter, medium);
+                }
             }
         }
         .bottom {

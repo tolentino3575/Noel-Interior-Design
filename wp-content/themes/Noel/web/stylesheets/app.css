@@ -2552,8 +2552,10 @@ html {
       margin-bottom: 15px; }
       .post-container .images .middle .middle-left {
         padding-left: 0px; }
-      .post-container .images .middle .middle-right-top {
-        margin-bottom: 15px; }
+      .post-container .images .middle .middle-right {
+        padding-right: 0px; }
+        .post-container .images .middle .middle-right .middle-right-top {
+          margin-bottom: 15px; }
     .post-container .images .bottom .bottom-left {
       padding-left: 0px; }
     .post-container .images .bottom .bottom-right {
