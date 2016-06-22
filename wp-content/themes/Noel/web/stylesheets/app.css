@@ -2497,6 +2497,68 @@ html {
   .services-container .services-images .bottom .right-image {
     padding-left: 0; } }
 
+.post-container {
+  margin-top: 2.375rem;
+  margin-bottom: 0.9375rem; }
+  .post-container .post-content {
+    text-align: center;
+    padding-left: 0; }
+    .post-container .post-content .post {
+      background-color: #fafaf5;
+      outline: 4px solid #fefefe;
+      outline-offset: -0.6875rem;
+      overflow: scroll; }
+      .post-container .post-content .post .post-text {
+        margin-top: 1.75rem; }
+        .post-container .post-content .post .post-text h4 {
+          color: #787878; }
+        .post-container .post-content .post .post-text p {
+          text-align: left;
+          line-height: 1.15rem;
+          margin-top: 1rem;
+          margin-left: 2rem;
+          margin-right: 1rem; }
+      .post-container .post-content .post .challenge-text p {
+        text-align: left;
+        line-height: 1.15rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-right: 1rem; }
+      .post-container .post-content .post .results-text p {
+        text-align: left;
+        line-height: 1.15rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-right: 1rem; }
+      .post-container .post-content .post .buttons {
+        padding-bottom: 1rem; }
+        .post-container .post-content .post .buttons h6 a {
+          font-style: italic;
+          color: #58595b; }
+          .post-container .post-content .post .buttons h6 a:hover {
+            color: #dddddd; }
+  .post-container .images {
+    padding-right: 0px; }
+    .post-container .images .fade {
+      opacity: 1;
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out; }
+    .post-container .images .fade:hover {
+      opacity: 0.5; }
+    .post-container .images .top {
+      margin-bottom: 15px; }
+    .post-container .images .middle {
+      margin-bottom: 15px; }
+      .post-container .images .middle .middle-left {
+        padding-left: 0px; }
+      .post-container .images .middle .middle-right-top {
+        margin-bottom: 15px; }
+    .post-container .images .bottom .bottom-left {
+      padding-left: 0px; }
+    .post-container .images .bottom .bottom-right {
+      padding-right: 0px; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
    * 1. Set default font family to sans-serif.
