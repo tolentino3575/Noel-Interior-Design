@@ -41,9 +41,13 @@
                     h4 {
                         color: $bodyFontColor;
                         line-height: 1.188rem;
-                        &:hover {
-                            color: $secondaryLightGrey;
+                            &:hover {
+                                color: $secondaryLightGrey;
+                            }
                         }
+                    p {
+                        margin-right: 1rem;
+                        line-height: 1.15rem;
                     }
                 }
             }

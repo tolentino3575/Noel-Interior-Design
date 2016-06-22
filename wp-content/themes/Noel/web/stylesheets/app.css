@@ -2456,6 +2456,9 @@ html {
           line-height: 1.188rem; }
           .services-container .services-content .services .why-text .services-links h4:hover {
             color: #dddddd; }
+        .services-container .services-content .services .why-text .services-links p {
+          margin-right: 1rem;
+          line-height: 1.15rem; }
   .services-container .services-images {
     padding-right: 0; }
     .services-container .services-images .fade {
