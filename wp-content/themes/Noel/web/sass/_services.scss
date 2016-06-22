@@ -74,6 +74,9 @@
 
 @include breakpoint(small only) {
     .services-container {
+        .services-content {
+            padding-right: 0;
+        }
         .services-images {
             .top {
                 margin-top: 0.75rem;
@@ -92,6 +95,9 @@
 }
 @include breakpoint(medium only) {
     .services-container {
+        .services-content {
+            padding-right: 0;
+        }
         .services-images {
             .top {
                 margin-top: 0.75rem;

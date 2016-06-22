@@ -38,13 +38,23 @@
 }
 
 @include breakpoint(small only) {
-    .about-image {
-        margin-top: 0.9375rem;
+    .about-container {
+        .about-content {
+            padding-right: 0;
+        }
+        .about-image {
+            display: none;
+        }
     }
 }
 
 @include breakpoint(medium only) {
-    .about-image {
-        margin-top: 0.9375rem;
+    .about-container {
+        .about-content {
+            padding-right: 0;
+        }
+        .about-image {
+            display: none;
+        }
     }
 }
