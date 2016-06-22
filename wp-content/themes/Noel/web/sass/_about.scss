@@ -38,12 +38,12 @@
 
 @include breakpoint(small only) {
     .about-image {
-        display: none;
+        margin-top: 0.9375rem;
     }
 }
 
 @include breakpoint(medium only) {
     .about-image {
-        display: none;
+        margin-top: 0.9375rem;
     }
 }

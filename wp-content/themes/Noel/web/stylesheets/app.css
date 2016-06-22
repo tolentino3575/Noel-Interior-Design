@@ -2408,17 +2408,18 @@ html {
 
 @media screen and (max-width: 40em) {
   .about-image {
-    display: none; } }
+    margin-top: 0.9375rem; } }
 
 @media screen and (min-width: 40.0625em) and (max-width: 64em) {
   .about-image {
-    display: none; } }
+    margin-top: 0.9375rem; } }
 
 .services-container {
   margin-top: 2.375rem;
   margin-bottom: 0.9375rem; }
   .services-container .services-content {
-    text-align: center; }
+    text-align: center;
+    padding-left: 0; }
     .services-container .services-content .services {
       background-color: #fafaf5;
       outline: 4px solid #fefefe;
@@ -2451,7 +2452,7 @@ html {
           .services-container .services-content .services .why-text .services-links h4:hover {
             color: #dddddd; }
   .services-container .services-images {
-    padding-left: 1.75rem; }
+    padding-right: 0; }
     .services-container .services-images .fade {
       opacity: 1;
       transition: opacity .25s ease-in-out;
@@ -2460,28 +2461,29 @@ html {
     .services-container .services-images .fade:hover {
       opacity: 0.5; }
     .services-container .services-images .top {
-      background-color: #BFEFFF;
-      margin-bottom: 0.75rem; }
-    .services-container .services-images .bottom .left-image {
-      background-color: #ffe6e6; }
-    .services-container .services-images .bottom .right-image {
-      background-color: #FEFFD4; }
+      margin-bottom: 30px; }
+    .services-container .services-images .left-image {
+      padding-left: 0; }
+    .services-container .services-images .right-image {
+      padding-right: 0; }
 
 @media screen and (max-width: 40em) {
-  .services-container .services-images {
-    padding-left: 0; }
-    .services-container .services-images .top {
-      margin-top: 0.75rem; }
-    .services-container .services-images .bottom .right-image {
-      margin-top: 0.75rem; } }
+  .services-container .services-images .top {
+    margin-top: 0.75rem;
+    margin-bottom: 0; }
+  .services-container .services-images .bottom .left-image {
+    padding-right: 0; }
+  .services-container .services-images .bottom .right-image {
+    padding-left: 0; } }
 
 @media screen and (min-width: 40.0625em) and (max-width: 64em) {
-  .services-container .services-images {
-    padding-left: 0; }
-    .services-container .services-images .top {
-      margin-top: 0.75rem; }
-    .services-container .services-images .bottom .right-image {
-      margin-top: 0.75rem; } }
+  .services-container .services-images .top {
+    margin-top: 0.75rem;
+    margin-bottom: 0; }
+  .services-container .services-images .bottom .left-image {
+    padding-right: 0; }
+  .services-container .services-images .bottom .right-image {
+    padding-left: 0; } }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**

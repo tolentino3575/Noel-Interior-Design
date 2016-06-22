@@ -5,6 +5,7 @@
     margin-bottom: 0.9375rem;
     .services-content {
         text-align: center;
+        padding-left: 0;
         .services {
             background-color: $left-column-yellow;
             outline: 4px solid $white;
@@ -49,7 +50,7 @@
         }
     }
     .services-images {
-        padding-left: 1.75rem;
+        padding-right: 0;
         .fade {
             opacity: 1;
             transition: opacity .25s ease-in-out;
@@ -60,17 +61,13 @@
                opacity: 0.5;
                }
         .top {
-            background-color: #BFEFFF;
-            margin-bottom: 0.75rem;
+            margin-bottom: map-get($grid-column-gutter, medium);
         }
-        .bottom {
-            .left-image {
-                background-color: #ffe6e6;
-                // padding-right: 1.25rem;
-            }
-            .right-image {
-                background-color: #FEFFD4;
-            }
+        .left-image {
+            padding-left: 0;
+        }
+        .right-image {
+            padding-right: 0;
         }
     }
 }
@@ -78,13 +75,16 @@
 @include breakpoint(small only) {
     .services-container {
         .services-images {
-            padding-left: 0;
             .top {
                 margin-top: 0.75rem;
+                margin-bottom: 0;
             }
             .bottom {
+                .left-image {
+                    padding-right: 0;
+                }
                 .right-image {
-                    margin-top: 0.75rem;
+                    padding-left: 0;
                 }
             }
         }
@@ -93,13 +93,16 @@
 @include breakpoint(medium only) {
     .services-container {
         .services-images {
-            padding-left: 0;
             .top {
                 margin-top: 0.75rem;
+                margin-bottom: 0;
             }
             .bottom {
+                .left-image {
+                    padding-right: 0;
+                }
                 .right-image {
-                    margin-top: 0.75rem;
+                    padding-left: 0;
                 }
             }
         }
