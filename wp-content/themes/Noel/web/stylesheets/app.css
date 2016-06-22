@@ -2404,18 +2404,18 @@ html {
         margin-top: 1rem;
         margin-left: 2rem;
         margin-right: 1rem; }
-    .about-container .about-content .about-image {
-      padding-right: 0px; }
+  .about-container .about-image {
+    padding-right: 0px; }
 
 @media screen and (max-width: 40em) {
   .about-container .about-content {
-    padding-right: 0; }
+    padding-right: 0px; }
   .about-container .about-image {
     display: none; } }
 
 @media screen and (min-width: 40.0625em) and (max-width: 64em) {
   .about-container .about-content {
-    padding-right: 0; }
+    padding-right: 0px; }
   .about-container .about-image {
     display: none; } }
 
