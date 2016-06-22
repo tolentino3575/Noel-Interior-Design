@@ -86,15 +86,13 @@
                 }
             }
         }
-        .bottom {
-            .bottom-left {
-                padding-left: 0px;
-            }
-            .bottom-right {
-                padding-right: 0px;
-            }
-        }
     }
+}
+
+.post-container .images .bottom #bottom-images {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    width: auto;
 }
 
 @include breakpoint(small only) {
@@ -113,6 +111,7 @@
                 margin-bottom: 0px;
                 .middle-left {
                     text-align: center;
+                    padding-right: 0px;
                 }
                 .middle-right {
                     padding-left: 0px;
@@ -123,6 +122,7 @@
             .bottom {
                 .bottom-left {
                     padding-right: 0px;
+                    padding-left: 0px;
                 }
                 .bottom-middle {
                     padding-left: 0px;
@@ -130,9 +130,15 @@
                 }
                 .bottom-right {
                     padding-left: 0px;
+                    padding-right: 0px;
                 }
             }
         }
+    }
+    .post-container .images .bottom #bottom-images {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: auto;
     }
 }
 
@@ -151,16 +157,19 @@
                 margin-bottom: 0px;
                 .middle-left {
                     text-align: center;
+                    padding-right: 0px;
                 }
                 .middle-right {
                     padding-left: 0px;
-                    .middle-right-top { margin-bottom: 0px;
+                    .middle-right-top {
+                        margin-bottom: 0px;
                     }
                 }
             }
             .bottom {
                 .bottom-left {
                     padding-right: 0px;
+                    padding-left: 0px;
                 }
                 .bottom-middle {
                     padding-left: 0px;
@@ -168,8 +177,14 @@
                 }
                 .bottom-right {
                     padding-left: 0px;
+                    padding-right: 0px;
                 }
             }
         }
+    }
+    .post-container .images .bottom #bottom-images {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: auto;
     }
 }

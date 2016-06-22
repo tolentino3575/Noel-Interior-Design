@@ -2569,10 +2569,11 @@ html {
         padding-right: 0px; }
         .post-container .images .middle .middle-right .middle-right-top {
           margin-bottom: 15px; }
-    .post-container .images .bottom .bottom-left {
-      padding-left: 0px; }
-    .post-container .images .bottom .bottom-right {
-      padding-right: 0px; }
+
+.post-container .images .bottom #bottom-images {
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+  width: auto; }
 
 @media screen and (max-width: 40em) {
   .post-container .post-content {
@@ -2586,18 +2587,25 @@ html {
     .post-container .images .middle {
       margin-bottom: 0px; }
       .post-container .images .middle .middle-left {
-        text-align: center; }
+        text-align: center;
+        padding-right: 0px; }
       .post-container .images .middle .middle-right {
         padding-left: 0px; }
         .post-container .images .middle .middle-right .middle-right-top {
           margin-bottom: 0px; }
     .post-container .images .bottom .bottom-left {
-      padding-right: 0px; }
+      padding-right: 0px;
+      padding-left: 0px; }
     .post-container .images .bottom .bottom-middle {
       padding-left: 0px;
       padding-right: 0px; }
     .post-container .images .bottom .bottom-right {
-      padding-left: 0px; } }
+      padding-left: 0px;
+      padding-right: 0px; }
+  .post-container .images .bottom #bottom-images {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: auto; } }
 
 @media screen and (min-width: 40.0625em) and (max-width: 64em) {
   .post-container .post-content {
@@ -2610,18 +2618,25 @@ html {
     .post-container .images .middle {
       margin-bottom: 0px; }
       .post-container .images .middle .middle-left {
-        text-align: center; }
+        text-align: center;
+        padding-right: 0px; }
       .post-container .images .middle .middle-right {
         padding-left: 0px; }
         .post-container .images .middle .middle-right .middle-right-top {
           margin-bottom: 0px; }
     .post-container .images .bottom .bottom-left {
-      padding-right: 0px; }
+      padding-right: 0px;
+      padding-left: 0px; }
     .post-container .images .bottom .bottom-middle {
       padding-left: 0px;
       padding-right: 0px; }
     .post-container .images .bottom .bottom-right {
-      padding-left: 0px; } }
+      padding-left: 0px;
+      padding-right: 0px; }
+  .post-container .images .bottom #bottom-images {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: auto; } }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
