@@ -2383,7 +2383,8 @@ html {
   margin-top: 2.375rem;
   margin-bottom: 0.9375rem; }
   .about-container .about-content {
-    text-align: center; }
+    text-align: center;
+    padding-left: 0; }
     .about-container .about-content .about {
       background-color: #fafaf5;
       outline: 4px solid #fefefe;
