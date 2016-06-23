@@ -1,12 +1,5 @@
 @import "settings";
 
-html {
-    margin-left: 7rem;
-    margin-right: 7rem;
-    margin-bottom: 7rem;
-    margin-top: 1.5rem;
-}
-
 //Header
 .header-container {
     width: 100%;
@@ -183,10 +176,6 @@ html {
 }
 
 @include breakpoint(small only) {
-    html {
-        margin-left: 0;
-        margin-right: 0;
-    }
     .img-slider {
         height: 20rem;
     }
@@ -218,10 +207,6 @@ html {
 }
 
 @include breakpoint(medium only) {
-    html {
-        margin-left: 3.5rem;
-        margin-right: 3.5rem;
-    }
     .img-slider {
         height: 30rem;
     }

@@ -2197,12 +2197,6 @@
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
-html {
-  margin-left: 7rem;
-  margin-right: 7rem;
-  margin-bottom: 7rem;
-  margin-top: 1.5rem; }
-
 .header-container {
   width: 100%;
   margin-bottom: 1.188rem; }
@@ -2334,9 +2328,6 @@ html {
   padding: 0.3rem; }
 
 @media screen and (max-width: 40em) {
-  html {
-    margin-left: 0;
-    margin-right: 0; }
   .img-slider {
     height: 20rem; }
   .content {
@@ -2357,9 +2348,6 @@ html {
     font-size: 0.9rem; } }
 
 @media screen and (min-width: 40.0625em) and (max-width: 64em) {
-  html {
-    margin-left: 3.5rem;
-    margin-right: 3.5rem; }
   .img-slider {
     height: 30rem; }
   .footer-info {
@@ -2502,6 +2490,7 @@ html {
   .services-container .services-content {
     padding-right: 0px; }
   .services-container .services-images {
+    text-align: center;
     padding-left: 0px; }
     .services-container .services-images .top {
       margin-top: 0.75rem;
@@ -2617,6 +2606,7 @@ html {
   .post-container .post-content {
     padding-right: 0px; }
   .post-container .images {
+    text-align: center;
     padding-left: 0px; }
     .post-container .images .top {
       margin-top: 0.75rem;
