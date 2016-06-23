@@ -50,6 +50,12 @@
             }
             .buttons {
                 padding-bottom: 1rem;
+                .prev {
+                    margin-right: 1.25rem;
+                }
+                .next {
+                    margin-left: 1.25rem;
+                }
                 h6 a {
                     font-style: italic;
                     color: $bodyFontColor;

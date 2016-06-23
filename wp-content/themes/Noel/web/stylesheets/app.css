@@ -2540,6 +2540,10 @@
         margin-bottom: 5.813rem; }
       .post-container .post-content .post .buttons {
         padding-bottom: 1rem; }
+        .post-container .post-content .post .buttons .prev {
+          margin-right: 1.25rem; }
+        .post-container .post-content .post .buttons .next {
+          margin-left: 1.25rem; }
         .post-container .post-content .post .buttons h6 a {
           font-style: italic;
           color: #58595b; }
