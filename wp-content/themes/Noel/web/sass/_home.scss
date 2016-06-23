@@ -80,8 +80,9 @@ html {
     }
 
     .img-text {
-        top: 43%;
+        top: 50%;
         position: absolute;
+        transform: translateY(-50%);
         width: 100%;
         z-index: 2;
         h1 {
