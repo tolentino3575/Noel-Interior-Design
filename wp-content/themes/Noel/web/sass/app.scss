@@ -1,7 +1,11 @@
+$fa-font-path: "../libs/font-awesome/fonts";
 @import "font-awesome";
 @import "settings";
 @import "foundation";
 @import "home";
+@import "about";
+@import "services";
+@import "portfolio-post";
 @include foundation-everything();
 
 @import "classes";

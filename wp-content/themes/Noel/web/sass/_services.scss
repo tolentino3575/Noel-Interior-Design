@@ -1,0 +1,122 @@
+@import "settings";
+
+.services-container {
+    margin-top: 2.375rem;
+    margin-bottom: 0.9375rem;
+    .services-content {
+        text-align: center;
+        padding-left: 0px;
+        .services {
+            background-color: $left-column-yellow;
+            outline: 4px solid $white;
+            outline-offset: -0.6875rem;
+            overflow: scroll;
+            .services-text {
+                margin-top: 1.75rem;
+                h4 {
+                    color: $primaryGrey;
+                }
+                p {
+                    text-align: left;
+                    line-height: 1.15rem;
+                    margin-top: 1rem;
+                    margin-left: 2rem;
+                    margin-right: 1rem;
+                }
+            }
+            .why-text {
+                h3 {
+                    text-align: left;
+                    margin-left: 2rem;
+                }
+                .why-lines {
+                    margin-left: 2.5rem;
+                    float: left;
+                }
+                .services-links {
+                    text-align: left;
+                    margin-top: 1.5rem;
+                    margin-left: 2rem;
+                    padding-bottom: 3.125rem;
+                    h4 {
+                        color: $bodyFontColor;
+                        line-height: 1.188rem;
+                            &:hover {
+                                color: $secondaryLightGrey;
+                            }
+                        }
+                    p {
+                        margin-right: 1rem;
+                        line-height: 1.15rem;
+                    }
+                }
+            }
+        }
+    }
+    .services-images {
+        padding-right: 0px;
+        .fade {
+            opacity: 1;
+            transition: opacity .25s ease-in-out;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
+            }
+            .fade:hover {
+               opacity: 0.5;
+               }
+        .top {
+            margin-bottom: map-get($grid-column-gutter, medium);
+        }
+        .left-image {
+            padding-left: 0px;
+        }
+        .right-image {
+            padding-right: 0px;
+        }
+    }
+}
+
+@include breakpoint(small only) {
+    .services-container {
+        .services-content {
+            padding-right: 0px;
+        }
+        .services-images {
+            padding-left: 0px;
+            .top {
+                margin-top: 0.75rem;
+                margin-bottom: 0px;
+            }
+            .bottom {
+                .left-image {
+                    padding-right: 0px;
+                }
+                .right-image {
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+}
+@include breakpoint(medium only) {
+    .services-container {
+        .services-content {
+            padding-right: 0px;
+        }
+        .services-images {
+            padding-left: 0px;
+            .top {
+                margin-top: 0.75rem;
+                margin-bottom: 0px;
+            }
+            .bottom {
+                .left-image {
+                    padding-right: 0px;
+                }
+                .right-image {
+                    padding-left: 0px;
+                }
+            }
+        }
+    }
+}

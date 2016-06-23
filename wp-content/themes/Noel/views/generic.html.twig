@@ -1,0 +1,46 @@
+<html>
+<head>
+    {% block meta %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>About</title>
+    {% endblock %}
+
+    {% block stylesheets %}
+        {{ head|raw }}
+    {% endblock %}
+
+</head>
+<body>
+{% block body %}
+    {% block header %}
+        {% include "layout/header.html.twig" %}
+    {% endblock %}
+
+    {% block nav %}
+        {% include "layout/nav.html.twig" %}
+    {% endblock %}
+
+    {% block content %}
+        {% if content is defined and content|length %}
+            {% for row in content %}
+                {{ row }}
+            {% endfor %}
+        {% endif %}
+    {% endblock %}
+
+    {% block shareTransform %}
+        {% include "layout/sharetransform.html.twig" %}
+    {% endblock %}
+
+    {% block footer %}
+        {% include "layout/footer.html.twig" %}
+    {% endblock %}
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
+</body>
+</html>

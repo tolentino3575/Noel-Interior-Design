@@ -1,0 +1,64 @@
+@import "settings";
+
+.about-container {
+    margin-top: 2.375rem;
+    margin-bottom: 0.9375rem;
+    .about-content{
+        text-align: center;
+        padding-left: 0;
+        .about {
+            background-color: $left-column-yellow;
+            outline: 4px solid $white;
+            outline-offset: -0.6875rem;
+            overflow: scroll;
+            .about-text{
+                margin-top: 3.875rem;
+                p {
+                    text-align: left;
+                    line-height: 1.15rem;
+                    margin-top: 1rem;
+                    margin-left: 2rem;
+                    margin-right: 1rem;
+                }
+            }
+            .mission-text {
+                p {
+                    text-align: left;
+                    line-height: 1.15rem;
+                    margin-top: 1rem;
+                    margin-left: 2rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+    .about-image {
+        padding-right: 0px;
+    }
+}
+
+@include breakpoint(small only) {
+    .about-container {
+        .about-content {
+            padding-right: 0px;
+        }
+        .about-image {
+            padding-left: 0px;
+            margin-top: 0.75rem;
+            text-align: center;
+        }
+    }
+}
+
+@include breakpoint(medium only) {
+    .about-container {
+        .about-content {
+            padding-right: 0px;
+        }
+        .about-image {
+            padding-left: 0px;
+            margin-top: 0.75rem;
+            text-align: center;
+        }
+    }
+}
