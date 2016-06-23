@@ -2216,7 +2216,9 @@ html {
   width: 50%;
   text-align: right;
   display: inline-block;
-  float: right; }
+  float: right;
+  color: #787878;
+  font-size: 1rem; }
 
 .nav {
   text-align: center;
