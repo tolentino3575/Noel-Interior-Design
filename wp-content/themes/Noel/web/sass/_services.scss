@@ -5,7 +5,7 @@
     margin-bottom: 0.9375rem;
     .services-content {
         text-align: center;
-        padding-left: 0;
+        padding-left: 0px;
         .services {
             background-color: $left-column-yellow;
             outline: 4px solid $white;
@@ -41,16 +41,20 @@
                     h4 {
                         color: $bodyFontColor;
                         line-height: 1.188rem;
-                        &:hover {
-                            color: $secondaryLightGrey;
+                            &:hover {
+                                color: $secondaryLightGrey;
+                            }
                         }
+                    p {
+                        margin-right: 1rem;
+                        line-height: 1.15rem;
                     }
                 }
             }
         }
     }
     .services-images {
-        padding-right: 0;
+        padding-right: 0px;
         .fade {
             opacity: 1;
             transition: opacity .25s ease-in-out;
@@ -64,10 +68,10 @@
             margin-bottom: map-get($grid-column-gutter, medium);
         }
         .left-image {
-            padding-left: 0;
+            padding-left: 0px;
         }
         .right-image {
-            padding-right: 0;
+            padding-right: 0px;
         }
     }
 }
@@ -75,19 +79,20 @@
 @include breakpoint(small only) {
     .services-container {
         .services-content {
-            padding-right: 0;
+            padding-right: 0px;
         }
         .services-images {
+            padding-left: 0px;
             .top {
                 margin-top: 0.75rem;
-                margin-bottom: 0;
+                margin-bottom: 0px;
             }
             .bottom {
                 .left-image {
-                    padding-right: 0;
+                    padding-right: 0px;
                 }
                 .right-image {
-                    padding-left: 0;
+                    padding-left: 0px;
                 }
             }
         }
@@ -96,19 +101,20 @@
 @include breakpoint(medium only) {
     .services-container {
         .services-content {
-            padding-right: 0;
+            padding-right: 0px;
         }
         .services-images {
+            padding-left: 0px;
             .top {
                 margin-top: 0.75rem;
-                margin-bottom: 0;
+                margin-bottom: 0px;
             }
             .bottom {
                 .left-image {
-                    padding-right: 0;
+                    padding-right: 0px;
                 }
                 .right-image {
-                    padding-left: 0;
+                    padding-left: 0px;
                 }
             }
         }

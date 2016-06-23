@@ -31,19 +31,21 @@
                 }
             }
         }
-        .about-image {
-            padding-right: 0px;
-        }
+    }
+    .about-image {
+        padding-right: 0px;
     }
 }
 
 @include breakpoint(small only) {
     .about-container {
         .about-content {
-            padding-right: 0;
+            padding-right: 0px;
         }
         .about-image {
-            display: none;
+            padding-left: 0px;
+            margin-top: 0.75rem;
+            text-align: center;
         }
     }
 }
@@ -51,10 +53,12 @@
 @include breakpoint(medium only) {
     .about-container {
         .about-content {
-            padding-right: 0;
+            padding-right: 0px;
         }
         .about-image {
-            display: none;
+            padding-left: 0px;
+            margin-top: 0.75rem;
+            text-align: center;
         }
     }
 }
