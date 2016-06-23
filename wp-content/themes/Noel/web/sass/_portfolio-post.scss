@@ -61,7 +61,7 @@
         }
     }
     .images {
-        padding-right: 0px;
+        padding-right: 0;
         .fade {
             opacity: 1;
             transition: opacity .25s ease-in-out;
@@ -77,10 +77,10 @@
         .middle {
             margin-bottom:  map-get($grid-column-gutter, medium);
             .middle-left {
-                padding-left: 0px;
+                padding-left: 0;
             }
             .middle-right {
-                padding-right: 0px;
+                padding-right: 0;
                 .middle-right-top {
                     margin-bottom:  map-get($grid-column-gutter, medium);
                 }
@@ -98,46 +98,46 @@
 @include breakpoint(small only) {
     .post-container {
         .post-content {
-            padding-right: 0px;
-            padding-left: 0px;
+            padding-right: 0;
+            padding-left: 0;
         }
         .images {
-            padding-left: 0px;
+            padding-left: 0;
             .top {
                 margin-top: 0.75rem;
-                margin-bottom: 0px;
+                margin-bottom: 0;
             }
             .middle {
-                margin-bottom: 0px;
+                margin-bottom: 0;
                 .middle-left {
                     text-align: center;
-                    padding-right: 0px;
+                    padding-right: 0;
                 }
                 .middle-right {
-                    padding-left: 0px;
-                    .middle-right-top { margin-bottom: 0px;
+                    padding-left: 0;
+                    .middle-right-top { margin-bottom: 0;
                     }
                 }
             }
             .bottom {
                 .bottom-left {
-                    padding-right: 0px;
-                    padding-left: 0px;
+                    padding-right: 0;
+                    padding-left: 0;
                 }
                 .bottom-middle {
-                    padding-left: 0px;
-                    padding-right: 0px;
+                    padding-left: 0;
+                    padding-right: 0;
                 }
                 .bottom-right {
-                    padding-left: 0px;
-                    padding-right: 0px;
+                    padding-left: 0;
+                    padding-right: 0;
                 }
             }
         }
     }
     .post-container .images .bottom #bottom-images {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
         width: auto;
     }
 }
@@ -145,46 +145,46 @@
 @include breakpoint(medium only) {
     .post-container {
         .post-content {
-            padding-right: 0px;
+            padding-right: 0;
         }
         .images {
-            padding-left: 0px;
+            padding-left: 0;
             .top {
                 margin-top: 0.75rem;
-                margin-bottom: 0px;
+                margin-bottom: 0;
             }
             .middle {
-                margin-bottom: 0px;
+                margin-bottom: 0;
                 .middle-left {
                     text-align: center;
-                    padding-right: 0px;
+                    padding-right: 0;
                 }
                 .middle-right {
-                    padding-left: 0px;
+                    padding-left: 0;
                     .middle-right-top {
-                        margin-bottom: 0px;
+                        margin-bottom: 0;
                     }
                 }
             }
             .bottom {
                 .bottom-left {
-                    padding-right: 0px;
-                    padding-left: 0px;
+                    padding-right: 0;
+                    padding-left: 0;
                 }
                 .bottom-middle {
-                    padding-left: 0px;
-                    padding-right: 0px;
+                    padding-left: 0;
+                    padding-right: 0;
                 }
                 .bottom-right {
-                    padding-left: 0px;
-                    padding-right: 0px;
+                    padding-left: 0;
+                    padding-right: 0;
                 }
             }
         }
     }
     .post-container .images .bottom #bottom-images {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
         width: auto;
     }
 }

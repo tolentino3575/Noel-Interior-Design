@@ -5,7 +5,7 @@
     margin-bottom: 0.9375rem;
     .services-content {
         text-align: center;
-        padding-left: 0px;
+        padding-left: 0;
         .services {
             background-color: $left-column-yellow;
             outline: 4px solid $white;
@@ -54,7 +54,7 @@
         }
     }
     .services-images {
-        padding-right: 0px;
+        padding-right: 0;
         .fade {
             opacity: 1;
             transition: opacity .25s ease-in-out;
@@ -68,10 +68,10 @@
             margin-bottom: map-get($grid-column-gutter, medium);
         }
         .left-image {
-            padding-left: 0px;
+            padding-left: 0;
         }
         .right-image {
-            padding-right: 0px;
+            padding-right: 0;
         }
     }
 }
@@ -79,20 +79,20 @@
 @include breakpoint(small only) {
     .services-container {
         .services-content {
-            padding-right: 0px;
+            padding-right: 0;
         }
         .services-images {
-            padding-left: 0px;
+            padding-left: 0;
             .top {
                 margin-top: 0.75rem;
-                margin-bottom: 0px;
+                margin-bottom: 0;
             }
             .bottom {
                 .left-image {
-                    padding-right: 0px;
+                    padding-right: 0;
                 }
                 .right-image {
-                    padding-left: 0px;
+                    padding-left: 0;
                 }
             }
         }
@@ -101,20 +101,20 @@
 @include breakpoint(medium only) {
     .services-container {
         .services-content {
-            padding-right: 0px;
+            padding-right: 0;
         }
         .services-images {
-            padding-left: 0px;
+            padding-left: 0;
             .top {
                 margin-top: 0.75rem;
-                margin-bottom: 0px;
+                margin-bottom: 0;
             }
             .bottom {
                 .left-image {
-                    padding-right: 0px;
+                    padding-right: 0;
                 }
                 .right-image {
-                    padding-left: 0px;
+                    padding-left: 0;
                 }
             }
         }
