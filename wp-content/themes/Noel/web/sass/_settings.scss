@@ -66,6 +66,8 @@ $bodyFontColor: #58595b;
 $headerColor: #414141;
 $anchorColor: #a9aaaa;
 $anchorColorHover: #a9aaaa;
+$sliderYellow: #f9f9eb;
+$left-column-yellow: #fafaf5;
 
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
@@ -92,8 +94,8 @@ $print-transparent-backgrounds: true;
 
 $breakpoints: (
   small: 0,
-  medium: 640px,
-  large: 1024px,
+  medium: 641px,
+  large: 1025px,
   xlarge: 1200px,
   xxlarge: 1440px,
 );
@@ -106,7 +108,7 @@ $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
   small: 20px,
-  medium: 30px,
+  medium: 15px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
