@@ -4,28 +4,84 @@
         <meta charset="utf-8">
         <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <title>{{ wp_get_the_title() }}</title>
+        <title>{{ SP.WordPress.title() }}</title>
     {% endblock %}
 
     {% block stylesheets %}
-        {{ wp_head() | raw }}
+        {{ SP.WordPress.header() }}
     {% endblock %}
-
-    {% include "recipes/google-analytics.html.twig" %}
 </head>
-<body {{ wp_body_class() | raw }}>
+<body  {{ SP.WordPress.classes() }}>
 {% block body %}
     {% block header %}
         {% include "layout/header.html.twig" %}
     {% endblock %}
 
     {% block content %}
-        <section class="content">
-            <div class="row column">
-                <h1>{{ wp_get_the_title() }}</h1>
-                {{ wp_get_the_content() | raw }}
+        <div class="two-column content">
+            <div class="row">
+                <div class="large-5 columns left-column">
+                    <div class="row column">
+                        {% if SP.ACF.get_field('subtitle') %}
+                            <h4>{{ SP.ACF.get_field('subtitle') }}</h4>
+                        {% endif %}
+                        {{ SP.ACF.get_field('content') }}
+                        {% if SP.WordPress.getType() == "post" or SP.WordPress.getType() == "portfolio" %}
+                            <div class="buttons">
+                                {{ SP.WordPress.getPreviousLink('%link', '&lt; Previous') }}
+                                {% if SP.WordPress.getPreviousLink() and SP.WordPress.getNextLink() %}
+                                    <span class="divider">/</span>
+                                {% endif %}
+                                {{ SP.WordPress.getNextLink('%link', 'Next &gt;') }}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="large-7 columns right-column">
+                    {% if SP.ACF.get_field('right_column_layout') == 'large' %}
+                        <div class="large">
+                            <img src="{{ SP.ACF.get_field('large_image').url }}">
+                        </div>
+                    {% elseif SP.ACF.get_field('right_column_layout') == 'landscape' %}
+                        <div class="landscape">
+                            {% for row in SP.ACF.get_field('landscape') %}
+                                <div class="row column">
+                                    <img src="{{ row.large.url }}" alt="">
+                                </div>
+                                <div class="row">
+                                    <div class="medium-6 columns"><img src="{{ row.small_left.url }}" alt=""></div>
+                                    <div class="medium-6 columns"><img src="{{ row.small_right.url }}" alt=""></div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% elseif SP.ACF.get_field('right_column_layout') == 'mixed' %}
+                        <div class="mixed">
+                            {% for row in SP.ACF.get_field('mixed') %}
+                                <div class="row column">
+                                    <img src="{{ row.large_landscape.url }}" alt="">
+                                </div>
+                                <div class="row">
+                                    <div class="medium-6 columns"><img src="{{ row.large_portrait.url }}" alt=""></div>
+                                    <div class="medium-6 columns">
+                                        <img src="{{ row.top_small_landscape.url }}" alt="">
+                                        <img src="{{ row.bottom_small_landscape.url }}" alt="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="medium-4 columns"><img src="{{ row.left_square.url }}" alt=""></div>
+                                    <div class="medium-4 columns"><img src="{{ row.center_square.url }}" alt=""></div>
+                                    <div class="medium-4 columns"><img src="{{ row.right_square.url }}" alt=""></div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
             </div>
-        </section>
+        </div>
+    {% endblock %}
+
+    {% block shareTransform %}
+        {% include "layout/sharetransform.html.twig" %}
     {% endblock %}
 
     {% block footer %}
@@ -34,7 +90,7 @@
 {% endblock %}
 
 {% block scripts %}
-    {{ wp_footer() | raw }}
+    {{ SP.WordPress.footer() }}
 {% endblock %}
 </body>
 </html>

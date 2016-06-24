@@ -1,6 +1,6 @@
-jQuery(document).foundation();
-
 jQuery(document).ready(function(){
+    jQuery(document).foundation();
+    
     jQuery('.img-slider').slick({
         infinite: true,
         speed: 300,
