@@ -10,7 +10,32 @@
     width: 50%;
     text-align: left;
     display: inline-block;
+    .ig-head {
+        display: inline-block;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/instagram-head.png');
+    }
+    .pin-head {
+        display: inline-block;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/pinterest-head.png');
+    }
+    .fb-head {
+        display: inline-block;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/facebook-head.png');
+    }
+    .goog-head {
+        display: inline-block;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/google-head.png');
+    }
 }
+
 
 .header-phone {
     width: 50%;
@@ -129,6 +154,34 @@
     height: 100%;
 }
 
+.share {
+    text-align: center;
+    .ig-share {
+        display: inline-block;
+        width:2.375rem;
+        height:2.375rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/instagram-foot.png');
+    }
+    .pin-share {
+        display: inline-block;
+        width:2.375rem;
+        height:2.375rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/pinterest-foot.png');
+    }
+    .fb-share {
+        display: inline-block;
+        width:2.375rem;
+        height:2.375rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/facebook-foot.png');
+    }
+    .goog-share {
+        display: inline-block;
+        width:2.375rem;
+        height: 2.375rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/google-foot.png');
+    }
+}
+
 .transform {
     border-left: 2px solid $secondaryLightGrey;
 }
@@ -163,18 +216,6 @@
 }
 
 //misc & breakpoints
-.circle-icon {
-    background: $secondaryDarkGrey;
-    color: $white;
-    width: 1.875rem;
-    height: 1.875rem;
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 1.5rem;
-    padding: 0.3rem;
-}
-
 @include breakpoint(small only) {
     .img-slider {
         height: 20rem;

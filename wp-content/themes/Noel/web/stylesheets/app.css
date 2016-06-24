@@ -2205,6 +2205,26 @@
   width: 50%;
   text-align: left;
   display: inline-block; }
+  .header-icons .ig-head {
+    display: inline-block;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/instagram-head.png"); }
+  .header-icons .pin-head {
+    display: inline-block;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/pinterest-head.png"); }
+  .header-icons .fb-head {
+    display: inline-block;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/facebook-head.png"); }
+  .header-icons .goog-head {
+    display: inline-block;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/google-head.png"); }
 
 .header-phone {
   width: 50%;
@@ -2289,6 +2309,29 @@
   margin-top: 2.5rem;
   height: 100%; }
 
+.share {
+  text-align: center; }
+  .share .ig-share {
+    display: inline-block;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/instagram-foot.png"); }
+  .share .pin-share {
+    display: inline-block;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/pinterest-foot.png"); }
+  .share .fb-share {
+    display: inline-block;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/facebook-foot.png"); }
+  .share .goog-share {
+    display: inline-block;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/google-foot.png"); }
+
 .transform {
   border-left: 2px solid #dddddd; }
 
@@ -2315,17 +2358,6 @@
   .footer p {
     line-height: 1rem;
     margin-bottom: 0.5rem; }
-
-.circle-icon {
-  background: #a5acaf;
-  color: #fefefe;
-  width: 1.875rem;
-  height: 1.875rem;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 1.5rem;
-  padding: 0.3rem; }
 
 @media screen and (max-width: 40em) {
   .img-slider {
