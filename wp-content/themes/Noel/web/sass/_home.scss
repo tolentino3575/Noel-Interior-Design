@@ -14,25 +14,25 @@
         display: inline-block;
         width: 1.875rem;
         height: 1.875rem;
-        background-image: url('/wp-content/themes/Noel/web/imgs/instagram-head.png');
+        background-image: url('../imgs/instagram-head.png');
     }
     .pin-head {
         display: inline-block;
         width: 1.875rem;
         height: 1.875rem;
-        background-image: url('/wp-content/themes/Noel/web/imgs/pinterest-head.png');
+        background-image: url('../imgs/pinterest-head.png');
     }
     .fb-head {
         display: inline-block;
         width: 1.875rem;
         height: 1.875rem;
-        background-image: url('/wp-content/themes/Noel/web/imgs/facebook-head.png');
+        background-image: url('../imgs/facebook-head.png');
     }
     .goog-head {
         display: inline-block;
         width: 1.875rem;
         height: 1.875rem;
-        background-image: url('/wp-content/themes/Noel/web/imgs/google-head.png');
+        background-image: url('../web/imgs/google-head.png');
     }
 }
 
@@ -122,7 +122,7 @@
     }
 
     .slick-prev:before{
-        content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png");
+        content: url("../imgs/prev-arrow.png");
     }
     .slick-prev {
         left: 4.5rem;
@@ -130,7 +130,7 @@
         z-index: 1;
     }
     .slick-next:before{
-        content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png");
+        content: url("../imgs/next-arrow.png");
     }
     .slick-next {
         right: 4.5rem;
@@ -160,25 +160,25 @@
         display: inline-block;
         width:2.375rem;
         height:2.375rem;
-        background-image: url('/wp-content/themes/Noel/web/imgs/instagram-foot.png');
+        background-image: url('../imgs/instagram-foot.png');
     }
     .pin-share {
         display: inline-block;
         width:2.375rem;
         height:2.375rem;
-        background-image: url('/wp-content/themes/Noel/web/imgs/pinterest-foot.png');
+        background-image: url('../imgs/pinterest-foot.png');
     }
     .fb-share {
         display: inline-block;
         width:2.375rem;
         height:2.375rem;
-        background-image: url('/wp-content/themes/Noel/web/imgs/facebook-foot.png');
+        background-image: url('../imgs/facebook-foot.png');
     }
     .goog-share {
         display: inline-block;
         width:2.375rem;
         height: 2.375rem;
-        background-image: url('/wp-content/themes/Noel/web/imgs/google-foot.png');
+        background-image: url('../imgs/google-foot.png');
     }
 }
 
