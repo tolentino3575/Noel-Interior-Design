@@ -1,18 +1,7 @@
 <?php
 require_once __DIR__.'/App/bootstrap.php';
+require_once __DIR__.'/src/functions.php';
 global $container;
-
-
-add_action('init', function() {
-    if( !session_id() )
-    {
-        session_start();
-    }
-});
-
-add_action('plugins_loaded', function() {
-    load_plugin_textdomain('supertheme', false, get_template_directory() . '/languages');
-});
 
 // styles and scripts
 add_action('wp_enqueue_scripts', function (){
@@ -26,53 +15,34 @@ add_action('wp_enqueue_scripts', function (){
     wp_enqueue_style( 'app' );
 });
 
-// logo for ACF options page
-add_action('admin_head', function () {
-    $rootURI = get_template_directory_uri();
-    echo <<<HTML
-    <style type="text/css">
-        .dashicons-sayenko {
-            background-image: url('$rootURI/options-icon.png');
-            background-size: 18px;
-            background-position: 10px center;
-            background-repeat: no-repeat;
-        }
-    </style>
-HTML;
-});
+add_action('init', function() {
+    register_post_type('portfolio', [
+        'labels' => [
+            'name' => 'Portfolios',
+            'singular_name' => 'Portfolio',
+        ],
+        'public' => true,
+        'menu_icon' => 'dashicons-portfolio',
+        'menu_position' => 5,
+        'supports' => [
+            'title',
+            'author',
+            'thumbnail',
+            'page-attributes',
+        ],
+        'has_archive' => true,
+    ]);
 
-// login logo
-add_action('login_head', function () {
-    $rootURI = get_template_directory_uri();
-    echo <<<HTML
-    <style type="text/css">
-        h1 a {
-            background-image: url('$rootURI/logo.png') !important;
-            background-size: contain !important;
-            width: 320px !important;
-            height: 120px !important;
-       }
-    </style>
-HTML;
-});
+    register_nav_menus([
+        'primary_menu' => 'Primary Menu',
+        'mobile_menu' => 'Mobile Menu',
+    ]);
 
-
-// referral widget
-add_action('wp_dashboard_setup', function () {
-    wp_add_dashboard_widget(
-        'referral_dashboard_widget',
-        'RECEIVE $500 in CASH FOR A WEBSITE REFERRAL!!',
-        function () {
-            echo <<<HTML
-                <a href='http://www.sayenkodesign.com'>
-                    <img alt='Seattle Web Design' src='http://www.sayenkodesign.com/wp-content/uploads/2014/08/Sayenko-Design-WP-Referral-Bonus-460.jpg' width='100%'>
-                </a>
-                </br>
-                </br>
-                Simply introduce us via email along with the prospects phone number.
-                Email introductions can be sent to
-                <a href='mailto:mike@sayenkodesign.com'>mike@sayenkodesign.com</a>
-HTML;
-        }
-    );
+    if(function_exists('acf_add_options_page')) {
+        acf_add_options_page([
+            'page_title' => 'Theme Options',
+            'capability' => 'edit_theme_options',
+            'icon_url' => 'dashicons-sayenko',
+        ]);
+    }
 });
