@@ -11,22 +11,73 @@
         {{ SP.WordPress.header() }}
     {% endblock %}
 </head>
-<body>
+<body  {{ SP.WordPress.classes() }}>
 {% block body %}
     {% block header %}
         {% include "layout/header.html.twig" %}
     {% endblock %}
 
-    {% block nav %}
-        {% include "layout/nav.html.twig" %}
-    {% endblock %}
-
     {% block content %}
-        {% if content is defined and content|length %}
-            {% for row in content %}
-                {{ row }}
-            {% endfor %}
-        {% endif %}
+        <div class="two-column content">
+            <div class="row">
+                <div class="large-5 columns left-column">
+                    <div class="row column">
+                        {% if SP.ACF.get_field('subtitle') %}
+                            <h4>{{ SP.ACF.get_field('subtitle') }}</h4>
+                        {% endif %}
+                        {{ SP.ACF.get_field('content') }}
+                        {% if SP.WordPress.getType() == "post" or SP.WordPress.getType() == "portfolio" %}
+                            <div class="buttons">
+                                {{ SP.WordPress.getPreviousLink('%link', '&lt; Previous') }}
+                                {% if SP.WordPress.getPreviousLink() and SP.WordPress.getNextLink() %}
+                                    <span class="divider">/</span>
+                                {% endif %}
+                                {{ SP.WordPress.getNextLink('%link', 'Next &gt;') }}
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="large-7 columns right-column">
+                    {% if SP.ACF.get_field('right_column_layout') == 'large' %}
+                        <div class="large">
+                            <img src="{{ SP.ACF.get_field('large_image').url }}">
+                        </div>
+                    {% elseif SP.ACF.get_field('right_column_layout') == 'landscape' %}
+                        <div class="landscape">
+                            {% for row in SP.ACF.get_field('landscape') %}
+                                <div class="row column">
+                                    <img src="{{ row.large.url }}" alt="">
+                                </div>
+                                <div class="row">
+                                    <div class="medium-6 columns"><img src="{{ row.small_left.url }}" alt=""></div>
+                                    <div class="medium-6 columns"><img src="{{ row.small_right.url }}" alt=""></div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% elseif SP.ACF.get_field('right_column_layout') == 'mixed' %}
+                        <div class="mixed">
+                            {% for row in SP.ACF.get_field('mixed') %}
+                                <div class="row column">
+                                    <img src="{{ row.large_landscape.url }}" alt="">
+                                </div>
+                                <div class="row">
+                                    <div class="medium-6 columns"><img src="{{ row.large_portrait.url }}" alt=""></div>
+                                    <div class="medium-6 columns">
+                                        <img src="{{ row.top_small_landscape.url }}" alt="">
+                                        <img src="{{ row.bottom_small_landscape.url }}" alt="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="medium-4 columns"><img src="{{ row.left_square.url }}" alt=""></div>
+                                    <div class="medium-4 columns"><img src="{{ row.center_square.url }}" alt=""></div>
+                                    <div class="medium-4 columns"><img src="{{ row.right_square.url }}" alt=""></div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
     {% endblock %}
 
     {% block shareTransform %}
