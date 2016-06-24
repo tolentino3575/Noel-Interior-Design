@@ -5737,12 +5737,6 @@ table.hover tr:nth-of-type(even):hover {
 .clearfix::after {
   clear: both; }
 
-html {
-  margin-left: 7rem;
-  margin-right: 7rem;
-  margin-bottom: 7rem;
-  margin-top: 1.5rem; }
-
 .header-container {
   width: 100%;
   margin-bottom: 1.188rem; }
@@ -5751,12 +5745,34 @@ html {
   width: 50%;
   text-align: left;
   display: inline-block; }
+  .header-icons .ig-head {
+    display: inline-block;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/instagram-head.png"); }
+  .header-icons .pin-head {
+    display: inline-block;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/pinterest-head.png"); }
+  .header-icons .fb-head {
+    display: inline-block;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/facebook-head.png"); }
+  .header-icons .goog-head {
+    display: inline-block;
+    width: 1.875rem;
+    height: 1.875rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/google-head.png"); }
 
 .header-phone {
   width: 50%;
   text-align: right;
   display: inline-block;
-  float: right; }
+  float: right;
+  color: #787878;
+  font-size: 1rem; }
 
 .nav {
   text-align: center;
@@ -5788,10 +5804,13 @@ html {
     height: 100%;
     width: 100%;
     outline: 4px solid #fcdad8;
-    outline-offset: -0.6875rem; }
+    outline-offset: -15px; }
   .img-slider .img-text {
-    top: 43%;
+    top: 50%;
     position: absolute;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     width: 100%;
     z-index: 2; }
     .img-slider .img-text h1 {
@@ -5830,6 +5849,29 @@ html {
   margin-top: 2.5rem;
   height: 100%; }
 
+.share {
+  text-align: center; }
+  .share .ig-share {
+    display: inline-block;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/instagram-foot.png"); }
+  .share .pin-share {
+    display: inline-block;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/pinterest-foot.png"); }
+  .share .fb-share {
+    display: inline-block;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/facebook-foot.png"); }
+  .share .goog-share {
+    display: inline-block;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-image: url("/wp-content/themes/Noel/web/imgs/google-foot.png"); }
+
 .transform {
   border-left: 2px solid #dddddd; }
 
@@ -5851,26 +5893,13 @@ html {
   border: 1px solid #fcdad8;
   text-align: center;
   vertical-align: middle;
-  font-size: 1rem;
+  font-size: 0.5625rem;
   color: #dddddd; }
   .footer p {
-    line-height: 1rem; }
-
-.circle-icon {
-  background: #a5acaf;
-  color: #fefefe;
-  width: 1.875rem;
-  height: 1.875rem;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 1.5rem;
-  padding: 0.3rem; }
+    line-height: 1rem;
+    margin-bottom: 0.5rem; }
 
 @media screen and (max-width: 40em) {
-  html {
-    margin-left: 0;
-    margin-right: 0; }
   .img-slider {
     height: 20rem; }
   .content {
@@ -5891,9 +5920,6 @@ html {
     font-size: 0.9rem; } }
 
 @media screen and (min-width: 40.0625em) and (max-width: 64em) {
-  html {
-    margin-left: 3.5rem;
-    margin-right: 3.5rem; }
   .img-slider {
     height: 30rem; }
   .footer-info {
@@ -6085,6 +6111,10 @@ html {
         margin-bottom: 5.813rem; }
       .post-container .post-content .post .buttons {
         padding-bottom: 1rem; }
+        .post-container .post-content .post .buttons .prev {
+          margin-right: 1.25rem; }
+        .post-container .post-content .post .buttons .next {
+          margin-left: 1.25rem; }
         .post-container .post-content .post .buttons h6 a {
           font-style: italic;
           color: #58595b; }

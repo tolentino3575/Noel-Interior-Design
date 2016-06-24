@@ -1,12 +1,5 @@
 @import "settings";
 
-html {
-    margin-left: 7rem;
-    margin-right: 7rem;
-    margin-bottom: 7rem;
-    margin-top: 1.5rem;
-}
-
 //Header
 .header-container {
     width: 100%;
@@ -17,13 +10,40 @@ html {
     width: 50%;
     text-align: left;
     display: inline-block;
+    .ig-head {
+        display: inline-block;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/instagram-head.png');
+    }
+    .pin-head {
+        display: inline-block;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/pinterest-head.png');
+    }
+    .fb-head {
+        display: inline-block;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/facebook-head.png');
+    }
+    .goog-head {
+        display: inline-block;
+        width: 1.875rem;
+        height: 1.875rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/google-head.png');
+    }
 }
+
 
 .header-phone {
     width: 50%;
     text-align: right;
     display: inline-block;
     float: right;
+    color: $primaryGrey;
+    font-size: 1rem;
 }
 
 //Nav
@@ -74,12 +94,13 @@ html {
         height: 100%;
         width: 100%;
         outline: 4px solid $primaryPink;
-        outline-offset: -0.6875rem;
+        outline-offset: - map-get($grid-column-gutter, medium);
     }
 
     .img-text {
-        top: 43%;
+        top: 50%;
         position: absolute;
+        transform: translateY(-50%);
         width: 100%;
         z-index: 2;
         h1 {
@@ -133,6 +154,34 @@ html {
     height: 100%;
 }
 
+.share {
+    text-align: center;
+    .ig-share {
+        display: inline-block;
+        width:2.375rem;
+        height:2.375rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/instagram-foot.png');
+    }
+    .pin-share {
+        display: inline-block;
+        width:2.375rem;
+        height:2.375rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/pinterest-foot.png');
+    }
+    .fb-share {
+        display: inline-block;
+        width:2.375rem;
+        height:2.375rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/facebook-foot.png');
+    }
+    .goog-share {
+        display: inline-block;
+        width:2.375rem;
+        height: 2.375rem;
+        background-image: url('/wp-content/themes/Noel/web/imgs/google-foot.png');
+    }
+}
+
 .transform {
     border-left: 2px solid $secondaryLightGrey;
 }
@@ -157,32 +206,17 @@ html {
     border: 1px solid $primaryPink;
     text-align: center;
     vertical-align: middle;
-    font-size: 1rem;
+    font-size: 0.5625rem;
     color: $secondaryLightGrey;
 
     p {
         line-height: 1rem;
+        margin-bottom: 0.5rem;
     }
 }
 
 //misc & breakpoints
-.circle-icon {
-    background: $secondaryDarkGrey;
-    color: $white;
-    width: 1.875rem;
-    height: 1.875rem;
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 1.5rem;
-    padding: 0.3rem;
-}
-
 @include breakpoint(small only) {
-    html {
-        margin-left: 0;
-        margin-right: 0;
-    }
     .img-slider {
         height: 20rem;
     }
@@ -214,10 +248,6 @@ html {
 }
 
 @include breakpoint(medium only) {
-    html {
-        margin-left: 3.5rem;
-        margin-right: 3.5rem;
-    }
     .img-slider {
         height: 30rem;
     }
