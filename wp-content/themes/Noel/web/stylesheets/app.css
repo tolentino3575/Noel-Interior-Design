@@ -5738,6 +5738,7 @@ table.hover tr:nth-of-type(even):hover {
   clear: both; }
 
 .left-column {
+  padding-top: 3.875rem;
   background-color: #fafaf5;
   outline: 4px solid #fefefe;
   outline-offset: -0.6875rem;
@@ -5751,6 +5752,9 @@ table.hover tr:nth-of-type(even):hover {
   .left-column h3 {
     text-align: left;
     margin-left: 2rem; }
+  .left-column h4 {
+    margin-bottom: 0;
+    color: #787878; }
 
 .header-container {
   width: 100%;
