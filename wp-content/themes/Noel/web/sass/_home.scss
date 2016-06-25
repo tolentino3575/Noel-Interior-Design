@@ -1,5 +1,23 @@
 @import "settings";
 
+.left-column {
+    background-color: $left-column-yellow;
+    outline: 4px solid $white;
+    outline-offset: -0.6875rem;
+    overflow: scroll;
+    p {
+        text-align: left;
+        line-height: 1.15rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+    h3 {
+        text-align: left;
+        margin-left: 2rem;
+    }
+}
+
 //Header
 .header-container {
     width: 100%;
@@ -32,7 +50,7 @@
         display: inline-block;
         width: 1.875rem;
         height: 1.875rem;
-        background-image: url('../web/imgs/google-head.png');
+        background-image: url('../imgs/google-head.png');
     }
 }
 

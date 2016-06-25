@@ -19,7 +19,7 @@ add_theme_support('html5');
 // always start a session
 add_action('init', function () {
     if (!session_id()) {
-        session_start();
+        // session_start();
     }
 });
 

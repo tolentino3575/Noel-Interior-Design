@@ -11,3 +11,4 @@ if(is_front_page()) {
 }
 
 $twig = $container->get("twig.environment");
+echo $twig->render($template, $data);

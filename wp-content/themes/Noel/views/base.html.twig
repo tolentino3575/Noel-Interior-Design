@@ -25,7 +25,7 @@
                         {% if SP.ACF.get_field('subtitle') %}
                             <h4>{{ SP.ACF.get_field('subtitle') }}</h4>
                         {% endif %}
-                        {{ SP.ACF.get_field('content') }}
+                        {{ SP.ACF.get_field('left_column_content') }}
                         {% if SP.WordPress.getType() == "post" or SP.WordPress.getType() == "portfolio" %}
                             <div class="buttons">
                                 {{ SP.WordPress.getPreviousLink('%link', '&lt; Previous') }}
