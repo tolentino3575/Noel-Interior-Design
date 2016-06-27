@@ -5737,6 +5737,25 @@ table.hover tr:nth-of-type(even):hover {
 .clearfix::after {
   clear: both; }
 
+.left-column {
+  padding-top: 3.875rem;
+  background-color: #fafaf5;
+  outline: 4px solid #fefefe;
+  outline-offset: -0.6875rem;
+  overflow: scroll; }
+  .left-column p {
+    text-align: left;
+    line-height: 1.15rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem; }
+  .left-column h3 {
+    text-align: left;
+    margin-left: 2rem; }
+  .left-column h4 {
+    margin-bottom: 0;
+    color: #787878; }
+
 .header-container {
   width: 100%;
   margin-bottom: 1.188rem; }
@@ -5749,22 +5768,22 @@ table.hover tr:nth-of-type(even):hover {
     display: inline-block;
     width: 1.875rem;
     height: 1.875rem;
-    background-image: url("/wp-content/themes/Noel/web/imgs/instagram-head.png"); }
+    background-image: url("../imgs/instagram-head.png"); }
   .header-icons .pin-head {
     display: inline-block;
     width: 1.875rem;
     height: 1.875rem;
-    background-image: url("/wp-content/themes/Noel/web/imgs/pinterest-head.png"); }
+    background-image: url("../imgs/pinterest-head.png"); }
   .header-icons .fb-head {
     display: inline-block;
     width: 1.875rem;
     height: 1.875rem;
-    background-image: url("/wp-content/themes/Noel/web/imgs/facebook-head.png"); }
+    background-image: url("../imgs/facebook-head.png"); }
   .header-icons .goog-head {
     display: inline-block;
     width: 1.875rem;
     height: 1.875rem;
-    background-image: url("/wp-content/themes/Noel/web/imgs/google-head.png"); }
+    background-image: url("../imgs/google-head.png"); }
 
 .header-phone {
   width: 50%;
@@ -5825,13 +5844,13 @@ table.hover tr:nth-of-type(even):hover {
   .img-slider .slick-prev:before, .img-slider .slick-next:before {
     color: #a5acaf; }
   .img-slider .slick-prev:before {
-    content: url("/wp-content/themes/Noel/web/imgs/prev-arrow.png"); }
+    content: url("../imgs/prev-arrow.png"); }
   .img-slider .slick-prev {
     left: 4.5rem;
     top: 45%;
     z-index: 1; }
   .img-slider .slick-next:before {
-    content: url("/wp-content/themes/Noel/web/imgs/next-arrow.png"); }
+    content: url("../imgs/next-arrow.png"); }
   .img-slider .slick-next {
     right: 4.5rem;
     top: 45%;
@@ -5855,22 +5874,22 @@ table.hover tr:nth-of-type(even):hover {
     display: inline-block;
     width: 2.375rem;
     height: 2.375rem;
-    background-image: url("/wp-content/themes/Noel/web/imgs/instagram-foot.png"); }
+    background-image: url("../imgs/instagram-foot.png"); }
   .share .pin-share {
     display: inline-block;
     width: 2.375rem;
     height: 2.375rem;
-    background-image: url("/wp-content/themes/Noel/web/imgs/pinterest-foot.png"); }
+    background-image: url("../imgs/pinterest-foot.png"); }
   .share .fb-share {
     display: inline-block;
     width: 2.375rem;
     height: 2.375rem;
-    background-image: url("/wp-content/themes/Noel/web/imgs/facebook-foot.png"); }
+    background-image: url("../imgs/facebook-foot.png"); }
   .share .goog-share {
     display: inline-block;
     width: 2.375rem;
     height: 2.375rem;
-    background-image: url("/wp-content/themes/Noel/web/imgs/google-foot.png"); }
+    background-image: url("../imgs/google-foot.png"); }
 
 .transform {
   border-left: 2px solid #dddddd; }
