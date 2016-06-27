@@ -7,26 +7,34 @@
     outline-offset: -0.6875rem;
     overflow: scroll;
     text-align: center;
+    position: relative;
     p {
         text-align: left;
         line-height: 1.15rem;
-        margin-top: 1rem;
         margin-left: 2rem;
         margin-right: 1rem;
+        margin-bottom: 2.938rem;
+        margin-top: 2.25rem;
     }
     h1::after {
         display: block;
-        height: 0.3125rem;
-        width: 3.125rem;
+        position: absolute;
+        left: 45%;
+        height: 0.5rem;
+        width: 3.5rem;
         content: " ";
         background-image: url('../imgs/about-lines.png');
+        background-repeat: no-repeat;
     }
     h2::after {
         display: block;
-        height: 0.3125rem;
-        width: 3.125rem;
+        position: absolute;
+        left: 45%;
+        height: 0.5rem;
+        width: 3.5rem;
         content: " ";
         background-image: url('../imgs/about-lines.png');
+        background-repeat: no-repeat;
     }
     h3 {
         text-align: left;
@@ -34,13 +42,22 @@
     }
     h3::after {
         display: block;
-        height: 0.3125rem;
-        width: 3.125rem;
+        position: absolute;
+        left: 12.5%;
+        height: 0.5rem;
+        width: 3.5rem;
         content: " ";
         background-image: url('../imgs/about-lines.png');
+        background-repeat: no-repeat;
     }
     h4 {
-        margin-bottom: 0;
         color: $primaryGrey;
+    }
+    h3 + h4 {
+        margin-top: 2.25rem;
+    }
+    h3 ~ h4 {
+        text-align: left;
+        margin-left: 2rem;
     }
 }
