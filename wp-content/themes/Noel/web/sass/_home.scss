@@ -113,6 +113,8 @@
             transform: translateY(-50%);
             width: 100%;
             z-index: 2;
+            padding-left: 6rem;
+            padding-right: 6rem;
             h1 {
                 color: $white;
             }
@@ -242,10 +244,14 @@
     .img-slider {
         height: 20rem;
     }
-    .share-transform-container {
-        .share-transform-content {
+    .img-slider .slide .img-text h1 {
+        font-size: 1.125rem;
+    }
+    .img-slider .slide .img-text p {
+        font-size: 0.9rem;
+    }
+    .share-transform-container .share-transform-content {
             margin-top: 0.5rem;
-        }
     }
     .share {
         h1 {
@@ -267,16 +273,6 @@
         color: $white;
         margin-top: -0.5rem;
         font-size: .9rem;
-    }
-    .slide {
-        .img-text {
-            h1 {
-                font-size: 1.125rem;
-            }
-            p {
-                font-size: 0.9rem;
-            }
-        }
     }
 }
 
@@ -284,13 +280,17 @@
     .img-slider {
         height: 30rem;
     }
+    .img-slider .slide .img-text h1 {
+        font-size: 1.5rem;
+    }
+    .img-slider .slide .img-text p {
+        font-size: 1.25rem;
+    }
     .footer-info {
         margin-top: .25rem;
     }
-    .share-transform-container {
-        .share-transform-content {
+    .share-transform-container .share-transform-content {
             margin-top: 0.5rem;
-        }
     }
     .share {
         h1 {
@@ -312,15 +312,5 @@
         color: $white;
         margin-top: -0.5rem;
         font-size: .9rem;
-    }
-    .slide {
-        .img-text {
-            h1 {
-                font-size: 1.5rem;
-            }
-            p {
-                font-size: 1.25rem;
-            }
-        }
     }
 }
