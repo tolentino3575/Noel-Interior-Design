@@ -1,0 +1,31 @@
+@import "settings";
+
+.left-column {
+    padding-top: 3.875rem;
+    background-color: $left-column-yellow;
+    outline: 4px solid $white;
+    outline-offset: -0.6875rem;
+    overflow: scroll;
+    text-align: center;
+    p {
+        text-align: left;
+        line-height: 1.15rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-right: 1rem;
+    }
+    h1::after {
+        background-image: url('/web/imgs/footer-lines.png');
+    }
+    h3 {
+        text-align: left;
+        margin-left: 2rem;
+        h3::after {
+            background-image: url('/web/imgs/footer-lines.png');
+        }
+    }
+    h4 {
+        margin-bottom: 0;
+        color: $primaryGrey;
+    }
+}
