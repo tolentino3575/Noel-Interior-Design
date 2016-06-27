@@ -8,11 +8,11 @@
     overflow: scroll;
     text-align: center;
     position: relative;
+    padding-left: 3.125rem;
+    padding-right: 1.875rem;
     p {
         text-align: left;
         line-height: 1.15rem;
-        margin-left: 2rem;
-        margin-right: 1rem;
         margin-bottom: 2.938rem;
         margin-top: 2.25rem;
     }
@@ -38,12 +38,11 @@
     }
     h3 {
         text-align: left;
-        margin-left: 2rem;
     }
     h3::after {
         display: block;
         position: absolute;
-        left: 12.5%;
+        left: 14%;
         height: 0.5rem;
         width: 3.5rem;
         content: " ";
@@ -58,6 +57,5 @@
     }
     h3 ~ h4 {
         text-align: left;
-        margin-left: 2rem;
     }
 }
