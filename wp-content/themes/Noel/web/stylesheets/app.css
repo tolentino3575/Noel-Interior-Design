@@ -5751,12 +5751,26 @@ table.hover tr:nth-of-type(even):hover {
     margin-left: 2rem;
     margin-right: 1rem; }
   .left-column h1::after {
-    background-image: url("/web/imgs/footer-lines.png"); }
+    display: inline-block;
+    height: 0.3125rem;
+    width: 3.125rem;
+    content: " ";
+    background-image: url("../imgs/about-lines.png"); }
+  .left-column h2::after {
+    display: inline-block;
+    height: 0.3125rem;
+    width: 3.125rem;
+    content: " ";
+    background-image: url("../imgs/about-lines.png"); }
   .left-column h3 {
     text-align: left;
     margin-left: 2rem; }
-    .left-column h3 h3::after {
-      background-image: url("/web/imgs/footer-lines.png"); }
+  .left-column h3::after {
+    display: inline-block;
+    height: 0.3125rem;
+    width: 3.125rem;
+    content: " ";
+    background-image: url("../imgs/about-lines.png"); }
   .left-column h4 {
     margin-bottom: 0;
     color: #787878; }
@@ -5820,16 +5834,19 @@ table.hover tr:nth-of-type(even):hover {
   text-align: left;
   display: inline-block; }
   .header-icons .ig-head {
+    margin-right: 0.4rem;
     display: inline-block;
     width: 1.875rem;
     height: 1.875rem;
     background-image: url("../imgs/instagram-head.png"); }
   .header-icons .pin-head {
+    margin-right: 0.4rem;
     display: inline-block;
     width: 1.875rem;
     height: 1.875rem;
     background-image: url("../imgs/pinterest-head.png"); }
   .header-icons .fb-head {
+    margin-right: 0.4rem;
     display: inline-block;
     width: 1.875rem;
     height: 1.875rem;
@@ -5891,7 +5908,7 @@ table.hover tr:nth-of-type(even):hover {
       display: inline-block;
       height: 0.8125rem;
       width: 8.625rem;
-      background-image: url("/wp-content/themes/Noel/web/imgs/slider-lines.png");
+      background-image: url("../imgs/slider-lines.png");
       content: " "; }
   .img-slider .img {
     height: 100%;
@@ -5927,16 +5944,19 @@ table.hover tr:nth-of-type(even):hover {
 .share {
   text-align: center; }
   .share .ig-share {
+    margin-right: 0.7rem;
     display: inline-block;
     width: 2.375rem;
     height: 2.375rem;
     background-image: url("../imgs/instagram-foot.png"); }
   .share .pin-share {
+    margin-right: 0.7rem;
     display: inline-block;
     width: 2.375rem;
     height: 2.375rem;
     background-image: url("../imgs/pinterest-foot.png"); }
   .share .fb-share {
+    margin-right: 0.7rem;
     display: inline-block;
     width: 2.375rem;
     height: 2.375rem;

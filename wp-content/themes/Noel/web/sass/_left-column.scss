@@ -15,14 +15,29 @@
         margin-right: 1rem;
     }
     h1::after {
-        background-image: url('/web/imgs/footer-lines.png');
+        display: inline-block;
+        height: 0.3125rem;
+        width: 3.125rem;
+        content: " ";
+        background-image: url('../imgs/about-lines.png');
+    }
+    h2::after {
+        display: inline-block;
+        height: 0.3125rem;
+        width: 3.125rem;
+        content: " ";
+        background-image: url('../imgs/about-lines.png');
     }
     h3 {
         text-align: left;
         margin-left: 2rem;
-        h3::after {
-            background-image: url('/web/imgs/footer-lines.png');
-        }
+    }
+    h3::after {
+    display: inline-block;
+    height: 0.3125rem;
+    width: 3.125rem;
+    content: " ";
+    background-image: url('../imgs/about-lines.png');
     }
     h4 {
         margin-bottom: 0;

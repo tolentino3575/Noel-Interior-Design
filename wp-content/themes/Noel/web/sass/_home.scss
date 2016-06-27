@@ -27,18 +27,21 @@
     text-align: left;
     display: inline-block;
     .ig-head {
+        margin-right: 0.4rem;
         display: inline-block;
         width: 1.875rem;
         height: 1.875rem;
         background-image: url('../imgs/instagram-head.png');
     }
     .pin-head {
+        margin-right: 0.4rem;
         display: inline-block;
         width: 1.875rem;
         height: 1.875rem;
         background-image: url('../imgs/pinterest-head.png');
     }
     .fb-head {
+        margin-right: 0.4rem;
         display: inline-block;
         width: 1.875rem;
         height: 1.875rem;
@@ -122,7 +125,7 @@
             display: inline-block;
             height: 0.8125rem;
             width: 8.625rem;
-            background-image: url('/wp-content/themes/Noel/web/imgs/slider-lines.png');
+            background-image: url('../imgs/slider-lines.png');
             content: " ";
         }
     }
@@ -173,18 +176,21 @@
 .share {
     text-align: center;
     .ig-share {
+        margin-right: 0.7rem;
         display: inline-block;
         width:2.375rem;
         height:2.375rem;
         background-image: url('../imgs/instagram-foot.png');
     }
     .pin-share {
+        margin-right: 0.7rem;
         display: inline-block;
         width:2.375rem;
         height:2.375rem;
         background-image: url('../imgs/pinterest-foot.png');
     }
     .fb-share {
+        margin-right: 0.7rem;
         display: inline-block;
         width:2.375rem;
         height:2.375rem;
