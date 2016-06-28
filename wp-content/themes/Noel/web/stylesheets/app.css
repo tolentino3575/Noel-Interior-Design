@@ -5755,7 +5755,7 @@ table.hover tr:nth-of-type(even):hover {
   .left-column h1::after {
     display: block;
     position: absolute;
-    left: 45%;
+    left: 47%;
     height: 0.5rem;
     width: 3.5rem;
     content: " ";
@@ -5764,7 +5764,7 @@ table.hover tr:nth-of-type(even):hover {
   .left-column h2::after {
     display: block;
     position: absolute;
-    left: 45%;
+    left: 47%;
     height: 0.5rem;
     width: 3.5rem;
     content: " ";
@@ -5788,23 +5788,25 @@ table.hover tr:nth-of-type(even):hover {
   .left-column h3 ~ h4 {
     text-align: left; }
 
-.right-column {
-  padding-right: 0; }
-  .right-column .landscape-top {
+.right-column .landscape-top {
+  margin-bottom: 15px; }
+
+.right-column .mixed .mixed-top {
+  margin-bottom: 15px; }
+
+.right-column .mixed .mixed-middle {
+  margin-bottom: 15px; }
+  .right-column .mixed .mixed-middle .mixed-middle-top {
     margin-bottom: 15px; }
-  .right-column .mixed .mixed-top {
-    margin-bottom: 15px; }
-  .right-column .mixed .mixed-middle {
-    margin-bottom: 15px; }
-    .right-column .mixed .mixed-middle .mixed-middle-top {
-      margin-bottom: 15px; }
-  .right-column .fade {
-    opacity: 1;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out; }
-  .right-column .fade:hover {
-    opacity: 0.5; }
+
+.right-column .fade {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out; }
+
+.right-column .fade:hover {
+  opacity: 0.5; }
 
 @media screen and (max-width: 40em) {
   .right-column {
