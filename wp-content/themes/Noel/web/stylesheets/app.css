@@ -6097,6 +6097,21 @@ table.hover tr:nth-of-type(even):hover {
   content: url("../imgs/prev-arrow.png");
   background-repeat: no-repeat; }
 
+.fancybox-title {
+  visibility: hidden;
+  font-family: Georgia;
+  font-size: 1.75rem;
+  font-style: italic;
+  color: #58595b;
+  text-align: center;
+  top: -0.4rem;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050; }
+
+.fancybox-title-outside-wrap {
+  margin-right: 1.5rem; }
+
 .about-container {
   margin-top: 2.375rem;
   margin-bottom: 0.9375rem; }

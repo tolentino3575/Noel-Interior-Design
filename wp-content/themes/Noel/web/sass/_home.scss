@@ -358,3 +358,20 @@
     content: url("../imgs/prev-arrow.png");
     background-repeat: no-repeat;
 }
+
+.fancybox-title {
+	visibility: hidden;
+	font-family: $header-font-family;
+    font-size: 1.75rem;
+    font-style: italic;
+    color: $bodyFontColor;
+    text-align: center;
+    top: -0.4rem;
+	position: relative;
+	text-shadow: none;
+	z-index: 8050;
+}
+
+.fancybox-title-outside-wrap {
+    margin-right: 1.5rem;
+}

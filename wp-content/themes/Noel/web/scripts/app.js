@@ -22,8 +22,13 @@ jQuery(document).ready(function(){
     jQuery('.fancybox').fancybox({
         helpers: {
             title: {
-                type: 'inside',
+                type: 'outside',
                 position: 'top',
+            },
+            overlay: {
+                css: {
+                    'background-color' : 'rgba(229, 229, 229, 0.2)'
+                }
             }
         },
         tpl: {
