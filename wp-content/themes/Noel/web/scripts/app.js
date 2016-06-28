@@ -14,7 +14,11 @@ jQuery(document).ready(function(){
         jQuery(this).next().slideToggle();
     });
 
-    jQuery('.contact').fancybox();
+    jQuery('.contact').fancybox({
+        tpl: {
+            closeBtn: '<a title="Close" class="fancybox-item fancybox-close my-contact-close" href="javascript:;"></a>'
+        }
+    });
     jQuery('.fancybox').fancybox({
         helpers: {
             title: {
@@ -23,9 +27,9 @@ jQuery(document).ready(function(){
             }
         },
         tpl: {
-            closeBtn: '<a title="Close" class="fancybox-item fancybox-close" href="javascript:;"></a>',
-            next: '<a title="Next" class="fancybox-nav fancybox-next" href="javascript:;"><span></span></a>',
-            prev: '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span></span></a>'
+            closeBtn: '<a title="Close" class="fancybox-item fancybox-close my-close" href="javascript:;"></a>',
+            next: '<a title="Next" class="fancybox-nav fancybox-next my-next" href="javascript:;"><span></span></a>',
+            prev: '<a title="Previous" class="fancybox-nav fancybox-prev my-prev" href="javascript:;"><span></span></a>'
         },
         padding: 0,
     });
