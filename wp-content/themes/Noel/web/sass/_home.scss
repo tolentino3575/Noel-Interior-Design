@@ -6,13 +6,16 @@
 }
 
 //Header
-.menu {
-    text-align: center !important;
+.menu-desktop-container {
+    text-align: center;
     border-top: 2px solid $primaryPink;
     border-bottom: 2px solid $primaryPink;
-    li:hover {
-        color: $secondaryLightGrey;
-        text-decoration: underline;
+    .menu {
+        display: inline-block;
+        li:hover {
+            color: $secondaryLightGrey;
+            text-decoration: underline;
+        }
     }
 }
 

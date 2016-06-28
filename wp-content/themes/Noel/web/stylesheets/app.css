@@ -5830,13 +5830,15 @@ table.hover tr:nth-of-type(even):hover {
   margin-top: 2.375rem;
   margin-bottom: 15px; }
 
-.menu {
-  text-align: center !important;
+.menu-desktop-container {
+  text-align: center;
   border-top: 2px solid #fcdad8;
   border-bottom: 2px solid #fcdad8; }
-  .menu li:hover {
-    color: #dddddd;
-    text-decoration: underline; }
+  .menu-desktop-container .menu {
+    display: inline-block; }
+    .menu-desktop-container .menu li:hover {
+      color: #dddddd;
+      text-decoration: underline; }
 
 .header-container {
   width: 100%;
