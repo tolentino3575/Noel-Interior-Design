@@ -6100,11 +6100,11 @@ table.hover tr:nth-of-type(even):hover {
 .fancybox-title {
   visibility: hidden;
   font-family: Georgia;
-  font-size: 1.75rem;
+  font-size: 1.875rem;
   font-style: italic;
   color: #58595b;
   text-align: center;
-  top: -0.4rem;
+  top: -0.6rem;
   position: relative;
   text-shadow: none;
   z-index: 8050; }

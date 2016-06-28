@@ -27,7 +27,7 @@ jQuery(document).ready(function(){
             },
             overlay: {
                 css: {
-                    'background-color' : 'rgba(229, 229, 229, 0.2)'
+                    'background-color' : 'rgba(255, 255, 255, 0.4)'
                 }
             }
         },

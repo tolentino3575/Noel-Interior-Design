@@ -362,11 +362,12 @@
 .fancybox-title {
 	visibility: hidden;
 	font-family: $header-font-family;
-    font-size: 1.75rem;
+    font-size: 1.875rem;
     font-style: italic;
     color: $bodyFontColor;
+    // color: black;
     text-align: center;
-    top: -0.4rem;
+    top: -0.6rem;
 	position: relative;
 	text-shadow: none;
 	z-index: 8050;
