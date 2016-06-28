@@ -6063,6 +6063,20 @@ table.hover tr:nth-of-type(even):hover {
     margin-top: -0.5rem;
     font-size: .9rem; } }
 
+.fancybox-close {
+  width: 23px;
+  height: 22px;
+  background-image: url("../imgs/x-close.png");
+  background-repeat: no-repeat; }
+
+.fancybox-next {
+  background-image: url("../imgs/next-arrow.png");
+  background-repeat: no-repeat; }
+
+.fancybox-prev {
+  background-image: url("../imgs/prev-arrow.png");
+  background-repeat: no-repeat; }
+
 .about-container {
   margin-top: 2.375rem;
   margin-bottom: 0.9375rem; }
