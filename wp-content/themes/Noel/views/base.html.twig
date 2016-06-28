@@ -19,13 +19,13 @@
 
     {% block content %}
         <div class="two-column content">
-            <div class="row">
+            <div class="row column">
                 <div class="large-5 columns left-column">
                     <div class="row column">
                         {% if SP.ACF.get_field('subtitle') %}
                             <h4>{{ SP.ACF.get_field('subtitle') }}</h4>
                         {% endif %}
-                        {{ SP.ACF.get_field('content') }}
+                        {{ SP.ACF.get_field('left_column_content') }}
                         {% if SP.WordPress.getType() == "post" or SP.WordPress.getType() == "portfolio" %}
                             <div class="buttons">
                                 {{ SP.WordPress.getPreviousLink('%link', '&lt; Previous') }}
@@ -45,32 +45,32 @@
                     {% elseif SP.ACF.get_field('right_column_layout') == 'landscape' %}
                         <div class="landscape">
                             {% for row in SP.ACF.get_field('landscape') %}
-                                <div class="row column">
-                                    <img src="{{ row.large.url }}" alt="">
+                                <div class="row column landscape-top">
+                                    <a><img src="{{ row.large.url }}" alt="" class="fade"></a>
                                 </div>
                                 <div class="row">
-                                    <div class="medium-6 columns"><img src="{{ row.small_left.url }}" alt=""></div>
-                                    <div class="medium-6 columns"><img src="{{ row.small_right.url }}" alt=""></div>
+                                    <div class="medium-6 columns"><a><img src="{{ row.small_left.url }}" alt="" class="fade"></a></div>
+                                    <div class="medium-6 columns"><a><img src="{{ row.small_right.url }}" alt="" class="fade"></a></div>
                                 </div>
                             {% endfor %}
                         </div>
                     {% elseif SP.ACF.get_field('right_column_layout') == 'mixed' %}
                         <div class="mixed">
                             {% for row in SP.ACF.get_field('mixed') %}
-                                <div class="row column">
-                                    <img src="{{ row.large_landscape.url }}" alt="">
+                                <div class="row column mixed-top">
+                                    <a><img src="{{ row.large_landscape.url }}" alt="" class="fade"></a>
                                 </div>
-                                <div class="row">
-                                    <div class="medium-6 columns"><img src="{{ row.large_portrait.url }}" alt=""></div>
+                                <div class="row mixed-middle">
+                                    <div class="medium-6 columns"><a><img src="{{ row.large_portrait.url }}" alt="" class="fade"></a></div>
                                     <div class="medium-6 columns">
-                                        <img src="{{ row.top_small_landscape.url }}" alt="">
-                                        <img src="{{ row.bottom_small_landscape.url }}" alt="">
+                                        <a><img src="{{ row.top_small_landscape.url }}" alt="" class="mixed-middle-top fade"></a>
+                                        <a><img src="{{ row.bottom_small_landscape.url }}" alt="" class="fade"></a>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="medium-4 columns"><img src="{{ row.left_square.url }}" alt=""></div>
-                                    <div class="medium-4 columns"><img src="{{ row.center_square.url }}" alt=""></div>
-                                    <div class="medium-4 columns"><img src="{{ row.right_square.url }}" alt=""></div>
+                                    <div class="medium-4 columns fade"><a><img src="{{ row.left_square.url }}" alt=""></a></div>
+                                    <div class="medium-4 columns fade"><a><img src="{{ row.center_square.url }}" alt=""></a></div>
+                                    <div class="medium-4 columns fade"><a><img src="{{ row.right_square.url }}" alt=""></a></div>
                                 </div>
                             {% endfor %}
                         </div>

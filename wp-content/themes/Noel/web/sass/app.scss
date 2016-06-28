@@ -3,6 +3,8 @@ $fa-font-path: "../libs/font-awesome/fonts";
 @import "settings";
 @import "foundation";
 @include foundation-everything();
+@import "left-column";
+@import "right-column";
 @import "home";
 @import "about";
 @import "services";
