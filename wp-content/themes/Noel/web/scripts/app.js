@@ -22,9 +22,6 @@ jQuery(document).ready(function(){
                 position: 'top',
             }
         },
-        closeBtn: true,
-        modal: false,
-        // closeClick: true,
-        nextClick: true,
+        padding: 0,
     });
 });
