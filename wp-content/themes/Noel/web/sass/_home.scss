@@ -12,6 +12,7 @@
     border-bottom: 2px solid $primaryPink;
     .menu {
         display: inline-block;
+        text-transform: uppercase;
         li:hover {
             color: $secondaryLightGrey;
             text-decoration: underline;
@@ -35,6 +36,7 @@
         width: 1.875rem;
         height: 1.875rem;
         background-image: url('../imgs/instagram-head.png');
+        background-repeat: no-repeat;
     }
     .pin-head {
         margin-right: 0.4rem;
@@ -42,6 +44,7 @@
         width: 1.875rem;
         height: 1.875rem;
         background-image: url('../imgs/pinterest-head.png');
+        background-repeat: no-repeat;
     }
     .fb-head {
         margin-right: 0.4rem;
@@ -49,12 +52,14 @@
         width: 1.875rem;
         height: 1.875rem;
         background-image: url('../imgs/facebook-head.png');
+        background-repeat: no-repeat;
     }
     .goog-head {
         display: inline-block;
         width: 1.875rem;
         height: 1.875rem;
         background-image: url('../imgs/google-head.png');
+        background-repeat: no-repeat;
     }
 }
 
@@ -186,6 +191,7 @@
         width:2.375rem;
         height:2.375rem;
         background-image: url('../imgs/instagram-foot.png');
+        background-repeat: no-repeat;
     }
     .pin-share {
         margin-right: 0.7rem;
@@ -193,6 +199,7 @@
         width:2.375rem;
         height:2.375rem;
         background-image: url('../imgs/pinterest-foot.png');
+        background-repeat: no-repeat;
     }
     .fb-share {
         margin-right: 0.7rem;
@@ -200,12 +207,14 @@
         width:2.375rem;
         height:2.375rem;
         background-image: url('../imgs/facebook-foot.png');
+        background-repeat: no-repeat;
     }
     .goog-share {
         display: inline-block;
         width:2.375rem;
         height: 2.375rem;
         background-image: url('../imgs/google-foot.png');
+        background-repeat: no-repeat;
     }
 }
 

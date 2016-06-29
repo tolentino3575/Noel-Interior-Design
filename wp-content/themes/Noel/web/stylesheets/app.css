@@ -5755,7 +5755,10 @@ table.hover tr:nth-of-type(even):hover {
   .left-column h1::after {
     display: block;
     position: absolute;
-    left: 45%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     height: 0.5rem;
     width: 3.5rem;
     content: " ";
@@ -5764,7 +5767,10 @@ table.hover tr:nth-of-type(even):hover {
   .left-column h2::after {
     display: block;
     position: absolute;
-    left: 45%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     height: 0.5rem;
     width: 3.5rem;
     content: " ";
@@ -5835,7 +5841,8 @@ table.hover tr:nth-of-type(even):hover {
   border-top: 2px solid #fcdad8;
   border-bottom: 2px solid #fcdad8; }
   .menu-desktop-container .menu {
-    display: inline-block; }
+    display: inline-block;
+    text-transform: uppercase; }
     .menu-desktop-container .menu li:hover {
       color: #dddddd;
       text-decoration: underline; }
@@ -5853,24 +5860,28 @@ table.hover tr:nth-of-type(even):hover {
     display: inline-block;
     width: 1.875rem;
     height: 1.875rem;
-    background-image: url("../imgs/instagram-head.png"); }
+    background-image: url("../imgs/instagram-head.png");
+    background-repeat: no-repeat; }
   .header-icons .pin-head {
     margin-right: 0.4rem;
     display: inline-block;
     width: 1.875rem;
     height: 1.875rem;
-    background-image: url("../imgs/pinterest-head.png"); }
+    background-image: url("../imgs/pinterest-head.png");
+    background-repeat: no-repeat; }
   .header-icons .fb-head {
     margin-right: 0.4rem;
     display: inline-block;
     width: 1.875rem;
     height: 1.875rem;
-    background-image: url("../imgs/facebook-head.png"); }
+    background-image: url("../imgs/facebook-head.png");
+    background-repeat: no-repeat; }
   .header-icons .goog-head {
     display: inline-block;
     width: 1.875rem;
     height: 1.875rem;
-    background-image: url("../imgs/google-head.png"); }
+    background-image: url("../imgs/google-head.png");
+    background-repeat: no-repeat; }
 
 .header-phone {
   width: 50%;
@@ -5965,24 +5976,28 @@ table.hover tr:nth-of-type(even):hover {
     display: inline-block;
     width: 2.375rem;
     height: 2.375rem;
-    background-image: url("../imgs/instagram-foot.png"); }
+    background-image: url("../imgs/instagram-foot.png");
+    background-repeat: no-repeat; }
   .share .pin-share {
     margin-right: 0.7rem;
     display: inline-block;
     width: 2.375rem;
     height: 2.375rem;
-    background-image: url("../imgs/pinterest-foot.png"); }
+    background-image: url("../imgs/pinterest-foot.png");
+    background-repeat: no-repeat; }
   .share .fb-share {
     margin-right: 0.7rem;
     display: inline-block;
     width: 2.375rem;
     height: 2.375rem;
-    background-image: url("../imgs/facebook-foot.png"); }
+    background-image: url("../imgs/facebook-foot.png");
+    background-repeat: no-repeat; }
   .share .goog-share {
     display: inline-block;
     width: 2.375rem;
     height: 2.375rem;
-    background-image: url("../imgs/google-foot.png"); }
+    background-image: url("../imgs/google-foot.png");
+    background-repeat: no-repeat; }
 
 .transform {
   border-left: 2px solid #dddddd; }
@@ -6383,12 +6398,12 @@ table.hover tr:nth-of-type(even):hover {
   box-shadow: none; }
 
 .fancybox-contact-content {
+  display: none;
   background-color: #fefefe;
   border: 2px solid #a5acaf;
   padding-top: 3.938rem;
   padding-bottom: 4.25rem;
   padding-left: 4.063rem;
-  padding-right: 5.375rem;
   width: 75rem;
   text-align: center; }
   .fancybox-contact-content .contact-main-row {
@@ -6397,18 +6412,21 @@ table.hover tr:nth-of-type(even):hover {
   .fancybox-contact-content .left-contact-column {
     background-color: #fcdad8;
     border: 2px solid black;
-    padding-left: 3.563rem;
-    padding-right: 3.563rem;
-    height: 32.63rem; }
+    height: 32.63rem;
+    position: relative;
+    text-align: center; }
     .fancybox-contact-content .left-contact-column .contact-logo {
+      display: inline-block;
       position: absolute;
-      margin-right: 3.563rem;
+      top: 47%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
       height: 5.125rem;
       width: 15.75rem;
       background-image: url("../imgs/contact-logo.png");
       background-repeat: no-repeat; }
   .fancybox-contact-content .right-contact-column {
-    padding-left: 4.688rem;
     position: relative; }
     .fancybox-contact-content .right-contact-column h4 {
       color: #787878; }
@@ -6416,7 +6434,10 @@ table.hover tr:nth-of-type(even):hover {
       margin-top: 1.438rem;
       display: block;
       position: absolute;
-      left: 52%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
       height: 0.5rem;
       width: 3.2rem;
       background-image: url("../imgs/contact-lines.png");

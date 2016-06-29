@@ -61,12 +61,13 @@
 }
 
 .fancybox-contact-content {
+    display: none;
     background-color: $white;
     border: 2px solid $secondaryDarkGrey;
     padding-top: 3.938rem;
     padding-bottom: 4.25rem;
     padding-left: 4.063rem;
-    padding-right: 5.375rem;
+    // padding-right: 5.375rem;
     width: 75rem;
     text-align: center;
     .contact-main-row {
@@ -76,12 +77,17 @@
     .left-contact-column {
         background-color: $primaryPink;
         border: 2px solid black;
-        padding-left: 3.563rem;
-        padding-right: 3.563rem;
         height: 32.63rem;
+        position: relative;
+        text-align: center;
         .contact-logo {
+            display: inline-block;
             position: absolute;
-            margin-right: 3.563rem;
+            top: 47%;
+            transform: translate(-50%, -50%);
+            // width: 100%;
+            // z-index: 2;
+            // margin-right: 3.563rem;
             height: 5.125rem;
             width: 15.75rem;
             background-image: url('../imgs/contact-logo.png');
@@ -90,7 +96,6 @@
     }
     .right-contact-column {
         // border: 2px solid black;
-        padding-left: 4.688rem;
         position: relative;
         h4 {
             color: $primaryGrey;
@@ -99,7 +104,8 @@
             margin-top: 1.438rem;
             display: block;
             position: absolute;
-            left: 52%;
+            left: 50%;
+            transform: translateX(-50%);
             height: 0.5rem;
             width: 3.2rem;
             background-image: url('../imgs/contact-lines.png');
