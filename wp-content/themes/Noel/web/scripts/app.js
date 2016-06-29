@@ -14,7 +14,7 @@ jQuery(document).ready(function(){
         jQuery(this).next().slideToggle();
     });
 
-    jQuery('.contact').fancybox({
+    jQuery('.contact a').fancybox({
         helpers: {
             overlay: {
                 css: {
@@ -24,7 +24,8 @@ jQuery(document).ready(function(){
         },
         tpl: {
             closeBtn: '<a title="Close" class="fancybox-item fancybox-close my-contact-close" href="javascript:;"></a>'
-        }
+        },
+        padding: 0,
     });
     jQuery('.fancybox').fancybox({
         helpers: {

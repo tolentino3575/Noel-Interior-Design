@@ -6063,6 +6063,9 @@ table.hover tr:nth-of-type(even):hover {
     margin-top: -0.5rem;
     font-size: .9rem; } }
 
+.homepage {
+  background-image: url("../imgs/logo.png"); }
+
 .about-container {
   margin-top: 2.375rem;
   margin-bottom: 0.9375rem; }
@@ -6337,8 +6340,8 @@ table.hover tr:nth-of-type(even):hover {
 
 .my-contact-close {
   position: absolute;
-  right: 0.15rem;
-  top: 1rem;
+  right: 1.438rem;
+  top: 1.75rem;
   width: 1.438rem;
   height: 1.438rem;
   content: url("../imgs/contact-x-close.png");
@@ -6374,6 +6377,60 @@ table.hover tr:nth-of-type(even):hover {
 
 .fancybox-title-outside-wrap {
   margin-right: 1.5rem; }
+
+.fancybox-opened .fancybox-skin {
+  border-radius: 0;
+  box-shadow: none; }
+
+.fancybox-contact-content {
+  background-color: #fefefe;
+  border: 2px solid #a5acaf;
+  padding-top: 3.938rem;
+  padding-bottom: 4.25rem;
+  padding-left: 4.063rem;
+  padding-right: 5.375rem;
+  width: 75rem;
+  text-align: center; }
+  .fancybox-contact-content .contact-main-row {
+    padding-left: 0;
+    padding-right: 0; }
+  .fancybox-contact-content .left-contact-column {
+    background-color: #fcdad8;
+    border: 2px solid black;
+    padding-left: 3.563rem;
+    padding-right: 3.563rem;
+    height: 32.63rem; }
+    .fancybox-contact-content .left-contact-column .contact-logo {
+      position: absolute;
+      margin-right: 3.563rem;
+      height: 5.125rem;
+      width: 15.75rem;
+      background-image: url("../imgs/contact-logo.png");
+      background-repeat: no-repeat; }
+  .fancybox-contact-content .right-contact-column {
+    padding-left: 4.688rem;
+    position: relative; }
+    .fancybox-contact-content .right-contact-column h4 {
+      color: #787878; }
+    .fancybox-contact-content .right-contact-column h4::after {
+      margin-top: 1.438rem;
+      display: block;
+      position: absolute;
+      left: 52%;
+      height: 0.5rem;
+      width: 3.2rem;
+      background-image: url("../imgs/contact-lines.png");
+      background-repeat: no-repeat;
+      content: " "; }
+
+.contact-button {
+  margin-top: 10rem;
+  background-color: #a9aaaa;
+  border: 2px solid #fefefe;
+  box-shadow: 0 0 0 2px #a9aaaa;
+  height: 2.375rem;
+  width: 5.625rem;
+  color: #fefefe; }
 
 .alignright {
   float: right;

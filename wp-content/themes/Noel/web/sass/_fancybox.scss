@@ -12,8 +12,8 @@
 
 .my-contact-close {
     position: absolute;
-    right: 0.15rem;
-    top: 1rem;
+    right: 1.438rem;
+    top: 1.75rem;
     width: 1.438rem;
     height: 1.438rem;
     content: url("../imgs/contact-x-close.png");
@@ -53,4 +53,68 @@
 
 .fancybox-title-outside-wrap {
     margin-right: 1.5rem;
+}
+
+.fancybox-opened .fancybox-skin {
+	border-radius: 0;
+    box-shadow: none;
+}
+
+.fancybox-contact-content {
+    background-color: $white;
+    border: 2px solid $secondaryDarkGrey;
+    padding-top: 3.938rem;
+    padding-bottom: 4.25rem;
+    padding-left: 4.063rem;
+    padding-right: 5.375rem;
+    width: 75rem;
+    text-align: center;
+    .contact-main-row {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .left-contact-column {
+        background-color: $primaryPink;
+        border: 2px solid black;
+        padding-left: 3.563rem;
+        padding-right: 3.563rem;
+        height: 32.63rem;
+        .contact-logo {
+            position: absolute;
+            margin-right: 3.563rem;
+            height: 5.125rem;
+            width: 15.75rem;
+            background-image: url('../imgs/contact-logo.png');
+            background-repeat: no-repeat;
+        }
+    }
+    .right-contact-column {
+        // border: 2px solid black;
+        padding-left: 4.688rem;
+        position: relative;
+        h4 {
+            color: $primaryGrey;
+        }
+        h4::after {
+            margin-top: 1.438rem;
+            display: block;
+            position: absolute;
+            left: 52%;
+            height: 0.5rem;
+            width: 3.2rem;
+            background-image: url('../imgs/contact-lines.png');
+            background-repeat: no-repeat;
+            content: " ";
+        }
+    }
+}
+
+.contact-button {
+    margin-top: 10rem;
+    background-color: $anchorColor;
+    border: 2px solid $white;
+    box-shadow: 0 0 0 2px $anchorColor;
+    height: 2.375rem;
+    width: 5.625rem;
+    color: $white;
 }
