@@ -5,14 +5,20 @@
     margin-bottom: map-get($grid-column-gutter, medium);
 }
 
+.contact {
+}
+
 //Header
-.menu {
-    text-align: center !important;
+.menu-desktop-container {
+    text-align: center;
     border-top: 2px solid $primaryPink;
     border-bottom: 2px solid $primaryPink;
-    li:hover {
-        color: $secondaryLightGrey;
-        text-decoration: underline;
+    .menu {
+        display: inline-block;
+        li:hover {
+            color: $secondaryLightGrey;
+            text-decoration: underline;
+        }
     }
 }
 
@@ -313,4 +319,60 @@
         margin-top: -0.5rem;
         font-size: .9rem;
     }
+}
+
+.my-close {
+    position: absolute;
+    right: 0.15rem;
+    top: -1.75rem;
+    width: 1.438rem;
+    height: 1.438rem;
+    content: url("../imgs/x-close.png");
+    background-image: none;
+}
+
+.my-contact-close {
+    position: absolute;
+    right: 0.15rem;
+    top: -1.75rem;
+    width: 1.438rem;
+    height: 1.438rem;
+    content: url("../imgs/x-close.png");
+    background-image: none;
+}
+
+.my-next {
+    width: 1.563rem;
+    height: 3.063rem;
+    top: 45%;
+    right: 2rem;
+    content: url("../imgs/next-arrow.png");
+    background-repeat: no-repeat;
+}
+
+.my-prev {
+    width: 1.563rem;
+    height: 3.063rem;
+    top: 45%;
+    left: 2rem;
+    content: url("../imgs/prev-arrow.png");
+    background-repeat: no-repeat;
+}
+
+.fancybox-title {
+	visibility: hidden;
+	font-family: $header-font-family;
+    font-size: 1.875rem;
+    font-style: italic;
+    color: $bodyFontColor;
+    // color: black;
+    text-align: center;
+    top: -0.6rem;
+	position: relative;
+	text-shadow: none;
+	z-index: 8050;
+}
+
+.fancybox-title-outside-wrap {
+    margin-right: 1.5rem;
 }

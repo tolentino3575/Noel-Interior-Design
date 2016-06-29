@@ -5830,13 +5830,15 @@ table.hover tr:nth-of-type(even):hover {
   margin-top: 2.375rem;
   margin-bottom: 15px; }
 
-.menu {
-  text-align: center !important;
+.menu-desktop-container {
+  text-align: center;
   border-top: 2px solid #fcdad8;
   border-bottom: 2px solid #fcdad8; }
-  .menu li:hover {
-    color: #dddddd;
-    text-decoration: underline; }
+  .menu-desktop-container .menu {
+    display: inline-block; }
+    .menu-desktop-container .menu li:hover {
+      color: #dddddd;
+      text-decoration: underline; }
 
 .header-container {
   width: 100%;
@@ -6060,6 +6062,55 @@ table.hover tr:nth-of-type(even):hover {
     color: #fefefe;
     margin-top: -0.5rem;
     font-size: .9rem; } }
+
+.my-close {
+  position: absolute;
+  right: 0.15rem;
+  top: -1.75rem;
+  width: 1.438rem;
+  height: 1.438rem;
+  content: url("../imgs/x-close.png");
+  background-image: none; }
+
+.my-contact-close {
+  position: absolute;
+  right: 0.15rem;
+  top: -1.75rem;
+  width: 1.438rem;
+  height: 1.438rem;
+  content: url("../imgs/x-close.png");
+  background-image: none; }
+
+.my-next {
+  width: 1.563rem;
+  height: 3.063rem;
+  top: 45%;
+  right: 2rem;
+  content: url("../imgs/next-arrow.png");
+  background-repeat: no-repeat; }
+
+.my-prev {
+  width: 1.563rem;
+  height: 3.063rem;
+  top: 45%;
+  left: 2rem;
+  content: url("../imgs/prev-arrow.png");
+  background-repeat: no-repeat; }
+
+.fancybox-title {
+  visibility: hidden;
+  font-family: Georgia;
+  font-size: 1.875rem;
+  font-style: italic;
+  color: #58595b;
+  text-align: center;
+  top: -0.6rem;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050; }
+
+.fancybox-title-outside-wrap {
+  margin-right: 1.5rem; }
 
 .about-container {
   margin-top: 2.375rem;
