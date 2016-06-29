@@ -15,6 +15,13 @@ jQuery(document).ready(function(){
     });
 
     jQuery('.contact').fancybox({
+        helpers: {
+            overlay: {
+                css: {
+                    'background' : 'rgba(255, 255, 255, 0.9)'
+                }
+            }
+        },
         tpl: {
             closeBtn: '<a title="Close" class="fancybox-item fancybox-close my-contact-close" href="javascript:;"></a>'
         }
@@ -27,7 +34,7 @@ jQuery(document).ready(function(){
             },
             overlay: {
                 css: {
-                    'background-color' : 'rgba(255, 255, 255, 0.4)'
+                    'background' : 'rgba(255, 255, 255, 0.9)'
                 }
             }
         },
