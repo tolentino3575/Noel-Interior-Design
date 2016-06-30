@@ -1,0 +1,10 @@
+<a href="{{ SP.WordPress.URL() }}" class="teaser">
+    {{ SP.WordPress.featuredImage() }}
+    <div class="content">
+        {% if SP.ACF.get_field('subtitle') %}
+            <h3>{{ SP.ACF.get_field('subtitle') }}</h3>
+        {% endif %}
+        <h2>{{ SP.WordPress.title() }}</h2>
+    </div>
+    <div class="border"></div>
+</a>
