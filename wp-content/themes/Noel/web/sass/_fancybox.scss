@@ -76,7 +76,9 @@
     }
     .left-contact-column {
         background-color: $primaryPink;
-        border: 2px solid black;
+        border: 7px solid white;
+        outline: 1px solid black;
+        box-shadow:inset 0 0 0 1px black;
         height: 32.63rem;
         position: relative;
         text-align: center;

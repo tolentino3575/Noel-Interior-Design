@@ -5754,11 +5754,7 @@ table.hover tr:nth-of-type(even):hover {
     margin-top: 2.25rem; }
   .left-column h1::after {
     display: block;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    margin: 0 auto;
     height: 0.5rem;
     width: 3.5rem;
     content: " ";
@@ -5766,11 +5762,7 @@ table.hover tr:nth-of-type(even):hover {
     background-repeat: no-repeat; }
   .left-column h2::after {
     display: block;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    margin: 0 auto;
     height: 0.5rem;
     width: 3.5rem;
     content: " ";
@@ -5793,6 +5785,18 @@ table.hover tr:nth-of-type(even):hover {
     margin-top: 2.25rem; }
   .left-column h3 ~ h4 {
     text-align: left; }
+
+@media screen and (max-width: 40em) {
+  .left-column h3::after {
+    display: block;
+    position: absolute;
+    left: 10%; } }
+
+@media screen and (min-width: 40.0625em) and (max-width: 64em) {
+  .left-column h3::after {
+    display: block;
+    position: absolute;
+    left: 7%; } }
 
 .right-column {
   padding-right: 0; }
@@ -6411,7 +6415,9 @@ table.hover tr:nth-of-type(even):hover {
     padding-right: 0; }
   .fancybox-contact-content .left-contact-column {
     background-color: #fcdad8;
-    border: 2px solid black;
+    border: 7px solid white;
+    outline: 1px solid black;
+    box-shadow: inset 0 0 0 1px black;
     height: 32.63rem;
     position: relative;
     text-align: center; }

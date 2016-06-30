@@ -18,9 +18,7 @@
     }
     h1::after {
         display: block;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 0 auto;
         height: 0.5rem;
         width: 3.5rem;
         content: " ";
@@ -29,9 +27,7 @@
     }
     h2::after {
         display: block;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 0 auto;
         height: 0.5rem;
         width: 3.5rem;
         content: " ";
@@ -59,5 +55,21 @@
     }
     h3 ~ h4 {
         text-align: left;
+    }
+}
+
+@include breakpoint(small only) {
+    .left-column h3::after {
+        display: block;
+        position: absolute;
+        left: 10%;
+    }
+}
+
+@include breakpoint(medium only) {
+    .left-column h3::after {
+        display: block;
+        position: absolute;
+        left: 7%;
     }
 }
