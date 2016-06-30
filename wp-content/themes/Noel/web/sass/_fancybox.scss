@@ -67,9 +67,8 @@
     padding-top: 3.938rem;
     padding-bottom: 4.25rem;
     padding-left: 4.063rem;
-    // padding-right: 5.375rem;
-    width: 75rem;
     text-align: center;
+    width: 75rem;
     .contact-main-row {
         padding-left: 0;
         padding-right: 0;
@@ -87,9 +86,6 @@
             position: absolute;
             top: 47%;
             transform: translate(-50%, -50%);
-            // width: 100%;
-            // z-index: 2;
-            // margin-right: 3.563rem;
             height: 5.125rem;
             width: 15.75rem;
             background-image: url('../imgs/contact-logo.png');
@@ -97,7 +93,6 @@
         }
     }
     .right-contact-column {
-        // border: 2px solid black;
         position: relative;
         h4 {
             color: $primaryGrey;
@@ -125,4 +120,30 @@
     height: 2.375rem;
     width: 5.625rem;
     color: $white;
+}
+
+@include breakpoint(small only) {
+    .fancybox-contact-content {
+        width: auto;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .fancybox-contact-content .left-contact-column {
+        height: 10rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@include breakpoint(medium only) {
+    .fancybox-contact-content {
+        width: auto;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .fancybox-contact-content .left-contact-column {
+        height: 10rem;
+        margin-bottom: 1.5rem;
+    }
 }
