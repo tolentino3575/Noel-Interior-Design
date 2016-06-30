@@ -55,7 +55,9 @@
         {{
         SP.WordPress.menu({
             'theme_location': 'primary_menu',
-            'container_class': 'menu-desktop-container'
+            'container_class': 'menu-desktop-container menu-centered',
+            'walker': walkers.dropdown,
+            'items_wrap': '<ul id="%1$s" class="%2$s dropdown menu" data-dropdown-menu>%3$s</ul>',
         })
         }}
     </div>

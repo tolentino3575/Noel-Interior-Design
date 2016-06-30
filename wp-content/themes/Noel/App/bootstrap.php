@@ -16,4 +16,5 @@ $loader->load('App/config/config.yml');
 $twig = $container->get('twig.environment');
 $twig->addGlobal('walkers', [
     'drilldown' => new \Supertheme\WordPress\DrillDownMenuWalker(),
+    'dropdown' => new \Supertheme\WordPress\DropDownMenuWalker(),
 ]);
