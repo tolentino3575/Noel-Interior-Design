@@ -1,0 +1,126 @@
+@import "settings";
+
+.my-close {
+    position: absolute;
+    right: 0.15rem;
+    top: -1.75rem;
+    width: 1.438rem;
+    height: 1.438rem;
+    content: url("../imgs/x-close.png");
+    background-image: none;
+}
+
+.my-contact-close {
+    position: absolute;
+    right: 1.438rem;
+    top: 1.75rem;
+    width: 1.438rem;
+    height: 1.438rem;
+    content: url("../imgs/contact-x-close.png");
+    background-image: none;
+}
+
+.my-next {
+    width: 1.563rem;
+    height: 3.063rem;
+    top: 45%;
+    right: 2rem;
+    content: url("../imgs/next-arrow.png");
+    background-repeat: no-repeat;
+}
+
+.my-prev {
+    width: 1.563rem;
+    height: 3.063rem;
+    top: 45%;
+    left: 2rem;
+    content: url("../imgs/prev-arrow.png");
+    background-repeat: no-repeat;
+}
+
+.fancybox-title {
+	visibility: hidden;
+	font-family: $header-font-family;
+    font-size: 1.875rem;
+    font-style: italic;
+    color: $bodyFontColor;
+    text-align: center;
+    top: -0.6rem;
+	position: relative;
+	text-shadow: none;
+	z-index: 8050;
+}
+
+.fancybox-title-outside-wrap {
+    margin-right: 1.5rem;
+}
+
+.fancybox-opened .fancybox-skin {
+	border-radius: 0;
+    box-shadow: none;
+}
+
+.fancybox-contact-content {
+    display: none;
+    background-color: $white;
+    border: 2px solid $secondaryDarkGrey;
+    padding-top: 3.938rem;
+    padding-bottom: 4.25rem;
+    padding-left: 4.063rem;
+    // padding-right: 5.375rem;
+    width: 75rem;
+    text-align: center;
+    .contact-main-row {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .left-contact-column {
+        background-color: $primaryPink;
+        border: 2px solid black;
+        height: 32.63rem;
+        position: relative;
+        text-align: center;
+        .contact-logo {
+            display: inline-block;
+            position: absolute;
+            top: 47%;
+            transform: translate(-50%, -50%);
+            // width: 100%;
+            // z-index: 2;
+            // margin-right: 3.563rem;
+            height: 5.125rem;
+            width: 15.75rem;
+            background-image: url('../imgs/contact-logo.png');
+            background-repeat: no-repeat;
+        }
+    }
+    .right-contact-column {
+        // border: 2px solid black;
+        position: relative;
+        h4 {
+            color: $primaryGrey;
+        }
+        h4::after {
+            margin-top: 1.438rem;
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 0.5rem;
+            width: 3.2rem;
+            background-image: url('../imgs/contact-lines.png');
+            background-repeat: no-repeat;
+            content: " ";
+        }
+    }
+}
+
+.contact-button {
+    margin-top: 10rem;
+    background-color: $anchorColor;
+    border: 2px solid $white;
+    box-shadow: 0 0 0 2px $anchorColor;
+    height: 2.375rem;
+    width: 5.625rem;
+    color: $white;
+}

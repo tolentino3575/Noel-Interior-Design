@@ -14,10 +14,18 @@ jQuery(document).ready(function(){
         jQuery(this).next().slideToggle();
     });
 
-    jQuery('.contact').fancybox({
+    jQuery('.contact a').fancybox({
+        helpers: {
+            overlay: {
+                css: {
+                    'background' : 'rgba(255, 255, 255, 0.9)'
+                }
+            }
+        },
         tpl: {
             closeBtn: '<a title="Close" class="fancybox-item fancybox-close my-contact-close" href="javascript:;"></a>'
-        }
+        },
+        padding: 0,
     });
     jQuery('.fancybox').fancybox({
         helpers: {
@@ -27,7 +35,7 @@ jQuery(document).ready(function(){
             },
             overlay: {
                 css: {
-                    'background-color' : 'rgba(255, 255, 255, 0.4)'
+                    'background' : 'rgba(255, 255, 255, 0.9)'
                 }
             }
         },
