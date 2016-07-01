@@ -22,19 +22,36 @@
             <div class="row column">
                 <div class="large-5 columns left-column">
                     <div class="row column">
-                        {% if SP.ACF.get_field('subtitle') %}
-                            <h4>{{ SP.ACF.get_field('subtitle') }}</h4>
-                        {% endif %}
-                        {{ SP.ACF.get_field('left_column_content') }}
-                        {% if SP.WordPress.getType() == "post" or SP.WordPress.getType() == "portfolio" %}
-                            <div class="buttons">
-                                {{ SP.WordPress.getPreviousLink('%link', '&lt; Previous') }}
-                                {% if SP.WordPress.getPreviousLink() and SP.WordPress.getNextLink() %}
-                                    <span class="divider">/</span>
+                        <div class="inner-content">
+                            <div class="title text-center">
+                                {% if SP.ACF.get_field('subtitle') %}
+                                    <h4>{{ SP.ACF.get_field('subtitle') }}</h4>
                                 {% endif %}
-                                {{ SP.WordPress.getNextLink('%link', 'Next &gt;') }}
+                                <h1>{{ SP.WordPress.title() }}</h1>
                             </div>
-                        {% endif %}
+                            {{ SP.ACF.get_field('left_column_content') }}
+                            {% if SP.ACF.get_field('left_column_accordion') %}
+                                <ul class="accordion" data-accordion data-allow-all-closed="true" data-multi-expand="true">
+                                    {% for row in SP.ACF.get_field('left_column_accordion') %}
+                                        <li class="accordion-item {% if row.open %}is-active{% endif %}" data-accordion-item>
+                                            <a href="#" class="accordion-title">{{ row.title }}</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                {{ row.content }}
+                                            </div>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                            {% if SP.WordPress.getType() == "post" or SP.WordPress.getType() == "portfolio" %}
+                                <div class="buttons">
+                                    {{ SP.WordPress.getPreviousLink('%link', '&lt; Previous') }}
+                                    {% if SP.WordPress.getPreviousLink() and SP.WordPress.getNextLink() %}
+                                        <span class="divider">/</span>
+                                    {% endif %}
+                                    {{ SP.WordPress.getNextLink('%link', 'Next &gt;') }}
+                                </div>
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
                 <div class="large-7 columns right-column">

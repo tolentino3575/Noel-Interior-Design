@@ -94,10 +94,8 @@ $print-transparent-backgrounds: true;
 
 $breakpoints: (
   small: 0,
-  medium: 641px,
+  medium: 700px,
   large: 1025px,
-  xlarge: 1200px,
-  xxlarge: 1440px,
 );
 $breakpoint-classes: (small medium large);
 
@@ -207,13 +205,13 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
-$accordion-background: $white;
-$accordion-plusminus: true;
+$accordion-background: transparent;
+$accordion-plusminus: false;
 $accordion-item-color: foreground($accordion-background, $primary-color);
-$accordion-item-background-hover: $light-gray;
-$accordion-item-padding: 1.25rem 1rem;
-$accordion-content-background: $white;
-$accordion-content-border: 1px solid $light-gray;
+$accordion-item-background-hover: transparent;
+$accordion-item-padding: rem-calc(10px) 0;
+$accordion-content-background: transparent;
+$accordion-content-border: none;
 $accordion-content-color: foreground($accordion-background, $primary-color);
 $accordion-content-padding: 1rem;
 

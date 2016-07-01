@@ -1,78 +1,75 @@
 @import "settings";
 
 .left-column {
-    padding-top: 3.875rem;
-    background-color: $left-column-yellow;
-    outline: 4px solid $white;
-    outline-offset: -0.6875rem;
-    overflow: scroll;
-    text-align: center;
-    position: relative;
-    padding-left: 3.125rem;
-    padding-right: 1.875rem;
+    .row.column {
+        background-color: $left-column-yellow;
+        position: relative;
+        padding: rem-calc(40px) !important;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: rem-calc(6px);
+            left: rem-calc(6px);
+            right: rem-calc(6px);
+            bottom: rem-calc(6px);
+            border: 3px solid $white;
+        }
+    }
+    .inner-content {
+        position: relative;
+        z-index: 1;
+    }
+    .title {
+        h3 + h4 {
+            margin-top: 2.25rem;
+        }
+    }
     p {
-        text-align: left;
-        line-height: 1.15rem;
-        margin-bottom: 2.938rem;
-        margin-top: 2.25rem;
+        margin-bottom: rem-calc(20px);
     }
-    h1::after {
+    h1::after, h2::after, h3::after {
         display: block;
-        margin: 0 auto;
-        margin-top: 0.3rem;
-        height: 0.5rem;
-        width: 3.5rem;
+        height: rem-calc(6px);
+        width: rem-calc(51px);
         content: " ";
         background-image: url('../imgs/about-lines.png');
         background-repeat: no-repeat;
+        margin:  rem-calc(16px) auto rem-calc(30px);
     }
-    h2::after {
-        display: block;
-        margin: 0 auto;
-        margin-top: 0.3rem;
-        height: 0.5rem;
-        width: 3.5rem;
-        content: " ";
-        background-image: url('../imgs/about-lines.png');
-        background-repeat: no-repeat;
+    h1, h2 {
+        text-align: center;
     }
     h3 {
         text-align: left;
-    }
-    h3::after {
-        display: block;
-        position: absolute;
-        margin-top: 0.3rem;
-        margin-left: 0.5rem;
-        height: 0.5rem;
-        width: 3.5rem;
-        content: " ";
-        background-image: url('../imgs/about-lines.png');
-        background-repeat: no-repeat;
+        &::after {
+            margin: rem-calc(16px) 0 0 rem-calc(8px);
+        }
     }
     h4 {
         color: $primaryGrey;
     }
-    h3 + h4 {
-        margin-top: 2.25rem;
+    .accordion {
+        margin: 0;
     }
-    h3 ~ h4 {
-        text-align: left;
+    .accordion-title {
+        font-size: rem-calc(16px);
+        color: $header-color;
+        text-transform: uppercase;
+        &::before {
+            content: "+";
+            width: 1rem;
+            display:inline-block;
+        }
+        &:hover {
+            color: $anchorColorHover;
+        }
     }
-}
-
-@include breakpoint(small only) {
-    .left-column h3::after {
-        display: block;
-        position: absolute;
-        margin-left: 0.4rem;
+    .is-active .accordion-title::before {
+        content: "-";
     }
-}
-
-@include breakpoint(medium only) {
-    .left-column h3::after {
-        display: block;
-        position: absolute;
-        margin-left: 0.45rem;
+    .accordion-content {
+        padding-bottom: rem-calc(40px);
+        color: $header-color;
     }
 }
