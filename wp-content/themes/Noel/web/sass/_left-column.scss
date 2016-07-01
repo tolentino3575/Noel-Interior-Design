@@ -28,45 +28,22 @@
     p {
         margin-bottom: rem-calc(20px);
     }
-    h1 {
-        text-align: center;
-        &::after {
-            display: block;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 0.5rem;
-            width: 3.5rem;
-            content: " ";
-            background-image: url('../imgs/about-lines.png');
-            background-repeat: no-repeat;
-        }
+    h1::after, h2::after, h3::after {
+        display: block;
+        height: rem-calc(6px);
+        width: rem-calc(51px);
+        content: " ";
+        background-image: url('../imgs/about-lines.png');
+        background-repeat: no-repeat;
+        margin:  rem-calc(16px) auto rem-calc(30px);
     }
-    h2 {
+    h1, h2 {
         text-align: center;
-        &::after {
-            display: block;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 0.5rem;
-            width: 3.5rem;
-            content: " ";
-            background-image: url('../imgs/about-lines.png');
-            background-repeat: no-repeat;
-        }
     }
     h3 {
         text-align: left;
         &::after {
-            display: block;
-            position: absolute;
-            left: 14%;
-            height: 0.5rem;
-            width: 3.5rem;
-            content: " ";
-            background-image: url('../imgs/about-lines.png');
-            background-repeat: no-repeat;
+            margin: rem-calc(16px) 0 0 rem-calc(8px);
         }
     }
     h4 {
