@@ -17,4 +17,5 @@ $twig = $container->get('twig.environment');
 $twig->addGlobal('walkers', [
     'drilldown' => new \Supertheme\WordPress\DrillDownMenuWalker(),
     'dropdown' => new \Supertheme\WordPress\DropDownMenuWalker(),
+    'accordion' => new \Supertheme\WordPress\AccordionMenuWalker(),
 ]);

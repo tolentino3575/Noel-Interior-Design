@@ -1,20 +1,107 @@
 @import "settings";
 
 .content {
-    margin-top: 2.375rem;
+    margin-top: rem-calc(24px);
     margin-bottom: map-get($grid-column-gutter, medium);
 }
 
-//Header
-.menu-desktop-container {
-    text-align: center;
-    border-top: 2px solid $primaryPink;
-    border-bottom: 2px solid $primaryPink;
+//menu
+.mobile-navi {
+    .sticky {
+        width: 100%;
+    }
+    .title-bar {
+        background-color: $white;
+    }
+    .fa, .icon {
+        font-size: rem-calc(40px);
+    }
+    #mobile-menu {
+        background-color: #F1F1F1;
+        text-align: center;
+        .is-accordion-submenu-parent > a {
+            padding-left: 1rem + rem-calc(22px);
+        }
+        .is-accordion-submenu-parent > a::after, .is-accordion-submenu-parent[aria-expanded="true"] > a::after  {
+            content: "+";
+            border: none;
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            padding-left: 20px;
+            margin: 0;
+            transform: none;
+        }
+        .is-accordion-submenu-parent[aria-expanded="true"] > a::after {
+            content: "-";
+            margin-top: -2px;
+        }
+        a {
+            font-size: rem-calc(14px);
+        }
+        .vertical.nested {
+            margin: 0;
+            background-color: #e6e6e6;
+        }
+    }
+    @include breakpoint(large) {
+        display: none;
+    }
+}
+.desktop-menu {
+    height: rem-calc(62px);
+    .menu-desktop-container {
+        border-top: rem-calc(1px) solid $primaryPink;
+        border-bottom: rem-calc(1px) solid $primaryPink;
+    }
     .menu {
         text-transform: uppercase;
-        li:hover {
-            color: $secondaryLightGrey;
-            text-decoration: underline;
+        a {
+            color: $primaryGrey;
+            &:hover {
+                color: $anchorColor;
+                text-decoration: underline;
+            }
+        }
+    }
+    .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+        content: "+";
+        border: none;
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        padding-left: 12px;
+    }
+    .submenu {
+        a {
+            font-size: rem-calc(13px);
+            text-transform: none;
+        }
+    }
+    .is-dropdown-submenu {
+        min-width: auto;
+        background-color: #F1F1F1;
+        border: none;
+        padding: rem-calc(12px) 0;
+    }
+    .dropdown.menu > li.opens-right > .is-dropdown-submenu {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .homepage {
+        position: relative;
+        width: rem-calc(252px) + rem-calc(20px);
+        a {
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            font-size: 0;
+            background-image: url('../imgs/logo.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: $white;
+            width: rem-calc(252px) + rem-calc(20px);
+            height: rem-calc(82px);
         }
     }
 }
@@ -22,7 +109,7 @@
 
 .header-container {
     width: 100%;
-    margin-bottom: 1.188rem;
+    margin-bottom: rem-calc(15px);
 }
 
 .header-icons {
@@ -64,45 +151,12 @@
 
 
 .header-phone {
-    width: 50%;
-    text-align: right;
-    display: inline-block;
     float: right;
-    color: $primaryGrey;
-    font-size: 1rem;
-}
-
-//Nav
-.nav {
-    text-align: center;
-    width: 100%;
-
-    .nav-link {
-        &:hover{
-            color: $secondaryLightGrey;
-            text-decoration: underline;
-        }
-    }
-
-    .col-left, .col-mid, .col-right {
-        display: inline-block;
-    }
-
-    .col-left, .col-right {
-        border-top: 1px solid $primaryPink;
-        border-bottom: 1px solid $primaryPink;
-        padding-top: 1.063rem;
-        padding-bottom: 0.625rem;
-        word-spacing: 4.875rem;
-        width: 35%;
-    }
-
-    .col-mid {
-        width: 23%;
+    a {
+        color: $primaryGrey;
+        font-size: rem-calc(20px);
     }
 }
-
-
 
 //Slider
 .img-slider {
@@ -324,8 +378,4 @@
         margin-top: -0.5rem;
         font-size: .9rem;
     }
-}
-
-.homepage {
-    background-image: url('../imgs/logo.png');
 }
