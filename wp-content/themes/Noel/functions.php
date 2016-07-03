@@ -43,6 +43,15 @@ add_action('init', function() {
         'mobile_menu' => 'Mobile Menu',
     ]);
 
+    add_image_size('slider', 1200, 700, true);
+    add_image_size('landscape_top', 1000, 600, true);
+    add_image_size('landscape_bottom', 650, 400, true);
+    add_image_size('mixed_top', 980, 450, true);
+    add_image_size('mixed_left', 660, 844, true);
+    add_image_size('mixed_right', 650, 400, true);
+    add_image_size('mixed_bottom', 650, 550, true);
+    add_image_size('right_large', 1000, 900, true);
+
     if(function_exists('acf_add_options_page')) {
         acf_add_options_page([
             'page_title' => 'Theme Options',

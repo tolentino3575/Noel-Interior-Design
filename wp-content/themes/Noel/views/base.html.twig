@@ -19,7 +19,7 @@
 
     {% block content %}
         <div class="two-column content">
-            <div class="row column">
+            <div class="row">
                 <div class="large-5 columns left-column">
                     <div class="row column">
                         <div class="inner-content">
@@ -57,17 +57,27 @@
                 <div class="large-7 columns right-column">
                     {% if SP.ACF.get_field('right_column_layout') == 'large' %}
                         <div class="large">
-                            <img src="{{ SP.ACF.get_field('large_image').url }}">
+                            <img src="{{ SP.ACF.get_field('large_image').sizes.right_large }}">
                         </div>
                     {% elseif SP.ACF.get_field('right_column_layout') == 'landscape' %}
                         <div class="landscape">
                             {% for row in SP.ACF.get_field('landscape') %}
                                 <div class="row column landscape-top">
-                                    <a class="fancybox" href="{{ row.large.url }}" rel="group" title="Bedroom Before & After"><img src="{{ row.large.url }}" alt="first image" class="fade"></a>
+                                    <a class="fancybox" href="{{ row.large.url }}" rel="group" title="Bedroom Before & After">
+                                        <img src="{{ row.large.sizes.landscape_top }}" alt="first image" class="fade">
+                                    </a>
                                 </div>
-                                <div class="row">
-                                    <div class="medium-6 columns"><a class="fancybox" href="{{ row.large.url }}" rel="group" title="Bedroom Before & After"><img src="{{ row.small_left.url }}" alt="" class="fade"></a></div>
-                                    <div class="medium-6 columns"><a class="fancybox" href="{{ row.large.url }}" rel="group" title="Bedroom Before & After"><img src="{{ row.small_right.url }}" alt="" class="fade"></a></div>
+                                <div class="row landscape-bottom">
+                                    <div class="medium-6 columns">
+                                        <a class="fancybox" href="{{ row.large.url }}" rel="group" title="Bedroom Before & After">
+                                            <img src="{{ row.small_left.sizes.landscape_bottom }}" alt="" class="fade">
+                                        </a>
+                                    </div>
+                                    <div class="medium-6 columns">
+                                        <a class="fancybox" href="{{ row.large.url }}" rel="group" title="Bedroom Before & After">
+                                            <img src="{{ row.small_right.sizes.landscape_bottom }}" alt="" class="fade">
+                                        </a>
+                                    </div>
                                 </div>
                             {% endfor %}
                         </div>
@@ -75,19 +85,39 @@
                         <div class="mixed">
                             {% for row in SP.ACF.get_field('mixed') %}
                                 <div class="row column mixed-top">
-                                    <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After"><img src="{{ row.large_landscape.url }}" alt="" class="fade"></a>
+                                    <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                        <img src="{{ row.large_landscape.sizes.mixed_top }}" alt="" class="fade">
+                                    </a>
                                 </div>
                                 <div class="row mixed-middle">
-                                    <div class="medium-6 columns"><a class="fancybox" href="{{ row.large_landscape.url }}" rel="group"  title="Bedroom Before & After"><img src="{{ row.large_portrait.url }}" alt="" class="fade"></a></div>
                                     <div class="medium-6 columns">
-                                        <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After"><img src="{{ row.top_small_landscape.url }}" alt="" class="mixed-middle-top fade"></a>
-                                        <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After"><img src="{{ row.bottom_small_landscape.url }}" alt="" class="fade"></a>
+                                        <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group"  title="Bedroom Before & After">
+                                            <img src="{{ row.large_portrait.sizes.mixed_left }}" alt="" class="fade"></a>
+                                    </div>
+                                    <div class="medium-6 columns">
+                                        <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                            <img src="{{ row.top_small_landscape.sizes.mixed_right }}" alt="" class="mixed-middle-top fade">
+                                        </a>
+                                        <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                            <img src="{{ row.bottom_small_landscape.sizes.mixed_right }}" alt="" class="fade">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="medium-4 columns fade"><a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After"><img src="{{ row.left_square.url }}" alt=""></a></div>
-                                    <div class="medium-4 columns fade"><a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After"><img src="{{ row.center_square.url }}" alt=""></a></div>
-                                    <div class="medium-4 columns fade"><a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After"><img src="{{ row.right_square.url }}" alt=""></a></div>
+                                    <div class="medium-4 columns fade">
+                                        <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                            <img src="{{ row.left_square.sizes.mixed_bottom }}" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="medium-4 columns fade"><a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                            <img src="{{ row.center_square.sizes.mixed_bottom }}" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="medium-4 columns fade">
+                                        <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                            <img src="{{ row.right_square.sizes.mixed_bottom }}" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                             {% endfor %}
                         </div>

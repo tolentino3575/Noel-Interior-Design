@@ -5,7 +5,7 @@
         <div class="img-slider">
             {% for slide in SP.ACF.get_field('slider') %}
                 <div class="slide">
-                    <img src="{{ slide.image.url }}" class="img">
+                    <img src="{{ slide.image.sizes.slider }}" class="img">
                     <div class="img-text">
                         <h1>{{ slide.title }}</h1>
                         <p>{{ slide.subtitle }}</p>
