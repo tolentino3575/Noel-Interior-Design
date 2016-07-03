@@ -1,6 +1,7 @@
 @import "settings";
 
 .right-column {
+    margin-bottom: map-get($grid-column-gutter, medium);
     .landscape-top {
         margin-bottom: map-get($grid-column-gutter, medium);
     }

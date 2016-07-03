@@ -5787,31 +5787,28 @@ table.hover tr:nth-of-type(even):hover {
     .left-column {
       margin-bottom: 0; } }
 
-.right-column .landscape-top {
+.right-column {
   margin-bottom: 15px; }
-
-.right-column .landscape-bottom > div:first-of-type img {
-  margin-bottom: 15px; }
-  @media screen and (min-width: 43.75em) {
-    .right-column .landscape-bottom > div:first-of-type img {
-      margin-bottom: 0; } }
-
-.right-column .mixed .mixed-top {
-  margin-bottom: 15px; }
-
-.right-column .mixed .mixed-middle {
-  margin-bottom: 15px; }
-  .right-column .mixed .mixed-middle .mixed-middle-top {
+  .right-column .landscape-top {
     margin-bottom: 15px; }
-
-.right-column .fade {
-  opacity: 1;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out; }
-
-.right-column .fade:hover {
-  opacity: 0.5; }
+  .right-column .landscape-bottom > div:first-of-type img {
+    margin-bottom: 15px; }
+    @media screen and (min-width: 43.75em) {
+      .right-column .landscape-bottom > div:first-of-type img {
+        margin-bottom: 0; } }
+  .right-column .mixed .mixed-top {
+    margin-bottom: 15px; }
+  .right-column .mixed .mixed-middle {
+    margin-bottom: 15px; }
+    .right-column .mixed .mixed-middle .mixed-middle-top {
+      margin-bottom: 15px; }
+  .right-column .fade {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out; }
+  .right-column .fade:hover {
+    opacity: 0.5; }
 
 .content {
   margin-top: 1.5rem;
