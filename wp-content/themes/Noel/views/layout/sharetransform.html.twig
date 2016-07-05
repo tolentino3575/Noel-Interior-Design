@@ -2,7 +2,7 @@
     <div class="share-transform-container">
         <div class="row column">
             <div class="row share-transform-content">
-                <div class="large-6 columns share">
+                <div class="medium-6 columns share">
                     <h1>Share this page!</h1>
                     <img src="{{ SP.WordPress.templateURI() }}/web/imgs/footer-lines.png">
                     <br><br>
@@ -11,14 +11,12 @@
                     <a href=""><div class="fb-share"></div></a>
                     <a href=""><div class="goog-share"></div></a>
                 </div>
-                <div class="large-6 columns transform">
+                <div class="medium-6 columns transform">
                     <h1>Ready to Transform Your Home?</h1>
                     <img src="{{ SP.WordPress.templateURI() }}/web/imgs/footer-lines.png">
-                    <br><br>
-                    <form>
-                        <input><br><br>
-                        <button class="transform-button">NEXT ></button>
-                    </form>
+                    <div id="quote-form">
+                        {{ SP.WordPress.getForm(SP.ACF.get_field('footer_form_id', 'option'), false, false, false, null, true) }}
+                    </div>
                 </div>
             </div>
         </div>

@@ -28,6 +28,10 @@ jQuery(document).ready(function(){
         padding: 0,
     });
     jQuery('.fancybox').fancybox({
+        padding: 0,
+        width: 'auto',
+        height: 'auto',
+        autoResize: true,
         helpers: {
             title: {
                 type: 'outside',
@@ -44,6 +48,8 @@ jQuery(document).ready(function(){
             next: '<a title="Next" class="fancybox-nav fancybox-next my-next" href="javascript:;"><span></span></a>',
             prev: '<a title="Previous" class="fancybox-nav fancybox-prev my-prev" href="javascript:;"><span></span></a>'
         },
-        padding: 0,
+        beforeShow : function() {
+            this.title = ' <small class="num">' + (this.index + 1) + ' of ' + this.group.length + ' </small>' + (this.title ? '' + this.title + '' : '');
+        }
     });
 });

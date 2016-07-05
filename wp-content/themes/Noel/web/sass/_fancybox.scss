@@ -1,41 +1,58 @@
 @import "settings";
 
-.my-close {
+.my-close, .my-contact-close {
     position: absolute;
-    right: 0.15rem;
-    top: -1.75rem;
-    width: 1.438rem;
-    height: 1.438rem;
-    content: url("../imgs/x-close.png");
-    background-image: none;
-}
-
-.my-contact-close {
-    position: absolute;
-    right: 1.438rem;
-    top: 1.75rem;
-    width: 1.438rem;
-    height: 1.438rem;
-    content: url("../imgs/contact-x-close.png");
-    background-image: none;
-}
-
-.my-next {
-    width: 1.563rem;
-    height: 3.063rem;
-    top: 45%;
     right: 2rem;
-    content: url("../imgs/next-arrow.png");
-    background-repeat: no-repeat;
+    top: 2rem;
+    width: rem-calc(23px);
+    height: rem-calc(22px);
+    background-image: url("../imgs/x-close.png");
+    background-size: auto;
+    opacity: 0.8;
+    &:hover {
+        opacity: 1;
+    }
 }
 
-.my-prev {
-    width: 1.563rem;
-    height: 3.063rem;
-    top: 45%;
-    left: 2rem;
-    content: url("../imgs/prev-arrow.png");
+.fancybox-prev span, .fancybox-next span {
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem-calc(25px);
+    height: rem-calc(50px);
+    z-index: 1;
+    visibility: visible;
+    opacity: 0.8;
+    &:hover {
+        opacity: 1;
+    }
+}
+.fancybox-nav span {
+    margin: 0;
+}
+.fancybox-prev span {
+    left: 1rem;
+    @include breakpoint(medium) {
+        left: rem-calc(30px)
+    }
+}
+.fancybox-next span {
+    right: 1rem;
+    @include breakpoint(medium) {
+        right: rem-calc(30px)
+    }
+}
+.fancybox-prev span, .my-next.fancybox-next span {
+    width: rem-calc(25px);
+    height: rem-calc(50px);
+    background-size: auto;
+    background-position: center center;
     background-repeat: no-repeat;
+}
+.fancybox-prev span{
+    background-image: url("../imgs/prev-arrow.png");
+}
+.fancybox-next span{
+    background-image: url("../imgs/next-arrow.png");
 }
 
 .fancybox-title {
@@ -49,6 +66,15 @@
 	position: relative;
 	text-shadow: none;
 	z-index: 8050;
+    small {
+        display: block;
+        font-size: rem-calc(14px);
+        margin-bottom: 1rem;
+        @include breakpoint(medium) {
+            float: left;
+            margin: 0;
+        }
+    }
 }
 
 .fancybox-title-outside-wrap {
@@ -64,16 +90,23 @@
     display: none;
     background-color: $white;
     border: 2px solid $secondaryDarkGrey;
-    padding-top: 3.938rem;
-    padding-bottom: 4.25rem;
-    padding-left: 4.063rem;
     text-align: center;
-    width: 75rem;
+    padding: 4rem 1rem 1rem 1rem;
+    @include breakpoint(medium) {
+        padding: 4rem;
+    }
+    h1 {
+        font-size: 1.3rem;
+        @include breakpoint(medium) {
+            padding: 1.5rem;
+        }
+    }
     .contact-main-row {
         padding-left: 0;
         padding-right: 0;
     }
     .left-contact-column {
+        display: none;
         background-color: $primaryPink;
         border: 7px solid white;
         outline: 1px solid black;
@@ -91,14 +124,117 @@
             background-image: url('../imgs/contact-logo.png');
             background-repeat: no-repeat;
         }
+        @include breakpoint(large) {
+            display: block;
+        }
     }
     .right-contact-column {
         position: relative;
+
+        ::-webkit-input-placeholder {
+            color: $anchorColorHover;
+            opacity: 1 !important;
+            text-transform: uppercase;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+            color: $anchorColorHover;
+            opacity: 1 !important;
+            text-transform: uppercase;
+        }
+        ::-moz-placeholder {  /* Firefox 19+ */
+            color: $anchorColorHover;
+            opacity: 1 !important;
+            text-transform: uppercase;
+        }
+        :-ms-input-placeholder {
+            color: $anchorColorHover;
+            opacity: 1 !important;
+            text-transform: uppercase;
+        }
+        .gform_title, .gform_description, .top_label .gfield_label, .field_sublabel_below .ginput_complex.ginput_container label {
+            display: none;
+        }
+        .gform_wrapper .top_label li.gfield.gfield_error.gf_left_half {
+            margin-right: 0;
+        }
+        .gform_wrapper li.gfield.gfield_error {
+            background-color: transparent;
+            border: none;
+            margin-top: 4px !important;
+            margin-bottom: 0 !important;
+        }
+        .gform_wrapper div.validation_error {
+            color: $alert-color;
+            border: none;
+            padding: 0;
+        }
+        .gform_wrapper .validation_message {
+            color: $alert-color;
+        }
+        .gform_wrapper .field_description_below .gfield_description {
+            padding: 0;
+        }
+        .gform_wrapper li.gfield_error input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]),
+        .gform_wrapper li.gfield_error textarea, select {
+            border: none;
+            border-bottom: 1px solid $alert-color;
+        }
+        .gform_wrapper li.gfield_error input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]),
+        .gform_wrapper li.gfield_error select, .gform_wrapper li.gfield_error textarea {
+            border: none;
+            border-bottom: 1px solid $alert-color;
+        }
+        .gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
+            padding: rem-calc(5px) rem-calc(20px);
+            font-size: rem-calc(12px);
+            @include breakpoint(medium) {
+                font-size: rem-calc(16px);
+            }
+        }
+        .gform_wrapper select {
+            padding-right: rem-calc(24px);
+            font-size: rem-calc(12px);
+            @include breakpoint(medium) {
+                font-size: rem-calc(16px);
+            }
+        }
+        .gform_wrapper textarea {
+            font-size: rem-calc(12px);
+            @include breakpoint(medium) {
+                font-size: rem-calc(16px);
+            }
+        }
+        [type="text"], [type="password"], [type="date"], [type="datetime"], [type="datetime-local"], [type="month"],
+        [type="week"], [type="email"], [type="number"], [type="search"], [type="tel"], [type="time"], [type="url"], [type="color"], textarea, select{
+            border: none;
+            border-bottom: 1px solid $anchorColorHover;
+            box-shadow: none;
+            height: auto;
+        }
+        .gf_placeholder {
+            color: $anchorColorHover;
+        }
+        .gform_wrapper ul li.gfield {
+            margin-top: 12px;
+        }
+        input.button {
+            background-color: $anchorColor;
+            border: 2px solid $white;
+            box-shadow: 0 0 0 2px $anchorColor;
+            color: $white;
+            padding: rem-calc(8px) rem-calc(16ps);
+            text-transform: uppercase;
+            &:hover {
+                background-color: $dark-gray;
+            }
+        }
         h4 {
             color: $primaryGrey;
+            margin-bottom: 2.5rem;
+            font-family: "Lato";
         }
         h4::after {
-            margin-top: 1.438rem;
+            margin-top: 1rem;
             display: block;
             position: absolute;
             left: 50%;
@@ -109,9 +245,14 @@
             background-repeat: no-repeat;
             content: " ";
         }
+        @include breakpoint(medium) {
+            padding: 0 rem-calc(80px);
+        }
     }
 }
-
+.fancybox-inner {
+    height: auto !important;
+}
 .contact-button {
     margin-top: 10rem;
     background-color: $anchorColor;
@@ -120,30 +261,4 @@
     height: 2.375rem;
     width: 5.625rem;
     color: $white;
-}
-
-@include breakpoint(small only) {
-    .fancybox-contact-content {
-        width: auto;
-        text-align: center;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .fancybox-contact-content .left-contact-column {
-        height: 10rem;
-        margin-bottom: 1.5rem;
-    }
-}
-
-@include breakpoint(medium only) {
-    .fancybox-contact-content {
-        width: auto;
-        text-align: center;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .fancybox-contact-content .left-contact-column {
-        height: 10rem;
-        margin-bottom: 1.5rem;
-    }
 }
