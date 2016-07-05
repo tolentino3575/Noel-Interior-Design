@@ -10,13 +10,13 @@ add_action('wp_enqueue_scripts', function (){
     wp_register_style('fancybox-css', get_template_directory_uri() . '/src/fancybox/source/jquery.fancybox.css');
     wp_register_style('app', get_template_directory_uri() . '/web/stylesheets/app.css', ['slick-css', 'slick-theme-css', 'fancybox-css']);
 
+    wp_register_script('sharethis', 'http://w.sharethis.com/button/buttons.js', array());
     wp_register_script('slick', get_template_directory_uri() . '/src/slick/slick/slick.js', array('jquery'));
-    wp_register_script('slick-app-js', get_template_directory_uri() . '/web/scripts-min/app.min.js', array('jquery'));
     wp_register_script('fancybox', get_template_directory_uri() . '/src/fancybox/source/jquery.fancybox.pack.js', array('jquery'));
+    wp_register_script('app', get_template_directory_uri() . '/web/scripts-min/app.min.js', array('jquery', 'fancybox', 'slick', 'sharethis'));
 
-    wp_enqueue_script('slick-app-js');
-    wp_enqueue_script('slick');
-    wp_enqueue_script('fancybox');
+    wp_enqueue_script('app');
+    wp_enqueue_script('app');
     wp_enqueue_style( 'app' );
 });
 

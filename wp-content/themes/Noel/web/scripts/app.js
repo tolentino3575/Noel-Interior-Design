@@ -1,6 +1,8 @@
 jQuery(document).ready(function(){
     jQuery(document).foundation();
 
+    stLight.options({publisher: "31abfba6-0978-4139-8479-d6e96f61d25f", doNotHash: true, doNotCopy: true, hashAddressBar: false});
+
     jQuery('.img-slider').slick({
         infinite: true,
         speed: 300,
