@@ -94,8 +94,8 @@ $print-transparent-backgrounds: true;
 
 $breakpoints: (
   small: 0,
-  medium: 700px,
-  large: 1025px,
+  medium: rem-calc(700px),
+  large: rem-calc(1200px),
 );
 $breakpoint-classes: (small medium large);
 

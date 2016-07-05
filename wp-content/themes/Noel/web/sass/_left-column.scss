@@ -1,6 +1,7 @@
 @import "settings";
 
 .left-column {
+    margin-bottom: map_get($grid-column-gutter, medium);
     .row.column {
         background-color: $left-column-yellow;
         position: relative;
@@ -71,5 +72,8 @@
     .accordion-content {
         padding-bottom: rem-calc(40px);
         color: $header-color;
+    }
+    @include breakpoint(medium) {
+        margin-bottom: 0;
     }
 }
