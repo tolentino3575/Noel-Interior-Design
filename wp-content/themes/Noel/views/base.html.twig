@@ -154,7 +154,7 @@
                 <div class="large-8 columns right-contact-column">
                     <h1>Call 509.952.3906</h1>
                     <h4>Michelle Will Respond Within a Business Day</h4>
-                    <button class="contact-button">SUBMIT</button>
+                    {{ SP.WordPress.getForm(SP.ACF.get_field('lightbox_form_id', 'option'), false, false, false, null, true) }}
                 </div>
             </div>
         </div>

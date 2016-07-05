@@ -1,0 +1,99 @@
+#quote-form .gform_wrapper{
+  position: relative;
+
+  ::-webkit-input-placeholder {
+    color: $anchorColorHover;
+    opacity: 1 !important;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $anchorColorHover;
+    opacity: 1 !important;
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: $anchorColorHover;
+    opacity: 1 !important;
+  }
+  :-ms-input-placeholder {
+    color: $anchorColorHover;
+    opacity: 1 !important;
+  }
+  form {
+    position: relative;
+  }
+  .gfield_label, label {
+    display: none;
+  }
+  [type="text"], [type="password"], [type="date"], [type="datetime"], [type="datetime-local"], [type="month"],
+  [type="week"], [type="email"], [type="number"], [type="search"], [type="tel"], [type="time"], [type="url"], [type="color"], textarea, select{
+    line-height:1;
+    border: none;
+    border-bottom: 1px solid $anchorColorHover;
+    box-shadow: none;
+    height: auto;
+    padding: rem-calc(5px) rem-calc(20px);
+    width: 60%;
+    margin: 0 auto;
+  }
+  li.gfield.gfield_error,
+  li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+    border: none;
+    background-color: transparent;
+  }
+  .ginput_container {
+    span {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  div.validation_error {
+    display: none;
+  }
+  .validation_message {
+    color: $alert-color;
+    width: 60%;
+    margin: rem-calc(8px) auto 0 auto;
+  }
+  .gf_progressbar_wrapper {
+    position: absolute;
+    top: 40px;
+    padding: 0;
+    margin: 0;
+    width:60%;
+    right: 20%;
+  }
+  ul.gform_fields li.gfield {
+    padding: 0;
+  }
+  .gf_progressbar {
+    display: none;
+  }
+  .gf_progressbar_title {
+    font-size: 0;
+    text-align: right;
+    margin: 0 !important;
+    span {
+      font-size:rem-calc(14px);
+    }
+  }
+  .gform_page_footer {
+    border: none;
+    text-align: center;
+    input.button {
+      line-height:1;
+      font-size:rem-calc(14px);
+      background-color: $anchorColor;
+      border: 2px solid $white;
+      box-shadow: 0 0 0 2px $anchorColor;
+      color: $white;
+      padding: rem-calc(8px) rem-calc(16px);
+      text-transform: uppercase;
+      width: auto;
+      &:hover {
+        background-color: $dark-gray;
+      }
+    }
+    .gform_previous_button + .button {
+      margin-top: rem-calc(-8px);
+    }
+  }
+}
