@@ -5,6 +5,13 @@
         <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <title>{{ SP.WordPress.title() }}</title>
+        {% if SP.ACF.get_field('favicon', 'option') %}
+            <link rel="shortcut icon" type="image/png" href="{{ SP.ACF.get_field('favicon', 'option').url }}"/>
+            <link rel="shortcut icon" type="image/png" href="{{ SP.ACF.get_field('favicon', 'option').url }}"/>
+        {% else %}
+            <link rel="shortcut icon" type="image/png" href="{{ SP.ACF.get_field('logo', 'option').url }}"/>
+            <link rel="shortcut icon" type="image/png" href="{{ SP.ACF.get_field('logo', 'option').url }}"/>
+        {% endif %}
     {% endblock %}
 
     {% block stylesheets %}
@@ -20,7 +27,7 @@
     {% block content %}
         <div class="two-column content">
             <div class="row">
-                <div class="medium-4 medium-push-8 large-7 large-push-5 columns right-column">
+                <div class="medium-5 medium-push-7 large-7 large-push-5 columns right-column">
                     {% if SP.ACF.get_field('right_column_layout') == 'large' %}
                         <div class="large">
                             <img src="{{ SP.ACF.get_field('large_image').sizes.right_large }}">
@@ -57,30 +64,31 @@
                                 </div>
                                 <div class="row mixed-middle hide-for-small-only">
                                     <div class="medium-6 columns">
-                                        <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group"  title="Bedroom Before & After">
+                                        <a class="fancybox" href="{{ row.large_portrait.url }}" rel="group"  title="Bedroom Before & After">
                                             <img src="{{ row.large_portrait.sizes.mixed_left }}" alt="" class="fade"></a>
                                     </div>
                                     <div class="medium-6 columns">
-                                        <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                        <a class="fancybox" href="{{ row.top_small_landscape.url }}" rel="group" title="Bedroom Before & After">
                                             <img src="{{ row.top_small_landscape.sizes.mixed_right }}" alt="" class="mixed-middle-top fade">
                                         </a>
-                                        <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                        <a class="fancybox" href="{{ row.bottom_small_landscape.url }}" rel="group" title="Bedroom Before & After">
                                             <img src="{{ row.bottom_small_landscape.sizes.mixed_right }}" alt="" class="fade">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="row hide-for-small-only">
                                     <div class="medium-4 columns fade">
-                                        <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                        <a class="fancybox" href="{{ row.left_square.url }}" rel="group" title="Bedroom Before & After">
                                             <img src="{{ row.left_square.sizes.mixed_bottom }}" alt="">
                                         </a>
                                     </div>
-                                    <div class="medium-4 columns fade"><a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                    <div class="medium-4 columns fade">
+                                        <a class="fancybox" href="{{ row.center_square.url }}" rel="group" title="Bedroom Before & After">
                                             <img src="{{ row.center_square.sizes.mixed_bottom }}" alt="">
                                         </a>
                                     </div>
                                     <div class="medium-4 columns fade">
-                                        <a class="fancybox" href="{{ row.large_landscape.url }}" rel="group" title="Bedroom Before & After">
+                                        <a class="fancybox" href="{{ row.right_square.url }}" rel="group" title="Bedroom Before & After">
                                             <img src="{{ row.right_square.sizes.mixed_bottom }}" alt="">
                                         </a>
                                     </div>
@@ -89,7 +97,7 @@
                         </div>
                     {% endif %}
                 </div>
-                <div class="medium-8 medium-pull-4 large-5 large-pull-7 columns left-column">
+                <div class="medium-7 medium-pull-5 large-5 large-pull-7 columns left-column">
                     <div class="row column">
                         <div class="inner-content">
                             <div class="title text-center">
