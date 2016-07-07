@@ -5902,7 +5902,8 @@ table.hover tr:nth-of-type(even):hover {
     min-width: 100%;
     background-color: #F1F1F1;
     border: none;
-    padding: 0.75rem 0; }
+    padding: 0.75rem 0;
+    z-index: 1000; }
   .desktop-menu .dropdown.menu > li.opens-right > .is-dropdown-submenu {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -6087,7 +6088,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .footer {
   text-align: center;
-  font-size: 0.5625rem;
+  font-size: 0.75rem;
   color: #dddddd;
   margin-bottom: 20px; }
   @media screen and (min-width: 75em) {
@@ -6670,6 +6671,9 @@ table.hover tr:nth-of-type(even):hover {
       text-transform: uppercase; }
       .fancybox-contact-content .right-contact-column input.button:hover {
         background-color: #8a8a8a; }
+    .fancybox-contact-content .right-contact-column h1 {
+      font-size: 2rem;
+      padding-bottom: 0; }
     .fancybox-contact-content .right-contact-column h4 {
       color: #787878;
       margin-bottom: 2.5rem;
