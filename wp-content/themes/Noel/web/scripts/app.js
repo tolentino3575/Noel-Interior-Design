@@ -11,11 +11,6 @@ jQuery(document).ready(function(){
         arrows: true
     });
 
-    jQuery('.service-text').hide();
-    jQuery('.service').click(function(){
-        jQuery(this).next().slideToggle();
-    });
-
     jQuery('.contact a').fancybox({
         helpers: {
             overlay: {
