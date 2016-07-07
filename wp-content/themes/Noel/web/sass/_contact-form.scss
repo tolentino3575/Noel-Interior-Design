@@ -93,7 +93,10 @@
       }
     }
     .gform_previous_button + .button {
-      margin-top: rem-calc(-8px);
+      margin-top: rem-calc(8px);
+      @include breakpoint(medium) {
+          margin-top: rem-calc(-8px);
+      }
     }
   }
 }
