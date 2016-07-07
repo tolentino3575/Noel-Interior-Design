@@ -78,7 +78,7 @@
         text-transform: uppercase;
         a {
             color: $primaryGrey;
-            padding: 1rem rem-calc(40px);
+            padding: 1rem rem-calc(30px);
             &:hover {
                 color: $anchorColor;
                 text-decoration: underline;
@@ -97,6 +97,7 @@
         content: "-";
     }
     .submenu {
+        white-space: nowrap;
         a {
             padding: rem-calc(11px) rem-calc(20px);
             font-size: rem-calc(13px);
