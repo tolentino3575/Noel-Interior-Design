@@ -7,6 +7,22 @@
                 {{ teaser }}
             {% endfor %}
         </div>
+        <div class="row medium-teasers">
+            <div class="medium-6 columns">
+                {% for teaser in teasers %}
+                    {% if loop.index % 2 == 1 %}
+                        {{ teaser }}
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="medium-6 columns">
+                {% for teaser in teasers %}
+                    {% if loop.index % 2 == 0 %}
+                        {{ teaser }}
+                    {% endif %}
+                {% endfor %}
+            </div>
+            </div>
         <div class="row large-teasers">
             <div class="large-4 columns">
                 {% for teaser in teasers %}

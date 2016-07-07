@@ -71,9 +71,18 @@
       display:none;
     }
   }
-  .large-teasers {
+  .medium-teasers {
     display: none;
     @include breakpoint(medium) {
+      display:block;
+    }
+    @include breakpoint(large) {
+      display: none;
+    }
+  }
+  .large-teasers {
+    display: none;
+    @include breakpoint(large) {
       display: block;
     }
   }
