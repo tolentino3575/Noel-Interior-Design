@@ -110,6 +110,7 @@
         background-color: #F1F1F1;
         border: none;
         padding: rem-calc(12px) 0;
+        z-index: 1000;
     }
     .dropdown.menu > li.opens-right > .is-dropdown-submenu {
         left: 50%;
@@ -331,7 +332,7 @@
 }
 .footer {
     text-align: center;
-    font-size: 0.5625rem;
+    font-size: rem-calc(12px);
     color: $secondaryLightGrey;
     margin-bottom: map_get($grid-column-gutter, small);
     @include breakpoint(large) {
@@ -361,6 +362,7 @@
             margin-top: 0.5rem;
     }
     .share {
+        margin-bottom: 1rem;
         h1 {
             font-size: 1.25rem;
         }
@@ -369,6 +371,13 @@
         h1 {
             font-size: 1.25rem;
         }
+    }
+    #gform_2 .gform_body .gform_page_footer .gform_previous_button {
+        margin-right: 1rem;
+    }
+    #gform_2 .gform_body .gform_page_footer .gform_next_button {
+        margin-top: 0;
+        // margin-left: 3rem;
     }
 }
 

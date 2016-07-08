@@ -86,6 +86,7 @@
     box-shadow: none;
 }
 
+//contact form
 .fancybox-contact-content {
     display: none;
     background-color: $white;
@@ -227,6 +228,10 @@
             &:hover {
                 background-color: $dark-gray;
             }
+        }
+        h1 {
+            font-size: 2rem;
+            padding-bottom: 0;
         }
         h4 {
             color: $primaryGrey;
